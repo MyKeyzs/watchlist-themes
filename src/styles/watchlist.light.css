@@ -1,34 +1,41 @@
 /* src/styles/watchlist.light.css */
 @reference "tailwindcss";
 
-/* ---------- Page ---------- */
-.wl-root         { @apply min-h-screen bg-gray-50 text-gray-800; }
-.wl-container    { @apply mx-auto max-w-7xl px-6 py-8; }
+/* ---------------- Global full-bleed fix ---------------- */
+html, body, #root { height: 100%; width: 100%; }
+#root { max-width: none; margin: 0; padding: 0; } /* remove Vite starter cap */
+/* optional page bg (keeps the right side light instead of dark) */
+body { background: #f7f7f8; }
 
-/* ---------- Header ---------- */
+/* ---------------- Page ---------------- */
+.wl-root         { @apply min-h-screen bg-gray-50 text-gray-800; }
+/* wider centered container; make full-bleed by changing max-w to none */
+.wl-container    { @apply mx-auto w-full max-w-[1400px] px-6 py-8; }
+
+/* ---------------- Header ---------------- */
 .wl-title        { @apply text-3xl font-semibold tracking-tight text-gray-900; }
 .wl-subtitle     { @apply mt-2 text-sm text-gray-500; }
 .wl-toolbar      { @apply mt-5 flex flex-col gap-4 md:flex-row md:items-center md:justify-between; }
 
-/* ---------- Search ---------- */
+/* ---------------- Search ---------------- */
 .wl-search-wrap  { @apply flex items-center gap-2; }
-.wl-search       { @apply w-[22rem] max-w-[70vw] rounded-2xl border border-gray-200 bg-white px-4 py-2.5 text-sm shadow-sm placeholder:text-gray-400 focus:border-blue-300 focus:ring-2 focus:ring-blue-200 outline-none; }
+.wl-search       { @apply w-[22rem] max-w-[70vw] rounded-2xl border border-gray-200 bg-white px-4 py-2.5 text-sm text-black shadow-sm placeholder:text-gray-400 focus:border-blue-300 focus:ring-2 focus:ring-blue-200 outline-none; }
 .wl-btn          { @apply rounded-xl border border-gray-200 bg-white px-3 py-2 text-xs text-gray-600 hover:bg-gray-50 shadow-sm; }
 
-/* ---------- Theme chips ---------- */
+/* ---------------- Theme chips ---------------- */
 .wl-themes-outer { @apply mt-4; }
-.wl-themes       { @apply flex flex-wrap gap-8; }        /* larger gap between groups */
+.wl-themes       { @apply flex flex-wrap gap-8; }
 .wl-chip-row     { @apply flex flex-wrap items-center gap-3; }
 
 .wl-pill         { @apply rounded-full px-4 py-2 text-sm transition shadow-sm border; }
 .wl-pill--idle   { @apply bg-white text-gray-700 border-gray-200 hover:bg-gray-50; }
-.wl-pill--current{ @apply bg-green-900 text-white border-green-900 hover:bg-green-700; } /* current (green, filled) */
-.wl-pill--prev   { @apply bg-blue-400 text-white border-blue-300 hover:bg-blue-400; }   /* previously selected (blue, filled) */
-.wl-pill--all    { @apply bg-gray-900 text-white border-gray-900 hover:bg-gray-900; }   /* “All themes” chip */
+.wl-pill--current{ @apply bg-green-900 text-white border-green-900 hover:bg-green-700; }
+.wl-pill--prev   { @apply bg-blue-400 text-white border-blue-300 hover:bg-blue-400; }
+.wl-pill--all    { @apply bg-gray-900 text-white border-gray-900 hover:bg-gray-900; }
 
 .wl-clear        { @apply text-sm text-gray-500 underline underline-offset-4 hover:text-gray-700; }
 
-/* ---------- Card / table ---------- */
+/* ---------------- Card / table ---------------- */
 .wl-card         { @apply mt-6 rounded-3xl border border-gray-200 bg-white shadow-lg; }
 .wl-table-wrap   { @apply overflow-auto rounded-3xl; }
 .wl-table        { @apply w-full border-separate border-spacing-0; }
@@ -37,7 +44,7 @@
 
 /* Header cells + sort caret */
 .wl-th           { @apply px-4 py-3 text-left font-semibold text-gray-700 text-sm; }
-.wl-th-btn       { @apply inline-flex items-center gap-1; }           /* add 'group' in JSX on this element */
+.wl-th-btn       { @apply inline-flex items-center gap-1; } /* add 'group' on this element in JSX */
 .wl-th-caret     { @apply text-[10px] text-gray-400 opacity-80 group-hover:opacity-100; }
 .wl-th-caret--on { @apply text-gray-600; }
 
@@ -53,6 +60,15 @@
 .wl-ticker-cell  { @apply sticky left-0 z-10 border-b border-gray-200 px-4 py-3 align-top bg-white; }
 .wl-ticker-chip  { @apply inline-flex items-center rounded-full bg-gray-900 text-white px-3 py-1 text-xs font-semibold shadow-sm; }
 
-/* ---------- Footer / empty states ---------- */
+/* ---------------- Footer / empty states ---------------- */
 .wl-empty        { @apply px-4 py-16 text-center text-gray-500; }
 .wl-count        { @apply mt-3 text-sm text-gray-500; }
+
+/* --- Footer ----------------------------------------------------------- */
+.wl-footer { @apply mt-10 border-t border-gray-200 pt-6 text-sm text-gray-500 flex items-center justify-between; }
+.wl-footer-copy { @apply text-gray-500; }
+
+.wl-social { @apply flex items-center gap-3; }
+.wl-social-link { @apply inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-3 py-1.5 text-gray-700 hover:bg-gray-50 shadow-sm; }
+.wl-social-ico { @apply text-gray-600; }
+
