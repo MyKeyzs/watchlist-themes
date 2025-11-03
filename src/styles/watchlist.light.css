@@ -1,0 +1,58 @@
+/* src/styles/watchlist.light.css */
+@reference "tailwindcss";
+
+/* ---------- Page ---------- */
+.wl-root         { @apply min-h-screen bg-gray-50 text-gray-800; }
+.wl-container    { @apply mx-auto max-w-7xl px-6 py-8; }
+
+/* ---------- Header ---------- */
+.wl-title        { @apply text-3xl font-semibold tracking-tight text-gray-900; }
+.wl-subtitle     { @apply mt-2 text-sm text-gray-500; }
+.wl-toolbar      { @apply mt-5 flex flex-col gap-4 md:flex-row md:items-center md:justify-between; }
+
+/* ---------- Search ---------- */
+.wl-search-wrap  { @apply flex items-center gap-2; }
+.wl-search       { @apply w-[22rem] max-w-[70vw] rounded-2xl border border-gray-200 bg-white px-4 py-2.5 text-sm shadow-sm placeholder:text-gray-400 focus:border-blue-300 focus:ring-2 focus:ring-blue-200 outline-none; }
+.wl-btn          { @apply rounded-xl border border-gray-200 bg-white px-3 py-2 text-xs text-gray-600 hover:bg-gray-50 shadow-sm; }
+
+/* ---------- Theme chips ---------- */
+.wl-themes-outer { @apply mt-4; }
+.wl-themes       { @apply flex flex-wrap gap-8; }        /* larger gap between groups */
+.wl-chip-row     { @apply flex flex-wrap items-center gap-3; }
+
+.wl-pill         { @apply rounded-full px-4 py-2 text-sm transition shadow-sm border; }
+.wl-pill--idle   { @apply bg-white text-gray-700 border-gray-200 hover:bg-gray-50; }
+.wl-pill--current{ @apply bg-green-900 text-white border-green-900 hover:bg-green-700; } /* current (green, filled) */
+.wl-pill--prev   { @apply bg-blue-400 text-white border-blue-300 hover:bg-blue-400; }   /* previously selected (blue, filled) */
+.wl-pill--all    { @apply bg-gray-900 text-white border-gray-900 hover:bg-gray-900; }   /* “All themes” chip */
+
+.wl-clear        { @apply text-sm text-gray-500 underline underline-offset-4 hover:text-gray-700; }
+
+/* ---------- Card / table ---------- */
+.wl-card         { @apply mt-6 rounded-3xl border border-gray-200 bg-white shadow-lg; }
+.wl-table-wrap   { @apply overflow-auto rounded-3xl; }
+.wl-table        { @apply w-full border-separate border-spacing-0; }
+.wl-thead        { @apply sticky top-0 z-10; }
+.wl-head-row     { @apply bg-gray-100/80 backdrop-blur; }
+
+/* Header cells + sort caret */
+.wl-th           { @apply px-4 py-3 text-left font-semibold text-gray-700 text-sm; }
+.wl-th-btn       { @apply inline-flex items-center gap-1; }           /* add 'group' in JSX on this element */
+.wl-th-caret     { @apply text-[10px] text-gray-400 opacity-80 group-hover:opacity-100; }
+.wl-th-caret--on { @apply text-gray-600; }
+
+/* Body rows/cells */
+.wl-row          { @apply transition-colors; }
+.wl-row--even    { @apply bg-gray-50; }
+.wl-row:hover    { @apply bg-gray-100/60; }
+
+.wl-td           { @apply border-b border-gray-200 px-4 py-3 align-top; }
+.wl-td-long      { @apply text-[13px] leading-[1.35] max-w-[720px]; }
+.wl-td-short     { @apply text-[13px] leading-[1.35] max-w-[340px]; }
+
+.wl-ticker-cell  { @apply sticky left-0 z-10 border-b border-gray-200 px-4 py-3 align-top bg-white; }
+.wl-ticker-chip  { @apply inline-flex items-center rounded-full bg-gray-900 text-white px-3 py-1 text-xs font-semibold shadow-sm; }
+
+/* ---------- Footer / empty states ---------- */
+.wl-empty        { @apply px-4 py-16 text-center text-gray-500; }
+.wl-count        { @apply mt-3 text-sm text-gray-500; }

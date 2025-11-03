@@ -1,4 +1,5 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useEffect, useMemo, useState } from "react";
+import "./styles/watchlist.light.css";
 
 /* ---------- Types ---------- */
 export type WatchItem = {
@@ -9,8 +10,26 @@ export type WatchItem = {
   "Key 2026 Catalysts": string;
   "What Moves It (Triggers)": string;
   "Catalyst Path"?: string;
-  Notes: string;
+  Notes?: string;
+  "Date analyzed"?: string; // parsed from CSV (even if it's the last column)
 };
+
+type Sort = { key: keyof WatchItem; dir: "asc" | "desc" } | null;
+
+/* Utility: build TradingView URL */
+function tvUrl(t: string) {
+  const ticker = (t || "").trim();
+  return `https://www.tradingview.com/chart/WiBJEuAh/?symbol=${encodeURIComponent(
+    ticker
+  )}`;
+}
+
+/* Split comma/pipe separated themes */
+const splitThemes = (s: string) =>
+  (s || "")
+    .split(/[,|]/)
+    .map((x) => x.trim())
+    .filter(Boolean);
 
 export default function ThematicWatchlist({
   title = "Permanent Thematic Watchlist",
@@ -24,9 +43,7 @@ export default function ThematicWatchlist({
   const [q, setQ] = useState("");
   const [themesSelected, setThemesSelected] = useState<string[]>([]);
   const [currentTheme, setCurrentTheme] = useState<string | null>(null);
-  const [sort, setSort] = useState<{ key: keyof WatchItem; dir: "asc" | "desc" } | null>({
-    key: "Ticker", dir: "asc",
-  });
+  const [sort, setSort] = useState<Sort>({ key: "Ticker", dir: "asc" });
 
   /* ---------- Load CSV ---------- */
   useEffect(() => {
@@ -36,45 +53,58 @@ export default function ThematicWatchlist({
       const text = await res.text();
       const parsed = Papa.parse(text, { header: true, skipEmptyLines: true });
       const rs = (parsed.data as any[]).map((r) => ({
-        Ticker: r.Ticker?.trim() ?? "",
-        Company: r.Company?.trim() ?? "",
-        "Theme(s)": r["Theme(s)"]?.trim() ?? "",
-        "Thesis Snapshot": r["Thesis Snapshot"]?.trim() ?? "",
-        "Key 2026 Catalysts": r["Key 2026 Catalysts"]?.trim() ?? "",
-        "What Moves It (Triggers)": r["What Moves It (Triggers)"]?.trim() ?? "",
-        "Catalyst Path": r["Catalyst Path"]?.trim() ?? "",
-        Notes: r.Notes?.trim() ?? "",
+        Ticker: (r.Ticker ?? "").trim(),
+        Company: (r.Company ?? "").trim(),
+        "Theme(s)": (r["Theme(s)"] ?? "").trim(),
+        "Thesis Snapshot": (r["Thesis Snapshot"] ?? "").trim(),
+        "Key 2026 Catalysts": (r["Key 2026 Catalysts"] ?? "").trim(),
+        "What Moves It (Triggers)":
+          (r["What Moves It (Triggers)"] ?? "").trim(),
+        "Catalyst Path": (r["Catalyst Path"] ?? "").trim(),
+        Notes: (r["Notes"] ?? "").trim(),
+        "Date analyzed": (r["Date analyzed"] ?? "").trim(),
       })) as WatchItem[];
       setRows(rs);
     })().catch(console.error);
   }, [csvUrl]);
 
-  /* ---------- Helpers ---------- */
-  const splitThemes = (s: string) => s.split(/[,|]/).map((x) => x.trim()).filter(Boolean);
-
+  /* ---------- Theme list ---------- */
   const allThemes = useMemo(
     () => Array.from(new Set(rows.flatMap((r) => splitThemes(r["Theme(s)"])))).sort(),
     [rows]
   );
 
-  const isAllSelected = allThemes.length > 0 && themesSelected.length === allThemes.length;
+  const isAllSelected =
+    allThemes.length > 0 && themesSelected.length === allThemes.length;
 
   /* ---------- Filtering ---------- */
   const filtered = useMemo(() => {
     const needle = q.trim().toLowerCase();
-    if (themesSelected.length === 0) return []; // empty table when none selected
+    if (themesSelected.length === 0) return [];
 
     let data = rows.filter((r) => {
-      const matchesTheme = splitThemes(r["Theme(s)"]).some((t) => themesSelected.includes(t));
+      const matchesTheme = splitThemes(r["Theme(s)"]).some((t) =>
+        themesSelected.includes(t)
+      );
       if (!matchesTheme) return false;
-      const matchesQ =
-        !needle ||
-        [
-          r.Ticker, r.Company, r["Theme(s)"], r["Thesis Snapshot"],
-          r["Key 2026 Catalysts"], r["What Moves It (Triggers)"],
-          r["Catalyst Path"] ?? "", r.Notes,
-        ].join(" ").toLowerCase().includes(needle);
-      return matchesQ;
+
+      if (!needle) return true;
+
+      const hay = [
+        r.Ticker,
+        r.Company,
+        r["Theme(s)"],
+        r["Date analyzed"] ?? "",
+        r["Thesis Snapshot"],
+        r["Key 2026 Catalysts"],
+        r["What Moves It (Triggers)"],
+        r["Catalyst Path"] ?? "",
+        r.Notes ?? "",
+      ]
+        .join(" ")
+        .toLowerCase();
+
+      return hay.includes(needle);
     });
 
     if (sort) {
@@ -100,50 +130,55 @@ export default function ThematicWatchlist({
     } else {
       const next = [...themesSelected, t];
       setThemesSelected(next);
-      setCurrentTheme(t); // latest = current (blue)
+      setCurrentTheme(t); // newest selection is "current" (blue)
     }
   };
 
-  const clearThemes = () => { setThemesSelected([]); setCurrentTheme(null); };
+  const clearThemes = () => {
+    setThemesSelected([]);
+    setCurrentTheme(null);
+  };
 
   const toggleAllThemes = () => {
     if (isAllSelected) {
-      // Clicking again clears everything
       setThemesSelected([]);
       setCurrentTheme(null);
     } else {
-      // Select all; keep currentTheme null so none is blue until user chooses one
       setThemesSelected(allThemes);
       setCurrentTheme(null);
-      // If you want one to be blue by default, set: setCurrentTheme(allThemes[0]);
     }
+  };
+
+  /* ---------- Sort helper ---------- */
+  const clickSort = (key: keyof WatchItem) => {
+    setSort((prev) => {
+      if (!prev || prev.key !== key) return { key, dir: "asc" };
+      return { key, dir: prev.dir === "asc" ? "desc" : "asc" };
+    });
   };
 
   /* ---------- UI ---------- */
   return (
-    <div className="min-h-screen bg-neutral-950 text-slate-100">
-      <div className="mx-auto max-w-7xl px-4 py-6">
+    <div className="wl-root">
+      <div className="wl-container">
         {/* Title & Search */}
-        <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <div className="wl-toolbar">
           <div>
-            <h1 className="text-2xl font-semibold tracking-tight">{title}</h1>
-            <p className="mt-1 text-xs text-slate-400">
-              Current theme = <span className="text-blue-300">blue</span>; previously selected = <span className="text-white">white</span>.
-              “All themes” toggles select-all ↔ none.
+            <h1 className="wl-title">{title}</h1>
+            <p className="wl-subtitle">
+              Current theme = <span className="text-blue-600">blue outline</span>; latest selection ={" "}
+              <span className="text-green-600">green</span>. “All themes” toggles select-all ↔ none.
             </p>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="wl-search-wrap">
             <input
               value={q}
               onChange={(e) => setQ(e.target.value)}
               placeholder="Search within selected themes…"
-              className="w-80 max-w-[70vw] rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm outline-none placeholder:text-slate-400 focus:border-white/20"
+              className="wl-search"
             />
             {q && (
-              <button
-                onClick={() => setQ("")}
-                className="rounded-lg border border-white/10 bg-white/5 px-2 py-1 text-xs text-slate-300 hover:bg-white/10"
-              >
+              <button onClick={() => setQ("")} className="wl-btn">
                 Clear
               </button>
             )}
@@ -151,94 +186,98 @@ export default function ThematicWatchlist({
         </div>
 
         {/* Theme pills */}
-        <div className="mb-4 flex flex-wrap items-center gap-2">
-          {/* All themes button */}
-          <button
-            onClick={toggleAllThemes}
-            className={`rounded-full border px-3 py-1 text-xs transition ${
-              isAllSelected
-                ? "bg-blue-500 text-white border-blue-400 hover:bg-blue-500"
-                : "bg-white/5 border-white/10 text-slate-200 hover:bg-white/10"
-            }`}
-            title={isAllSelected ? "Deselect all themes" : "Select all themes"}
-          >
-            All themes
-          </button>
-
-          {/* Individual themes */}
-          {allThemes.map((t) => {
-            const isSelected = themesSelected.includes(t);
-            const isCurrent  = isSelected && currentTheme === t;
-
-            // CURRENT = blue; PREVIOUS = outlined white; UNSELECTED = gray
-            const cls = isSelected
-              ? (isCurrent
-                  ? "bg-blue-500 text-white border-blue-400 hover:bg-blue-500"
-                  : "bg-transparent text-white border-white ring-1 ring-white/80 hover:bg-white/5")
-              : "bg-white/5 border-white/10 text-slate-200 hover:bg-white/10";
-
-            return (
+        <div className="wl-themes-outer">
+          <div className="wl-themes">
+            {/* All themes */}
+            <div className="wl-chip-row">
               <button
-                key={t}
-                onClick={() => toggleTheme(t)}
-                className={`rounded-full px-3 py-1 text-xs transition border ${cls}`}
-                title={isSelected ? "Click to deselect" : "Click to select"}
+                onClick={toggleAllThemes}
+                className={`wl-pill wl-pill--all`}
+                title={isAllSelected ? "Deselect all themes" : "Select all themes"}
               >
-                {t}
+                All themes
               </button>
-            );
-          })}
+              <button onClick={clearThemes} className="wl-clear">Clear themes</button>
+            </div>
 
-          {/* Clear themes = clear selection AND clear table */}
-          <button
-            onClick={clearThemes}
-            className="text-xs text-rose-200/90 underline underline-offset-4"
-            title="Clear all selected themes (table will be empty)"
-          >
-            Clear themes
-          </button>
+            {/* Individual themes */}
+            <div className="wl-chip-row">
+              {allThemes.map((t) => {
+                const isSelected = themesSelected.includes(t);
+                const isCurrent = isSelected && currentTheme === t;
+                const cls = isSelected
+                  ? isCurrent
+                    ? "wl-pill wl-pill--current"
+                    : "wl-pill wl-pill--prev"
+                  : "wl-pill wl-pill--idle";
+                return (
+                  <button
+                    key={t}
+                    onClick={() => toggleTheme(t)}
+                    className={cls}
+                    title={isSelected ? "Click to deselect" : "Click to select"}
+                  >
+                    {t}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
         </div>
 
         {/* Table */}
-        <div className="overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.03] shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
-          <div className="overflow-auto">
-            <table className="w-full border-separate border-spacing-0">
-              <thead className="sticky top-0 z-20">
-                <tr className="bg-neutral-900/85 backdrop-blur">
-                  {th("Ticker", "Ticker", "w-[110px] sticky left-0 z-30")}
-                  {th("Company", "Company", "min-w-[220px]")}
-                  {th("Theme(s)", "Theme(s)", "min-w-[260px]")}
-                  {th("Thesis Snapshot", "Thesis", "min-w-[420px]")}
-                  {th("Key 2026 Catalysts", "2026 Catalysts", "min-w-[360px]")}
-                  {th("What Moves It (Triggers)", "What Moves It", "min-w-[360px]")}
-                  {th("Catalyst Path", "Catalyst Path", "min-w-[320px]")}
-                  {th("Notes", "Notes", "min-w-[240px]")}
-                </tr>
-              </thead>
+        <div className="wl-card">
+          <div className="wl-table-wrap">
+            <table className="wl-table">
+            <thead className="wl-thead">
+              <tr className="wl-head-row">
+                {TH("Ticker", "Ticker", () => clickSort("Ticker"), sort, "sticky left-0 z-30")}
+                {TH("Company", "Company", () => clickSort("Company"), sort)}
+                {TH("Theme(s)", "Theme(s)", () => clickSort("Theme(s)"), sort)}
+                {TH("Date analyzed", "Date analyzed", () => clickSort("Date analyzed"), sort)}
+                {TH("Thesis Snapshot", "Thesis", () => clickSort("Thesis Snapshot"), sort)}
+                {TH("Key 2026 Catalysts", "2026 Catalysts", () => clickSort("Key 2026 Catalysts"), sort)}
+                {TH("What Moves It (Triggers)", "What Moves It", () => clickSort("What Moves It (Triggers)"), sort)}
+                {TH("Catalyst Path", "Catalyst Path", () => clickSort("Catalyst Path"), sort)}
+                {TH("Notes", "Notes", () => clickSort("Notes"), sort)}
+              </tr>
+            </thead>
               <tbody>
                 {filtered.map((r, i) => {
-                  const zebra = i % 2 === 0 ? "bg-white/[0.03]" : "bg-transparent";
+                  const zebra = i % 2 === 0 ? "wl-row wl-row--even" : "wl-row";
                   return (
-                    <tr key={`${r.Ticker}-${i}`} className={`${zebra} hover:bg-white/[0.06] transition-colors`}>
-                      <td className="sticky left-0 z-20 border-b border-white/10 px-3 py-2 align-top bg-neutral-950/60 backdrop-blur" title={r.Ticker}>
-                        <span className="inline-flex items-center rounded-full bg-white/10 px-2 py-0.5 text-xs font-semibold tracking-wide">
-                          {r.Ticker || "—"}
-                        </span>
+                    <tr key={`${r.Ticker}-${i}`} className={zebra}>
+                      {/* TICKER: opens TradingView in new tab */}
+                      <td className="wl-ticker-cell" title={`Open ${r.Ticker} on TradingView`}>
+                        {r.Ticker ? (
+                          <a
+                            href={tvUrl(r.Ticker)}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="wl-ticker-chip"
+                          >
+                            {r.Ticker}
+                          </a>
+                        ) : (
+                          <span className="wl-ticker-chip">—</span>
+                        )}
                       </td>
-                      <Cell value={r.Company} />
-                      <Cell value={r["Theme(s)"]} raw={r["Theme(s)"]} />
-                      <Cell value={r["Thesis Snapshot"]} long />
-                      <Cell value={r["Key 2026 Catalysts"]} long />
-                      <Cell value={r["What Moves It (Triggers)"]} long />
-                      <Cell value={r["Catalyst Path"] ?? ""} long />
-                      <Cell value={r.Notes} long />
+
+                      <TD value={r.Company} />
+                      <TD value={r["Theme(s)"]} raw={r["Theme(s)"]} />
+                      <TD value={r["Date analyzed"] ?? ""} />
+                      <TD value={r["Thesis Snapshot"]} long />
+                      <TD value={r["Key 2026 Catalysts"]} long />
+                      <TD value={r["What Moves It (Triggers)"]} long />
+                      <TD value={r["Catalyst Path"] ?? ""} long />
+                      <TD value={r.Notes ?? ""} long />
                     </tr>
                   );
                 })}
 
                 {themesSelected.length === 0 && (
                   <tr>
-                    <td colSpan={8} className="px-3 py-14 text-center text-slate-400">
+                    <td colSpan={9} className="wl-empty">
                       No themes selected. Pick one above to populate the table.
                     </td>
                   </tr>
@@ -246,7 +285,7 @@ export default function ThematicWatchlist({
 
                 {themesSelected.length > 0 && filtered.length === 0 && (
                   <tr>
-                    <td colSpan={8} className="px-3 py-14 text-center text-slate-400">
+                    <td colSpan={9} className="wl-empty">
                       No results within the selected theme(s). Try clearing the search box.
                     </td>
                   </tr>
@@ -257,32 +296,41 @@ export default function ThematicWatchlist({
         </div>
 
         {/* Count */}
-        <div className="mt-3 text-xs text-slate-400">
+        <div className="wl-count">
           {themesSelected.length === 0
             ? <>No themes selected</>
-            : <>Showing <span className="text-slate-200">{filtered.length}</span> item{filtered.length === 1 ? "" : "s"}</>}
+            : <>Showing <span className="text-gray-900">{filtered.length}</span> item{filtered.length === 1 ? "" : "s"}</>}
         </div>
       </div>
     </div>
   );
 }
 
-/* ---------- Small helpers ---------- */
-
-function th(key: keyof WatchItem, label?: string, width?: string) {
+/* ---------- Small UI helpers ---------- */
+function TH(
+  key: keyof WatchItem,
+  label: string,
+  onClick: () => void,
+  sort: Sort,
+  extra?: string
+) {
+  const active = sort && sort.key === key;
   return (
-    <th className={`px-3 py-2 font-semibold text-slate-200 text-xs lg:text-sm ${width ?? ""}`}>
-      <span className="flex items-center gap-1">{label ?? String(key)}</span>
+    <th className={`wl-th ${extra ?? ""}`}>
+      <button onClick={onClick} className="wl-th-btn group" title="Click to sort">
+        <span>{label}</span>
+        <span className={`wl-th-caret ${active ? "wl-th-caret--on" : ""}`}>
+          {active ? (sort!.dir === "asc" ? "▲" : "▼") : "↕"}
+        </span>
+      </button>
     </th>
   );
 }
 
-function Cell({ value, raw, long }: { value: React.ReactNode | string; raw?: string; long?: boolean }) {
+function TD({ value, raw, long }: { value: React.ReactNode | string; raw?: string; long?: boolean }) {
   return (
-    <td className="border-b border-white/10 px-3 py-2 align-top" title={typeof value === "string" ? value : raw}>
-      <div className={`text-[13px] leading-[1.35] ${long ? "max-w-[720px]" : "max-w-[340px]"} truncate sm:whitespace-normal sm:line-clamp-3`}>
-        {value || "—"}
-      </div>
+    <td className="wl-td" title={typeof value === "string" ? value : raw}>
+      <div className={long ? "wl-td-long" : "wl-td-short"}>{value || "—"}</div>
     </td>
   );
 }
