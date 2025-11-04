@@ -1,11 +1,15 @@
 // src/App.tsx
-import ThematicWatchlist from "./ThematicWatchlist";
+import React from "react";
+import WatchlistPage from "./pages/WatchlistPage";
+import "./styles/watchlist.light.css"; // global styles
 
 export default function App() {
   return (
-    <ThematicWatchlist
+    <WatchlistPage
       title="Permanent Thematic Watchlist"
-      csvUrl="/watchlist_web.csv"   // <- use the merged file
+      csvUrl="/watchlist_web.csv" // make sure the CSV is in /public/watchlist_web.csv
+      linkedinUrl="https://www.linkedin.com/in/mmiamckinmmckiney"
+      twitterUrl="https://twitter.com/mmykeyy"
     />
   );
 }
