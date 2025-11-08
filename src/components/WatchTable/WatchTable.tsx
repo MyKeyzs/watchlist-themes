@@ -1,18 +1,21 @@
-
+// src/components/WatchTable/WatchTable.tsx
 import React from "react";
 import { WatchItem } from "../../utils/types";
 
+/* ---------- Sorting ---------- */
 export type SortKey =
   | "Ticker"
   | "Company"
   | "Theme(s)"
   | "Date analyzed"
+  | "Initial Price"
+  | "Current Price"
+  | "Total PnL"
   | "Thesis Snapshot"
   | "Key 2026 Catalysts"
   | "What Moves It (Triggers)"
   | "Catalyst Path"
-  | "Notes"
-  | "Initial Price";
+  | "Notes";
 
 export type SortDir = "asc" | "desc";
 export type SortState = { key: SortKey; dir: SortDir };
@@ -25,6 +28,97 @@ type Props = {
   /** Back-compat prop name */
   onSort?: (s: SortState) => void;
 };
+
+/* ---------- Massive helpers ---------- */
+
+const MASSIVE_KEY = import.meta.env.VITE_MASSIVE_API_KEY;
+const MASSIVE_BASE = "https://api.massive.com";
+
+/** Convert “MM/DD” (or “M/D”) to YYYY-MM-DD and back off weekends to last business day */
+function normalizeToBizDate(mmdd: string): string {
+  const m = mmdd.match(/^(\d{1,2})[\/\-](\d{1,2})$/);
+  const today = new Date();
+  let year = today.getFullYear();
+
+  if (!m) {
+    // fallback: today minus 2 days
+    const d = new Date(Date.UTC(year, today.getUTCMonth(), today.getUTCDate() - 2));
+    while (d.getUTCDay() === 0 || d.getUTCDay() === 6) d.setUTCDate(d.getUTCDate() - 1);
+    return d.toISOString().slice(0, 10);
+  }
+
+  let month = Number(m[1]) - 1;
+  let day = Number(m[2]);
+
+  let d = new Date(Date.UTC(year, month, day));
+  if (d.getTime() > Date.now()) {
+    year = year - 1;
+    d = new Date(Date.UTC(year, month, day));
+  }
+  while (d.getUTCDay() === 0 || d.getUTCDay() === 6) d.setUTCDate(d.getUTCDate() - 1);
+  return d.toISOString().slice(0, 10);
+}
+
+/** Build aggs/day URL via URL API (old style) */
+function buildAggsDayUrl(ticker: string, yyyy_mm_dd: string): string {
+  const url = new URL(
+    `${MASSIVE_BASE}/v2/aggs/ticker/${encodeURIComponent(
+      ticker
+    )}/range/1/day/${yyyy_mm_dd}/${yyyy_mm_dd}`
+  );
+  url.searchParams.set("adjusted", "true");
+  url.searchParams.set("limit", "1");
+  url.searchParams.set("apiKey", MASSIVE_KEY);
+  return url.toString();
+}
+
+/** Fetch aggs close for specific YYYY-MM-DD (Initial Price) */
+async function fetchInitialClose(
+  ticker: string,
+  yyyy_mm_dd: string
+): Promise<number | null> {
+  const res = await fetch(buildAggsDayUrl(ticker, yyyy_mm_dd));
+  if (!res.ok) return null;
+  const json = await res.json();
+  const c = json?.results?.[0]?.c ?? null;
+  return typeof c === "number" ? c : null;
+}
+
+/** Fetch “current” price as today’s (last business day) aggs close */
+async function fetchCurrentClose(ticker: string): Promise<number | null> {
+  // compute today’s last business day in UTC
+  const d = new Date();
+  while (d.getUTCDay() === 0 || d.getUTCDay() === 6) d.setUTCDate(d.getUTCDate() - 1);
+  const yyyy = d.getUTCFullYear();
+  const mm = String(d.getUTCMonth() + 1).padStart(2, "0");
+  const dd = String(d.getUTCDate()).padStart(2, "0");
+  const iso = `${yyyy}-${mm}-${dd}`;
+
+  const res = await fetch(buildAggsDayUrl(ticker, iso));
+  if (!res.ok) return null;
+  const json = await res.json();
+  const c = json?.results?.[0]?.c ?? null;
+  return typeof c === "number" ? c : null;
+}
+
+/** PnL % */
+function pct(initial: number | null, current: number | null): number | null {
+  if (initial == null || current == null) return null;
+  if (initial === 0) return null;
+  return ((current - initial) / initial) * 100;
+}
+
+/** Row background color by PnL % */
+function rowBgForPct(p: number | null): string | undefined {
+  if (p == null) return undefined;
+  if (p >= 10) return "#4C763B"; // darker green
+  if (p > 0) return "#B0CE88"; // light green
+  if (p <= -10) return "#EE4E4E"; // darker red
+  if (p < 0) return "#FDAB9E"; // light red
+  return undefined;
+}
+
+/* ---------- UI bits ---------- */
 
 function Caret({ active, dir }: { active: boolean; dir: SortDir }) {
   return (
@@ -62,7 +156,11 @@ function TH({
 
   return (
     <th className={`wl-th ${className ?? ""}`}>
-      <button type="button" onClick={onClick} className="inline-flex items-center gap-1 text-white">
+      <button
+        type="button"
+        onClick={onClick}
+        className="inline-flex items-center gap-1 text-white"
+      >
         <span>{label}</span>
         <Caret active={active} dir={active ? sort.dir : "asc"} />
       </button>
@@ -83,30 +181,133 @@ function Cell({
 }) {
   return (
     <td className={`wl-td ${className ?? ""}`} title={title}>
-      <div className={(long ? "wl-td-long" : "wl-td-short") + " sm:whitespace-normal sm:line-clamp-3"}>
-        {value || "—"}
+      <div
+        className={
+          (long ? "wl-td-long" : "wl-td-short") +
+          " sm:whitespace-normal sm:line-clamp-3"
+        }
+      >
+        {value ?? "—"}
       </div>
     </td>
   );
 }
 
+/* ---------- Main ---------- */
+
 export default function WatchTable({ rows, sort, setSort, onSort }: Props) {
-  // Accept either prop name (prevents “setSort missing” error)
   const applySort = setSort ?? onSort ?? (() => {});
 
+  // caches so we fetch once per ticker/date
+  const initCache = React.useRef(new Map<string, number>()); // TICKER|YYYY-MM-DD -> close
+  const curCache = React.useRef(new Map<string, number>()); // TICKER -> today's close
+  const [tick, setTick] = React.useState(0); // force rerender when data lands
+
+  // Pre-compute normalized date per row
+  const normalizedRows = React.useMemo(
+    () =>
+      rows.map((r) => {
+        const raw = (r["Date analyzed"] || "").trim();
+        const norm = raw ? normalizeToBizDate(raw) : null;
+        return { row: r, normDate: norm };
+      }),
+    [rows]
+  );
+
+  // Kick off fetches (initial/date close + current/today close)
+  React.useEffect(() => {
+    let aborted = false;
+
+    async function run() {
+      const tasks: Promise<void>[] = [];
+
+      for (const { row, normDate } of normalizedRows) {
+        const tkr = (row.Ticker || "").trim();
+        if (!tkr) continue;
+
+        // date-specific initial close
+        if (normDate) {
+          const k = `${tkr}|${normDate}`;
+          if (!initCache.current.has(k)) {
+            tasks.push(
+              (async () => {
+                const v = await fetchInitialClose(tkr, normDate).catch(() => null);
+                if (!aborted && v != null) {
+                  initCache.current.set(k, v);
+                  setTick((n) => n + 1);
+                }
+              })()
+            );
+          }
+        }
+
+        // today's (last business day) close as "current"
+        if (!curCache.current.has(tkr)) {
+          tasks.push(
+            (async () => {
+              const v = await fetchCurrentClose(tkr).catch(() => null);
+              if (!aborted && v != null) {
+                curCache.current.set(tkr, v);
+                setTick((n) => n + 1);
+              }
+            })()
+          );
+        }
+      }
+
+      if (tasks.length) await Promise.allSettled(tasks);
+    }
+
+    run();
+    return () => {
+      aborted = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [normalizedRows.map(n => n.row.Ticker + "|" + (n.normDate ?? "")).join(",")]);
+
+  // Sorting
   const sorted = React.useMemo(() => {
     const data = rows.slice();
     const { key, dir } = sort;
-    const get = (r: WatchItem) => (String((r as any)[key] ?? "") || "").toLowerCase();
+
+    function valueOf(r: WatchItem): string | number {
+      if (key === "Initial Price") {
+        const d = (r["Date analyzed"] || "").trim();
+        const norm = d ? normalizeToBizDate(d) : null;
+        const k = norm ? `${r.Ticker}|${norm}` : "";
+        const v = norm ? initCache.current.get(k) : undefined;
+        return v ?? Number.NEGATIVE_INFINITY;
+      }
+      if (key === "Current Price") {
+        const v = curCache.current.get(r.Ticker || "");
+        return v ?? Number.NEGATIVE_INFINITY;
+      }
+      if (key === "Total PnL") {
+        const d = (r["Date analyzed"] || "").trim();
+        const norm = d ? normalizeToBizDate(d) : null;
+        const k = norm ? `${r.Ticker}|${norm}` : "";
+        const init = norm ? initCache.current.get(k) : undefined;
+        const cur = curCache.current.get(r.Ticker || "");
+        const p =
+          init != null && cur != null
+            ? ((cur - init) / init) * 100
+            : Number.NEGATIVE_INFINITY;
+        return p;
+      }
+      const s = String((r as any)[key] ?? "").toLowerCase();
+      return s;
+    }
+
     data.sort((a, b) => {
-      const av = get(a);
-      const bv = get(b);
+      const av = valueOf(a);
+      const bv = valueOf(b);
       if (av < bv) return dir === "asc" ? -1 : 1;
       if (av > bv) return dir === "asc" ? 1 : -1;
       return 0;
     });
+
     return data;
-  }, [rows, sort]);
+  }, [rows, sort, tick]);
 
   return (
     <div className="wl-table-wrap custom-scroll">
@@ -120,7 +321,8 @@ export default function WatchTable({ rows, sort, setSort, onSort }: Props) {
                 onClick={() =>
                   applySort({
                     key: "Ticker",
-                    dir: sort.key === "Ticker" && sort.dir === "asc" ? "desc" : "asc",
+                    dir:
+                      sort.key === "Ticker" && sort.dir === "asc" ? "desc" : "asc",
                   })
                 }
                 className="inline-flex items-center gap-1 text-white"
@@ -132,26 +334,83 @@ export default function WatchTable({ rows, sort, setSort, onSort }: Props) {
 
             <TH label="Company" sortKey="Company" sort={sort} applySort={applySort} />
             <TH label="Theme(s)" sortKey="Theme(s)" sort={sort} applySort={applySort} />
-            <TH label="Date analyzed" sortKey="Date analyzed" sort={sort} applySort={applySort} />
-            <TH label="Thesis" sortKey="Thesis Snapshot" sort={sort} applySort={applySort} />
-            <TH label="2026 Catalysts" sortKey="Key 2026 Catalysts" sort={sort} applySort={applySort} />
-            <TH label="What Moves It" sortKey="What Moves It (Triggers)" sort={sort} applySort={applySort} />
-            <TH label="Catalyst Path" sortKey="Catalyst Path" sort={sort} applySort={applySort} />
+            <TH
+              label="Date analyzed"
+              sortKey="Date analyzed"
+              sort={sort}
+              applySort={applySort}
+            />
+
+            {/* NEW: Current + PnL + Initial (before Thesis) */}
+            <TH
+              label="Current Price"
+              sortKey="Current Price"
+              sort={sort}
+              applySort={applySort}
+            />
+            <TH label="Total PnL" sortKey="Total PnL" sort={sort} applySort={applySort} />
+            <TH
+              label="Initial Price"
+              sortKey="Initial Price"
+              sort={sort}
+              applySort={applySort}
+            />
+
+            <TH
+              label="Thesis"
+              sortKey="Thesis Snapshot"
+              sort={sort}
+              applySort={applySort}
+            />
+            <TH
+              label="2026 Catalysts"
+              sortKey="Key 2026 Catalysts"
+              sort={sort}
+              applySort={applySort}
+            />
+            <TH
+              label="What Moves It"
+              sortKey="What Moves It (Triggers)"
+              sort={sort}
+              applySort={applySort}
+            />
+            <TH
+              label="Catalyst Path"
+              sortKey="Catalyst Path"
+              sort={sort}
+              applySort={applySort}
+            />
             <TH label="Notes" sortKey="Notes" sort={sort} applySort={applySort} />
           </tr>
         </thead>
 
         <tbody>
           {sorted.map((r, i) => {
+            const tkr = (r.Ticker || "").trim();
+            const norm = (r["Date analyzed"] || "").trim()
+              ? normalizeToBizDate((r["Date analyzed"] || "").trim())
+              : null;
+
+            const initKey = norm ? `${tkr}|${norm}` : "";
+            const initial = norm ? initCache.current.get(initKey) ?? null : null;
+            const current = curCache.current.get(tkr) ?? null;
+            const pnlPct = pct(initial, current);
+
+            const bg = rowBgForPct(pnlPct);
             const zebra = i % 2 === 0 ? "wl-row wl-row--even" : "wl-row";
+            const style = bg ? { backgroundColor: bg } : undefined;
+
             return (
-              <tr key={`${r.Ticker}-${i}`} className={zebra}>
+              <tr key={`${r.Ticker}-${i}`} className={zebra} style={style}>
+                {/* Ticker (sticky) */}
                 <td
                   className="wl-ticker-cell"
                   title={r.Ticker}
                   onClick={() =>
                     window.open(
-                      `https://www.tradingview.com/chart/WiBJEuAh/?symbol=${encodeURIComponent(r.Ticker)}`,
+                      `https://www.tradingview.com/chart/WiBJEuAh/?symbol=${encodeURIComponent(
+                        r.Ticker
+                      )}`,
                       "_blank",
                       "noopener,noreferrer"
                     )
@@ -164,6 +423,20 @@ export default function WatchTable({ rows, sort, setSort, onSort }: Props) {
                 <Cell value={r.Company} />
                 <Cell value={r["Theme(s)"]} title={r["Theme(s)"]} />
                 <Cell value={r["Date analyzed"] || "—"} />
+
+                {/* NEW: Current, PnL, Initial */}
+                <Cell
+                  value={current != null ? `$${current.toFixed(2)}` : "—"}
+                />
+                <Cell
+                  value={
+                    pnlPct != null
+                      ? `${pnlPct >= 0 ? "+" : ""}${pnlPct.toFixed(2)}%`
+                      : "—"
+                  }
+                />
+                <Cell value={initial != null ? `$${initial.toFixed(2)}` : "—"} />
+
                 <Cell value={r["Thesis Snapshot"]} long />
                 <Cell value={r["Key 2026 Catalysts"]} long />
                 <Cell value={r["What Moves It (Triggers)"]} long />
@@ -175,7 +448,7 @@ export default function WatchTable({ rows, sort, setSort, onSort }: Props) {
 
           {sorted.length === 0 && (
             <tr>
-              <td colSpan={9} className="wl-empty">
+              <td colSpan={12} className="wl-empty">
                 No items match your filters.
               </td>
             </tr>
