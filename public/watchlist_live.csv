@@ -1,0 +1,51 @@
+Theme,Ticker,Company,Thesis Snapshot,2026 Catalysts,What Moves It (Triggers),Notes,Date analyzed
+Healthcare IoT / Remote Patient Monitoring,DXCM,Dexcom,CGM leader; scale + payer access,New indications; coverage expansions,FDA/coverage decisions; competitor launches,Core quality,10/29
+Healthcare IoT / Remote Patient Monitoring,ABT,Abbott,Libre CGM; diversified med‑tech,Libre upgrades; coverage wins,Regulatory/recall updates; pricing,,10/29
+Healthcare IoT / Remote Patient Monitoring,SENS,Senseonics,Implantable CGM; small‑cap beta,US ramp; longer sensor longevity,Coverage decisions; financing,,10/29
+Healthcare IoT / Remote Patient Monitoring,IRTC,iRhythm,Zio patches; reimbursement‑sensitive,CPT code updates; new indications,Payer changes; adoption trends,,10/29
+Healthcare IoT / Remote Patient Monitoring,MASI,Masimo,Connected monitoring; hospital‑to‑home,Enterprise deals,Hospital capex cycles,,10/29
+Healthcare IoT / Remote Patient Monitoring,GEHC,GE HealthCare,Enterprise monitoring + AI,Platform wins,Hospital budgets,,10/29
+Healthcare IoT / Remote Patient Monitoring,RMD,ResMed,Connected CPAP,Device refreshes,Coverage decisions; quality news,,10/29
+Healthcare IoT / Remote Patient Monitoring,PHG,Philips,Connected care; legacy overhang,Resolution milestones; new wins,Litigation/settlement updates,,10/29
+Edge Computing (real‑time),NET,Cloudflare,Workers/AI at the edge,New features; enterprise attach,Outages; pricing and package changes,,10/29
+Edge Computing (real‑time),FSLY,Fastly,Compute@Edge,Logo wins; margin expansion,Churn; competitive dynamics,,10/29
+Edge Computing (real‑time),AKAM,Akamai,Edge + security,Security growth,Price wars; share shifts,,10/29
+Edge Computing (real‑time),NVDA,NVIDIA,Jetson + Omniverse; core AI enablement,Platform launches; software attach,Datacenter cycle; export rules,,10/29
+Edge Computing (real‑time),QCOM,Qualcomm,Embedded/auto edge AI,Auto design‑wins,Handset/auto cycles,,10/29
+Edge Computing (real‑time),NXPI,NXP,Industrial/auto edge,Demand inflections,Cycle; China exposure,,10/29
+Edge Computing (real‑time),AMBA,Ambarella,Vision SoCs,ADAS/security wins,Customer concentration,,10/29
+Edge Computing (real‑time),AMT,American Tower,Edge/near‑edge infrastructure,Leasing trends; edge initiatives,Rates; tenant mix,,10/29
+Edge Computing (real‑time),HPE,HPE,Aruba edge networking,ARR/NaaS traction,IT budgets,,10/29
+Immersive Realities & Digital Twins,DASTY,Dassault Systèmes,3DEXPERIENCE twins; Vision Pro tie‑ins,Enterprise rollouts,License/packaging transitions,,10/29
+Immersive Realities & Digital Twins,PTC,PTC,Windchill/ThingWorx/Vuforia,SaaS mix; logo wins,Macro manufacturing cycles,,10/29
+Immersive Realities & Digital Twins,BSY,Bentley Systems,iTwin for infrastructure,DOT/rail awards,Project timing,,10/29
+Immersive Realities & Digital Twins,SIEGY,Siemens ADR,Xcelerator + Omniverse; installed base leverage,Scaled case studies,Capex; FX,,10/29
+Immersive Realities & Digital Twins,ADSK,Autodesk,Tandem twins; OpenUSD alignment,Construction Cloud growth,Pricing transitions,,10/29
+Immersive Realities & Digital Twins,U,Unity,Unity Industry for digital twins,Enterprise penetration,Pricing changes; gaming cycles,,10/29
+Immersive Realities & Digital Twins,TRMB,Trimble,Reality capture into twins,Infrastructure wins,Construction cycles,,10/29
+Immersive Realities & Digital Twins,HEXA-B.ST,Hexagon AB,Leica/HxDR,Industrial demand,Europe cycles,,10/29
+Immersive Realities & Digital Twins,CSGP,CoStar,Buying Matterport; built‑world twins,Deal close + integration,CRE cycle,,10/29
+Immersive Realities & Digital Twins,AMZN,Amazon,AWS TwinMaker,Vertical wins,Cloud spend,,10/29
+Immersive Realities & Digital Twins,MSFT,Microsoft,Azure Digital Twins; HoloLens,Partner solutions,Cloud/device cadence,,10/29
+Immersive Realities & Digital Twins,AAPL,Apple,Vision Pro enterprise,Headset updates,Device cadence,,10/29
+Immersive Realities & Digital Twins,META,Meta,Cost‑down XR hardware,Hardware roadmap,XR losses; ad spend,,10/29
+Augmented Connected Workforce,HON,Honeywell,Forge + Worker Assist,Fleet rollouts; AI copilots,Industrial capex,,10/29
+Augmented Connected Workforce,ROK,Rockwell Automation,Plex/FactoryTalk connected worker,SaaS bookings growth,Discrete mfg cycles,,10/29
+Augmented Connected Workforce,PTC,PTC,Vuforia work instructions,AR use cases scale,Macro manufacturing,,10/29
+Augmented Connected Workforce,TMV.DE,TeamViewer,Frontline AR workflows,Hardware partnerships,EU FX; competition,,10/29
+Augmented Connected Workforce,ZBRA,Zebra Technologies,Wearables/scanners/vision,Warehouse/retail demand,Supply chains; retail cycle,,10/29
+Augmented Connected Workforce,MSFT,Microsoft,HoloLens/Power Platform glue,Partner apps,Device/cloud trends,,10/29
+Augmented Connected Workforce,IOT,Samsara,Connected ops for fleets/sites,ARR growth,Pricing; SMB mix,,10/29
+RPA / Agentic Automation,PATH,UiPath,AI‑orchestrated automation,Platform launches; mega‑deals,Pricing/model changes,,10/29
+RPA / Agentic Automation,SSNC,SS&C,Blue Prism cross‑sell,Vertical wins,Integration progress,,10/29
+RPA / Agentic Automation,NICE,NICE,Attended automation in CCaaS,Seat expansion,Contact‑center spend,,10/29
+RPA / Agentic Automation,NOW,ServiceNow,Workflow + RPA suite,Release waves; large deals,IT budgets,,10/29
+RPA / Agentic Automation,PEGA,Pegasystems,Orchestration + AI,Cloud mix; AWS tie‑ups,Sales cycles,,10/29
+RPA / Agentic Automation,APPN,Appian,Low‑code + RPA,Fed/regulated wins,Competition,,10/29
+Spec / Broader,PALI,,Biotech; binary events,Clinical data timing,Funding; clinical outcomes,,10/29
+Spec / Broader,PGEN,,Cell/gene therapy,Data/readouts; regulatory,Sector risk; outcomes,,10/29
+Spec / Broader,WTTR,,Water services,Contract wins,Commodity cycles,,10/29
+Spec / Broader,ARIS,,Produced water recycling,Volume growth,Basin activity,,10/29
+Spec / Broader,AQMS,,Battery recycling tech,Plant milestones,Financing; scale‑up progress,,10/29
+Spec / Broader,CIFR,,Bitcoin miner / DC infra,Hashrate/power deals,BTC price; power contracts,,10/29
+Spec / Broader,IQV,IQVIA,CRO/data,Bookings; AI tool rollouts,Biopharma budgets,,10/29

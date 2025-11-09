@@ -7,7 +7,7 @@ export default function App() {
   return (
     <WatchlistPage
       title="Permanent Thematic Watchlist"
-      csvUrl="/watchlist_web.csv" // make sure the CSV is in /public/watchlist_web.csv
+      csvUrl="/watchlist_live.csv" // make sure the CSV is in /public/watchlist_web.csv
       linkedinUrl="https://www.linkedin.com/in/mmiamckinmmckiney"
       twitterUrl="https://twitter.com/mmykeyy"
     />
