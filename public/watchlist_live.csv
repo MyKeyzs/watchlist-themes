@@ -1,51 +1,73 @@
 Theme,Ticker,Company,Thesis Snapshot,2026 Catalysts,What Moves It (Triggers),Notes,Date analyzed
-Healthcare IoT / Remote Patient Monitoring,DXCM,Dexcom,CGM leader; scale + payer access,New indications; coverage expansions,FDA/coverage decisions; competitor launches,Core quality,10/29
-Healthcare IoT / Remote Patient Monitoring,ABT,Abbott,Libre CGM; diversified med‑tech,Libre upgrades; coverage wins,Regulatory/recall updates; pricing,,10/29
-Healthcare IoT / Remote Patient Monitoring,SENS,Senseonics,Implantable CGM; small‑cap beta,US ramp; longer sensor longevity,Coverage decisions; financing,,10/29
-Healthcare IoT / Remote Patient Monitoring,IRTC,iRhythm,Zio patches; reimbursement‑sensitive,CPT code updates; new indications,Payer changes; adoption trends,,10/29
-Healthcare IoT / Remote Patient Monitoring,MASI,Masimo,Connected monitoring; hospital‑to‑home,Enterprise deals,Hospital capex cycles,,10/29
-Healthcare IoT / Remote Patient Monitoring,GEHC,GE HealthCare,Enterprise monitoring + AI,Platform wins,Hospital budgets,,10/29
-Healthcare IoT / Remote Patient Monitoring,RMD,ResMed,Connected CPAP,Device refreshes,Coverage decisions; quality news,,10/29
-Healthcare IoT / Remote Patient Monitoring,PHG,Philips,Connected care; legacy overhang,Resolution milestones; new wins,Litigation/settlement updates,,10/29
-Edge Computing (real‑time),NET,Cloudflare,Workers/AI at the edge,New features; enterprise attach,Outages; pricing and package changes,,10/29
-Edge Computing (real‑time),FSLY,Fastly,Compute@Edge,Logo wins; margin expansion,Churn; competitive dynamics,,10/29
-Edge Computing (real‑time),AKAM,Akamai,Edge + security,Security growth,Price wars; share shifts,,10/29
-Edge Computing (real‑time),NVDA,NVIDIA,Jetson + Omniverse; core AI enablement,Platform launches; software attach,Datacenter cycle; export rules,,10/29
-Edge Computing (real‑time),QCOM,Qualcomm,Embedded/auto edge AI,Auto design‑wins,Handset/auto cycles,,10/29
-Edge Computing (real‑time),NXPI,NXP,Industrial/auto edge,Demand inflections,Cycle; China exposure,,10/29
-Edge Computing (real‑time),AMBA,Ambarella,Vision SoCs,ADAS/security wins,Customer concentration,,10/29
-Edge Computing (real‑time),AMT,American Tower,Edge/near‑edge infrastructure,Leasing trends; edge initiatives,Rates; tenant mix,,10/29
-Edge Computing (real‑time),HPE,HPE,Aruba edge networking,ARR/NaaS traction,IT budgets,,10/29
-Immersive Realities & Digital Twins,DASTY,Dassault Systèmes,3DEXPERIENCE twins; Vision Pro tie‑ins,Enterprise rollouts,License/packaging transitions,,10/29
-Immersive Realities & Digital Twins,PTC,PTC,Windchill/ThingWorx/Vuforia,SaaS mix; logo wins,Macro manufacturing cycles,,10/29
-Immersive Realities & Digital Twins,BSY,Bentley Systems,iTwin for infrastructure,DOT/rail awards,Project timing,,10/29
-Immersive Realities & Digital Twins,SIEGY,Siemens ADR,Xcelerator + Omniverse; installed base leverage,Scaled case studies,Capex; FX,,10/29
-Immersive Realities & Digital Twins,ADSK,Autodesk,Tandem twins; OpenUSD alignment,Construction Cloud growth,Pricing transitions,,10/29
-Immersive Realities & Digital Twins,U,Unity,Unity Industry for digital twins,Enterprise penetration,Pricing changes; gaming cycles,,10/29
-Immersive Realities & Digital Twins,TRMB,Trimble,Reality capture into twins,Infrastructure wins,Construction cycles,,10/29
-Immersive Realities & Digital Twins,HEXA-B.ST,Hexagon AB,Leica/HxDR,Industrial demand,Europe cycles,,10/29
-Immersive Realities & Digital Twins,CSGP,CoStar,Buying Matterport; built‑world twins,Deal close + integration,CRE cycle,,10/29
-Immersive Realities & Digital Twins,AMZN,Amazon,AWS TwinMaker,Vertical wins,Cloud spend,,10/29
-Immersive Realities & Digital Twins,MSFT,Microsoft,Azure Digital Twins; HoloLens,Partner solutions,Cloud/device cadence,,10/29
-Immersive Realities & Digital Twins,AAPL,Apple,Vision Pro enterprise,Headset updates,Device cadence,,10/29
-Immersive Realities & Digital Twins,META,Meta,Cost‑down XR hardware,Hardware roadmap,XR losses; ad spend,,10/29
-Augmented Connected Workforce,HON,Honeywell,Forge + Worker Assist,Fleet rollouts; AI copilots,Industrial capex,,10/29
-Augmented Connected Workforce,ROK,Rockwell Automation,Plex/FactoryTalk connected worker,SaaS bookings growth,Discrete mfg cycles,,10/29
-Augmented Connected Workforce,PTC,PTC,Vuforia work instructions,AR use cases scale,Macro manufacturing,,10/29
-Augmented Connected Workforce,TMV.DE,TeamViewer,Frontline AR workflows,Hardware partnerships,EU FX; competition,,10/29
-Augmented Connected Workforce,ZBRA,Zebra Technologies,Wearables/scanners/vision,Warehouse/retail demand,Supply chains; retail cycle,,10/29
-Augmented Connected Workforce,MSFT,Microsoft,HoloLens/Power Platform glue,Partner apps,Device/cloud trends,,10/29
-Augmented Connected Workforce,IOT,Samsara,Connected ops for fleets/sites,ARR growth,Pricing; SMB mix,,10/29
-RPA / Agentic Automation,PATH,UiPath,AI‑orchestrated automation,Platform launches; mega‑deals,Pricing/model changes,,10/29
-RPA / Agentic Automation,SSNC,SS&C,Blue Prism cross‑sell,Vertical wins,Integration progress,,10/29
-RPA / Agentic Automation,NICE,NICE,Attended automation in CCaaS,Seat expansion,Contact‑center spend,,10/29
-RPA / Agentic Automation,NOW,ServiceNow,Workflow + RPA suite,Release waves; large deals,IT budgets,,10/29
-RPA / Agentic Automation,PEGA,Pegasystems,Orchestration + AI,Cloud mix; AWS tie‑ups,Sales cycles,,10/29
-RPA / Agentic Automation,APPN,Appian,Low‑code + RPA,Fed/regulated wins,Competition,,10/29
-Spec / Broader,PALI,,Biotech; binary events,Clinical data timing,Funding; clinical outcomes,,10/29
-Spec / Broader,PGEN,,Cell/gene therapy,Data/readouts; regulatory,Sector risk; outcomes,,10/29
-Spec / Broader,WTTR,,Water services,Contract wins,Commodity cycles,,10/29
-Spec / Broader,ARIS,,Produced water recycling,Volume growth,Basin activity,,10/29
-Spec / Broader,AQMS,,Battery recycling tech,Plant milestones,Financing; scale‑up progress,,10/29
-Spec / Broader,CIFR,,Bitcoin miner / DC infra,Hashrate/power deals,BTC price; power contracts,,10/29
-Spec / Broader,IQV,IQVIA,CRO/data,Bookings; AI tool rollouts,Biopharma budgets,,10/29
+Healthcare IoT / Remote Patient Monitoring,DXCM,Dexcom,CGM leader; scale + payer access,New indications; coverage expansions,FDA/coverage decisions; competitor launches,Core quality,29-Oct
+Healthcare IoT / Remote Patient Monitoring,ABT,Abbott,Libre CGM; diversified med‑tech,Libre upgrades; coverage wins,Regulatory/recall updates; pricing,,29-Oct
+Healthcare IoT / Remote Patient Monitoring,SENS,Senseonics,Implantable CGM; small‑cap beta,US ramp; longer sensor longevity,Coverage decisions; financing,,29-Oct
+Healthcare IoT / Remote Patient Monitoring,IRTC,iRhythm,Zio patches; reimbursement‑sensitive,CPT code updates; new indications,Payer changes; adoption trends,,29-Oct
+Healthcare IoT / Remote Patient Monitoring,MASI,Masimo,Connected monitoring; hospital‑to‑home,Enterprise deals,Hospital capex cycles,,29-Oct
+Healthcare IoT / Remote Patient Monitoring,GEHC,GE HealthCare,Enterprise monitoring + AI,Platform wins,Hospital budgets,,29-Oct
+Healthcare IoT / Remote Patient Monitoring,RMD,ResMed,Connected CPAP,Device refreshes,Coverage decisions; quality news,,29-Oct
+Healthcare IoT / Remote Patient Monitoring,PHG,Philips,Connected care; legacy overhang,Resolution milestones; new wins,Litigation/settlement updates,,29-Oct
+Edge Computing (real‑time),NET,Cloudflare,Workers/AI at the edge,New features; enterprise attach,Outages; pricing and package changes,,29-Oct
+Edge Computing (real‑time),FSLY,Fastly,Compute@Edge,Logo wins; margin expansion,Churn; competitive dynamics,,29-Oct
+Edge Computing (real‑time),AKAM,Akamai,Edge + security,Security growth,Price wars; share shifts,,29-Oct
+Edge Computing (real‑time),NVDA,NVIDIA,Jetson + Omniverse; core AI enablement,Platform launches; software attach,Datacenter cycle; export rules,,29-Oct
+Edge Computing (real‑time),QCOM,Qualcomm,Embedded/auto edge AI,Auto design‑wins,Handset/auto cycles,,29-Oct
+Edge Computing (real‑time),NXPI,NXP,Industrial/auto edge,Demand inflections,Cycle; China exposure,,29-Oct
+Edge Computing (real‑time),AMBA,Ambarella,Vision SoCs,ADAS/security wins,Customer concentration,,29-Oct
+Edge Computing (real‑time),AMT,American Tower,Edge/near‑edge infrastructure,Leasing trends; edge initiatives,Rates; tenant mix,,29-Oct
+Edge Computing (real‑time),HPE,HPE,Aruba edge networking,ARR/NaaS traction,IT budgets,,29-Oct
+Immersive Realities & Digital Twins,DASTY,Dassault Systèmes,3DEXPERIENCE twins; Vision Pro tie‑ins,Enterprise rollouts,License/packaging transitions,,29-Oct
+Immersive Realities & Digital Twins,PTC,PTC,Windchill/ThingWorx/Vuforia,SaaS mix; logo wins,Macro manufacturing cycles,,29-Oct
+Immersive Realities & Digital Twins,BSY,Bentley Systems,iTwin for infrastructure,DOT/rail awards,Project timing,,29-Oct
+Immersive Realities & Digital Twins,SIEGY,Siemens ADR,Xcelerator + Omniverse; installed base leverage,Scaled case studies,Capex; FX,,29-Oct
+Immersive Realities & Digital Twins,ADSK,Autodesk,Tandem twins; OpenUSD alignment,Construction Cloud growth,Pricing transitions,,29-Oct
+Immersive Realities & Digital Twins,U,Unity,Unity Industry for digital twins,Enterprise penetration,Pricing changes; gaming cycles,,29-Oct
+Immersive Realities & Digital Twins,TRMB,Trimble,Reality capture into twins,Infrastructure wins,Construction cycles,,29-Oct
+Immersive Realities & Digital Twins,CSGP,CoStar,Buying Matterport; built‑world twins,Deal close + integration,CRE cycle,,29-Oct
+Immersive Realities & Digital Twins,AMZN,Amazon,AWS TwinMaker,Vertical wins,Cloud spend,,29-Oct
+Immersive Realities & Digital Twins,MSFT,Microsoft,Azure Digital Twins; HoloLens,Partner solutions,Cloud/device cadence,,29-Oct
+Immersive Realities & Digital Twins,AAPL,Apple,Vision Pro enterprise,Headset updates,Device cadence,,29-Oct
+Immersive Realities & Digital Twins,META,Meta,Cost‑down XR hardware,Hardware roadmap,XR losses; ad spend,,29-Oct
+Augmented Connected Workforce,HON,Honeywell,Forge + Worker Assist,Fleet rollouts; AI copilots,Industrial capex,,29-Oct
+Augmented Connected Workforce,ROK,Rockwell Automation,Plex/FactoryTalk connected worker,SaaS bookings growth,Discrete mfg cycles,,29-Oct
+Augmented Connected Workforce,PTC,PTC,Vuforia work instructions,AR use cases scale,Macro manufacturing,,29-Oct
+Augmented Connected Workforce,ZBRA,Zebra Technologies,Wearables/scanners/vision,Warehouse/retail demand,Supply chains; retail cycle,,29-Oct
+Augmented Connected Workforce,MSFT,Microsoft,HoloLens/Power Platform glue,Partner apps,Device/cloud trends,,29-Oct
+Augmented Connected Workforce,IOT,Samsara,Connected ops for fleets/sites,ARR growth,Pricing; SMB mix,,29-Oct
+RPA / Agentic Automation,PATH,UiPath,AI‑orchestrated automation,Platform launches; mega‑deals,Pricing/model changes,,29-Oct
+RPA / Agentic Automation,SSNC,SS&C,Blue Prism cross‑sell,Vertical wins,Integration progress,,29-Oct
+RPA / Agentic Automation,NICE,NICE,Attended automation in CCaaS,Seat expansion,Contact‑center spend,,29-Oct
+RPA / Agentic Automation,NOW,ServiceNow,Workflow + RPA suite,Release waves; large deals,IT budgets,,29-Oct
+RPA / Agentic Automation,PEGA,Pegasystems,Orchestration + AI,Cloud mix; AWS tie‑ups,Sales cycles,,29-Oct
+RPA / Agentic Automation,APPN,Appian,Low‑code + RPA,Fed/regulated wins,Competition,,29-Oct
+Biotech,PALI,Palisade Bio,Biotech; binary events,Clinical data timing,Funding; clinical outcomes,,29-Oct
+Biotech,PGEN,Precigen,Cell/gene therapy,Data/readouts; regulatory,Sector risk; outcomes,,29-Oct
+Water Tech,WTTR,Select Water Solutions,Water services,Contract wins,Commodity cycles,,29-Oct
+Water Tech,AQMS,Aqua Metals Inc,Battery recycling tech,Plant milestones,Financing; scale‑up progress,,29-Oct
+Database,CIFR,Cipher Mining Inc,Bitcoin miner / DC infra,Hashrate/power deals,BTC price; power contracts,,29-Oct
+Spec / Broader,IQV,IQVIA,CRO/data,Bookings; AI tool rollouts,Biopharma budgets,,29-Oct
+Biotech,ASND,Ascendis Pharma,TransCon CNP (weekly CNP) for achondroplasia; cleaner path signaled,US approval decision (achondroplasia); initial launch metrics,"FDA decision, label scope, post-approval commitments",,7-Nov
+Biotech,BMY,Bristol Myers Squibb,Breyanzi (liso-cel) label expansion into MZL; strong efficacy dataset,US decision; launch/uptake in community settings,"FDA decision, label language, safety (CRS/NE) commentary",,7-Nov
+Biotech,TVTX,Travere ,FILSPARI (sparsentan) in FSGS; prioritized pathway with supportive proteinuria/eGFR,Full approval decision; payer/access updates,"FDA decision, REMS/label constraints, postmarketing requirements",,7-Nov
+Biotech,SNY,Sanofi,Cerezyme label expansion (Gaucher type 3); mature ERT with precedent,US decision; real-world data inclusion,"FDA decision, label specifics, safety updates",,7-Nov
+Biotech,PHAR,Pharming Group,Joenja (leniolisib) pediatric APDS (ages 4�11) label expansion; adult/?12 already approved,US decision; pediatric launch ,"FDA decision, pediatric labeling, safety signals",,7-Nov
+Critical minerals / Domestic battery supply,LAC,Lithium Americas Corp,U.S. lithium pure-play building Thacker Pass (Phase 1 target ~40 ktpa LCE) with DOE loan support and GM offtake; levered to U.S. EV supply-chain policy.,Phase-1 construction progress/ramp milestones; subsequent DOE loan draws and capex de-risking; resolution/timing of GM funding tranches.,Lithium price cycle; federal/state permitting or loan milestones; offtake/financing updates; execution vs. cost/timeline.,,4-Oct
+Grid transmission / Advanced power electronics,PWR,Quanta Services,"Leading EPC for transmission/grid hardening, renewables interconnect, pipelines; a beneficiary of data-center-driven power demand and IRA-era grid spend.",Backlog conversion on large T&D projects; incremental awards tied to data center and renewables interconnect; earnings progression off record revenue/EPS trajectory.,Utility capex plans/regulatory approvals; severe-weather hardening programs; major project wins or delays; labor/productivity.,,4-Oct
+Domestic uranium / HALEU fuel cycle,BWXT,BWX Technologies,Defense-nuclear core supplier with optionality in microreactors (Project Pele) and medical radioisotopes.,"Continued Pele program milestones toward demonstration (manufacturing progress, testing); isotope commercialization updates.",.S. defense/nuclear budgets; microreactor program funding/results; medical-isotope supply dynamics.,,4-Oct
+PFAS remediation / Water Tech,AOS,A.O Smith Corporation,Water-heater leader positioned for heat-pump adoption and tighter efficiency rules; commercial standard change hits by Oct 2026.,"U.S. DOE commercial water-heater efficiency standard effective Oct 6, 2026; IRA 25C tax credits supporting heat-pump water heater demand.","Sell-through of HPWHs, rebate/tax-credit uptake; channel inventory; building/retrofit activity.",,4-Oct
+Domestic uranium / HALEU fuel cycle,LEU,Centrus Energy Corp,Only domestic producer of HALEU fuel (critical for SMRs/advanced reactors); demand tied to U.S. re-nuclearization and data-center power.,Scaling Piketon HALEU plant output; additional DOE/utility contracts; deconversion capacity announcements.,SMR project timelines/regulatory progress; DOE contracting/funding; geopolitics of uranium supply.,,4-Oct
+Biofuels / Sustainable Aviation Fuel under 45Z,PLUG,Energy Plug Technologies Corp,Vertically-integrated green-hydrogen developer/electrolyzer maker; large DOE loan guarantee backs U.S. plant build-out.,Commissioning of additional H2 plants (post-Texas and others funded by LPO); path-to-profitability milestones; large customer wins.,"Hydrogen credit policy (45V), plant uptime/ramp, capital access, gross-margin progress.",,4-Oct
+PFAS remediation / Water Tech,CLH,Clean Harbors Inc,Hazardous-waste leader with PFAS remediation and high-temp incineration capability validated by recent studies.,PFAS regulatory timelines: expanded reporting in 2026; continuing rollout of drinking-water PFAS standards heading toward compliance later in the decade�driving remediation demand.,"EPA Superfund & PFAS rules, state actions; disposal/incineration capacity and pricing; industrial production trends.",,4-Oct
+Grid transmission / Advanced power electronics,MYRG,MYR Group,Specialty contractor for T&D and renewables interconnect; solid backlog and margin recovery amid grid/digital-power build-out.,Backlog conversion on large T&D/system-hardening projects; awards tied to record U.S. power-capex outlook through 2026-28.,"Utility awards, data-center interconnections, labor availability, project execution.",,4-Oct
+Grid transmission / Advanced power electronics,DUK,Duke Energy,Regulated utility pivoting to add new nuclear (SMR/LWR) optionality while expanding grid and renewables; multi-year rate-base growth.,Belews Creek early site permitting process underway (permit targeted 2027); integrated resource plan updates and rate proceedings that set allowed ROE/capex runway.,"Commissioning timelines/capex guidance, nuclear licensing steps, rate-case outcomes, fuel/power demand trends (e.g., data centers).",,4-Oct
+PFAS remediation / Water Tech,A,Agilent Technologies,"Leader in lab instruments & diagnostics; end-market recovery (pharma/biopharma, environmental testing) is back on track in FY�25 with improving core growth and margin discipline. Tailwinds from PFAS testing workflows and refreshed LC/MS platforms.",Sustained core growth as instrument replacement cycle resumes; China normalization; continued mix shift to higher-margin consumables/services; execution on FY�25+ growth guide.,Quarterly prints vs. core-growth guide; China policy/tariffs on lab gear; PFAS regulation/testing spend; new instrument launches and backlog conversion.,,4-Oct
+Data-center power / Thermal ecosystems,VRT,Vertiv Holdings Co,"Pure-play on AI datacenter power & thermal. Orders, backlog, and margins inflecting on hyperscaler build-out; ongoing tuck-ins broaden full-stack solutions.",Capacity expansions to meet AI demand; additional acquisitions; liquid-cooling program ramps; hyperscaler capex staying elevated.,Hyperscaler/AI capex revisions; order growth and book-to-bill; liquid-cooling attach rates; M&A updates and margin progress vs. guidance.,,4-Oct
+Data-center power / Thermal ecosystems,ETN,Eaton Corporation Public Limited Company,"Electrification winner across power distribution, grid, and AI data centers; adding thermal capability to offer chip-to-grid stack. Strong margin/FCF profile.",Closing/integration of Boyd Thermal ($9.5B) and other 2025 deals; scaling liquid-cooling business; AI data-center mega-projects; Investor Day targets execution.,Deal close milestones; datacenter mega-project announcements; segment margin expansion; grid spending policies.,,4-Oct
+Data-center power / Thermal ecosystems,SBGSY,Schneider Electric SE,Global leader in energy management & industrial software (incl. AVEVA). Riding durable DC demand + grid upgrades; IA/software recovering.,Continued DC program wins; AVEVA software growth and cross-sell; regional grid-infra stimulus; automation rebound.,Quarterly organic growth in Energy Management; software bookings at AVEVA; datacenter order momentum; FX/Europe cycle.,,4-Oct
+Critical minerals / Domestic battery supply,GM,General Motors,ICE/Truck cash flows fund Ultium EV ramp and software/charging ecosystem; pushing bidirectional charging and cost curve down. Cruise is the wild card.,Ultium platform scale and EV profitability targets; software & services ARPU; U.S. charging buildout/NACS access impact.,EV production/ASP vs. guidance; battery cost per kWh; any Cruise milestones/regulatory updates; incentives/tariffs.,,4-Oct
+Critical minerals / Domestic battery supply,MP,MP Materials,U.S. rare-earth supply chain re-onshoring leader from mine to magnets; production rising with DoD support and magnet line ramp.,Mid-2026 heavy REE commissioning (Dy/Tb); Texas magnet facility scaling toward 1k+ tpa magnets; further federal contracts.,NdPr prices; magnet offtakes (auto/defense); policy/DoD funding; quarterly production and cash costs.,,4-Oct
+Quantum Computing / PQC Migration,IBM,International Business Machines Corporation,"Hybrid cloud (Red Hat) + enterprise AI (watsonx/consulting) drive software-led growth; margin/FCF up, portfolio simplified.",AI agent deployments at scale via Consulting; watsonx monetization; mainframe/infra cycle; quantum roadmap PRs.,Software growth vs. mid-single/high-single digit ambitions; backlog/bookings in Consulting; AI reference wins; segment recut KPIs.,,4-Oct
+Biofuels / Sustainable Aviation Fuel under 45Z,GEVO,Gevo Inc,"SAF developer levered to IRA credits and long-dated offtakes; path to value hinges on project financing & NZ1 build. Volatile, but torque to milestones.",NZ1 FID/financial close and construction; additional SAF/RNG offtakes; DOE/USDA support mechanics.,"Project financing news, EPC updates, partner announcements, credit markets & policy for SAF/LCFS.",,4-Oct
+Defense & space-nuclear,ATI,Ati Inc,Specialty alloys & titanium leveraged to jet engine and aero structure build-rates; multi-year Airbus/Boeing agreements and new Ti sheet capacity.,"Continued aero rate hikes (NB & WB), defense mix, margin expansion in HPMC segment, capacity ramps.",Airbus/Boeing production updates; long-term titanium contracts; segment EBITDA margins vs. targets.,,4-Oct
+Defense & space-nuclear,HWM,Howmet Aerospace Inc.,"Mission-critical aero fasteners, engine components; high operating leverage to Boeing/Airbus rate increases and engine spares; data-center gas-turbine demand a side tailwind.",737/A320 build rates; widebody (787/A350) acceleration; 2026 revenue guide (~$9B) credibility; capacity investments.,OEM monthly rate changes; engine shop-visit cadence; pricing/mix; investment-grade funding and buybacks.,,4-Oct
+Defense & space-nuclear,LHX,L3Harris Technolgies,Nuclear tech supplier,"reactors for subs and NASA space missions,Project Pele microreactor delivery","NASA nuclear thermal rocket prototype,Government contract awards",,4-Oct

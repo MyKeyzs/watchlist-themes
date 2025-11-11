@@ -24,9 +24,7 @@ export type SortState = { key: SortKey; dir: SortDir };
 type Props = {
   rows: WatchItem[];
   sort: SortState;
-  /** Preferred prop name */
   setSort?: (s: SortState) => void;
-  /** Back-compat prop name */
   onSort?: (s: SortState) => void;
 };
 
@@ -34,33 +32,68 @@ type Props = {
 
 const MASSIVE_BASE = "https://api.massive.com";
 
-/** Convert “MM/DD” (or M/D) into YYYY-MM-DD and back up to the previous business day for weekends. */
-function normalizeToBizDate(mmdd: string): string {
-  const m = mmdd.match(/^(\d{1,2})[\/\-](\d{1,2})$/);
+/** Parse a variety of short “Date analyzed” shapes to YYYY-MM-DD.
+ *  Supports:
+ *    - M/D or MM/DD (optionally with /YYYY)
+ *    - D-MMM or DD-MMM (optionally with -YYYY), e.g. 29-Oct, 4-Oct-2024
+ *  Backs up to the previous business day for weekends and future dates.
+ */
+function normalizeToBizDate(raw: string): string {
+  const s = raw.trim();
   const today = new Date();
   let year = today.getFullYear();
 
-  if (!m) {
-    // Fallback: two days ago as ISO (safe for weekends)
-    const d = new Date(today);
-    d.setDate(d.getDate() - 2);
-    return d.toISOString().slice(0, 10);
+  // Map for 3-letter months
+  const MONTHS: Record<string, number> = {
+    jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5,
+    jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11,
+  };
+
+  let d: Date | null = null;
+
+  // 1) Numeric: M/D or MM/DD (with optional /YYYY)
+  //    e.g. 10/29 or 10/29/2024
+  {
+    const m = s.match(/^(\d{1,2})[\/\-](\d{1,2})(?:[\/\-](\d{2,4}))?$/);
+    if (m) {
+      const mm = Number(m[1]);
+      const dd = Number(m[2]);
+      const yy = m[3] ? Number(m[3].length === 2 ? `20${m[3]}` : m[3]) : year;
+      d = new Date(Date.UTC(yy, mm - 1, dd));
+    }
   }
 
-  let month = Number(m[1]) - 1;
-  let day = Number(m[2]);
-  let d = new Date(Date.UTC(year, month, day));
+  // 2) D-MMM or DD-MMM (with optional -YYYY)
+  //    e.g. 29-Oct or 4-Oct-2024
+  if (!d) {
+    const m = s.match(/^(\d{1,2})[\/\-]([A-Za-z]{3})(?:[\/\-](\d{2,4}))?$/);
+    if (m) {
+      const dd = Number(m[1]);
+      const mon = MONTHS[m[2].toLowerCase()];
+      if (mon != null) {
+        const yy = m[3] ? Number(m[3].length === 2 ? `20${m[3]}` : m[3]) : year;
+        d = new Date(Date.UTC(yy, mon, dd));
+      }
+    }
+  }
 
-  // If parsed day is in the future (e.g., CSV carried into new year), step back a year
+  // 3) If still not parsed, fallback = two days ago (safe for weekends)
+  if (!d) {
+    const f = new Date(today);
+    f.setUTCDate(f.getUTCDate() - 2);
+    return f.toISOString().slice(0, 10);
+  }
+
+  // If the parsed date is in the future (e.g., CSV carried forward), nudge back a year
   if (d.getTime() > Date.now()) {
-    year = year - 1;
-    d = new Date(Date.UTC(year, month, day));
+    d.setUTCFullYear(d.getUTCFullYear() - 1);
   }
 
-  // Back up while Sat/Sun
+  // Back up for weekends (Sun=0, Sat=6)
   while (d.getUTCDay() === 0 || d.getUTCDay() === 6) {
     d.setUTCDate(d.getUTCDate() - 1);
   }
+
   return d.toISOString().slice(0, 10);
 }
 
@@ -72,8 +105,8 @@ async function fetchCurrentPrice(ticker: string): Promise<number | null> {
 
   const res = await fetch(url);
   if (!res.ok) return null;
-
   const json = await res.json();
+
   // Prefer lastTrade.p, then lastQuote.p, then day.c
   const p =
     json?.ticker?.lastTrade?.p ??
@@ -89,7 +122,6 @@ async function fetchInitialClose(
   ticker: string,
   yyyy_mm_dd: string
 ): Promise<number | null> {
-  // Use /v2/aggs/.../range/1/day/{from}/{to} with same day both ends.
   const url =
     `${MASSIVE_BASE}/v2/aggs/ticker/${encodeURIComponent(
       ticker
@@ -281,7 +313,6 @@ export default function WatchTable({ rows, sort, setSort, onSort }: Props) {
         if (init == null || cur == null || init === 0) return Number.NEGATIVE_INFINITY;
         return ((cur - init) / init) * 100;
       }
-      // default: string compare
       const s = String((r as any)[key] ?? "").toLowerCase();
       return s;
     }
@@ -323,7 +354,7 @@ export default function WatchTable({ rows, sort, setSort, onSort }: Props) {
             <TH label="Theme(s)" sortKey="Theme(s)" sort={sort} applySort={applySort} />
             <TH label="Date analyzed" sortKey="Date analyzed" sort={sort} applySort={applySort} />
 
-            {/* NEW: Current + PnL + Initial (in this order, before Thesis) */}
+            {/* NEW: Current + PnL + Initial */}
             <TH label="Current Price" sortKey="Current Price" sort={sort} applySort={applySort} />
             <TH label="Total PnL" sortKey="Total PnL" sort={sort} applySort={applySort} />
             <TH label="Initial Price" sortKey="Initial Price" sort={sort} applySort={applySort} />
