@@ -11,9 +11,11 @@
     "ws": "node ws-server.js"
   },
   "dependencies": {
+    "axios": "^1.13.2",
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "iconv-lite": "^0.7.0",
+    "lightweight-charts": "^5.0.9",
     "node-fetch": "^3.3.2",
     "papaparse": "^5.5.3",
     "react": "^19.1.1",

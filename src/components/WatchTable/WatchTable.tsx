@@ -1,7 +1,7 @@
 // src/components/WatchTable/WatchTable.tsx
 import React from "react";
 import { WatchItem } from "../../utils/types";
-import PopoutModal from "../../components/PopoutModal/PopoutModal"; // ⬅️ ensure this path is correct
+import PopoutModal from "../../components/PopoutModal/PopoutModal";
 import { MASSIVE_API_KEY } from "../../lib/env";
 
 /* ---------- Sorting ---------- */
@@ -15,8 +15,7 @@ export type SortKey =
   | "Total PnL"
   | "Thesis Snapshot"
   | "Key 2026 Catalysts"
-  | "What Moves It (Triggers)"
-  | "Notes";
+  | "What Moves It (Triggers)";
 
 export type SortDir = "asc" | "desc";
 export type SortState = { key: SortKey; dir: SortDir };
@@ -167,7 +166,6 @@ const FIELDS = {
     "What_Moves_It",
   ],
   themes: ["Theme(s)", "Themes", "Theme", "Theme_1", "Theme_2"],
-  notes: ["Notes", "Note"],
   dateAnalyzed: ["Date analyzed", "Date Analyzed", "Date_Analyzed", "Analyzed Date"],
 };
 
@@ -242,7 +240,7 @@ function Cell({
 export default function WatchTable({ rows, sort, setSort, onSort }: Props) {
   const applySort = setSort ?? onSort ?? (() => {});
 
-  // NEW: popout modal state
+  // popout modal state
   const [modalOpen, setModalOpen] = React.useState(false);
   const [modalTicker, setModalTicker] = React.useState<string>("");
 
@@ -323,7 +321,6 @@ export default function WatchTable({ rows, sort, setSort, onSort }: Props) {
       if (k === "Key 2026 Catalysts") return firstValue(r as any, FIELDS.catalysts2026).toLowerCase();
       if (k === "What Moves It (Triggers)") return firstValue(r as any, FIELDS.whatMovesIt).toLowerCase();
       if (k === "Theme(s)") return firstValue(r as any, FIELDS.themes).toLowerCase();
-      if (k === "Notes") return firstValue(r as any, FIELDS.notes).toLowerCase();
       if (k === "Date analyzed") return firstValue(r as any, FIELDS.dateAnalyzed).toLowerCase();
       return String((r as any)[k] ?? "").toLowerCase();
     };
@@ -390,15 +387,14 @@ export default function WatchTable({ rows, sort, setSort, onSort }: Props) {
               <TH label="Theme(s)" sortKey="Theme(s)" sort={sort} applySort={applySort} />
               <TH label="Date analyzed" sortKey="Date analyzed" sort={sort} applySort={applySort} />
 
-              {/* Prices + PnL */}
+              {/* Reordered: Initial → Current → Total PnL */}
+              <TH label="Initial Price" sortKey="Initial Price" sort={sort} applySort={applySort} />
               <TH label="Current Price" sortKey="Current Price" sort={sort} applySort={applySort} />
               <TH label="Total PnL" sortKey="Total PnL" sort={sort} applySort={applySort} />
-              <TH label="Initial Price" sortKey="Initial Price" sort={sort} applySort={applySort} />
 
               <TH label="Thesis" sortKey="Thesis Snapshot" sort={sort} applySort={applySort} />
               <TH label="2026 Catalysts" sortKey="Key 2026 Catalysts" sort={sort} applySort={applySort} />
               <TH label="What Moves It" sortKey="What Moves It (Triggers)" sort={sort} applySort={applySort} />
-              <TH label="Notes" sortKey="Notes" sort={sort} applySort={applySort} />
             </tr>
           </thead>
 
@@ -417,7 +413,6 @@ export default function WatchTable({ rows, sort, setSort, onSort }: Props) {
               const catalysts2026 = firstValue(r as any, FIELDS.catalysts2026);
               const whatMoves = firstValue(r as any, FIELDS.whatMovesIt);
               const themes = firstValue(r as any, FIELDS.themes) || (r as any)["Theme(s)"];
-              const notes = firstValue(r as any, FIELDS.notes);
 
               const zebra = i % 2 === 0 ? "wl-row wl-row--even" : "wl-row";
               const glowClass = rowClassForPct(pnlPct);
@@ -441,22 +436,22 @@ export default function WatchTable({ rows, sort, setSort, onSort }: Props) {
                   <Cell value={themes} title={themes} />
                   <Cell value={analyzed || "—"} />
 
+                  {/* Reordered cells */}
+                  <Cell value={initial != null ? `$${initial.toFixed(2)}` : "—"} />
                   <Cell value={current != null ? `$${current.toFixed(2)}` : "—"} />
                   <Cell value={pnlPct != null ? `${pnlPct >= 0 ? "+" : ""}${pnlPct.toFixed(2)}%` : "—"} />
-                  <Cell value={initial != null ? `$${initial.toFixed(2)}` : "—"} />
 
                   <Cell value={thesis} long />
                   <Cell value={catalysts2026} long />
                   <Cell value={whatMoves} long />
-                  <Cell value={notes} long />
                 </tr>
               );
             })}
 
             {sorted.length === 0 && (
               <tr>
-                {/* 11 columns total now */}
-                <td colSpan={11} className="wl-empty">
+                {/* Ticker + 9 columns = 10 total */}
+                <td colSpan={10} className="wl-empty">
                   No items match your filters.
                 </td>
               </tr>
