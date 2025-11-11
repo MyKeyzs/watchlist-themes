@@ -1,4 +1,5 @@
-html, body, #root { height: 100%; width: 100%; }
+html, #root { height: 100%; width: 100%; --page-bg: #F5F7FA; }
+body { background-color: var(--page-bg); }
 #root {
   max-width: none;
   margin: 0 auto;
