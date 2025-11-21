@@ -1,0 +1,111 @@
+/* Top header wrapper */
+.app-header {
+  background: #020617; /* very dark slate to match your theme */
+  border-bottom: 1px solid #111827;
+  color: #f9fafb;
+}
+
+/* Center content + max width */
+.app-header__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand area */
+.app-header__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.app-header__brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #0ea5e9, #22c55e);
+  color: #020617;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.app-header__brand-text {
+  font-size: 0.95rem;
+  color: #e5e7eb;
+}
+
+/* Nav tabs */
+.app-header__nav {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.app-header__link {
+  position: relative;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  border: none;
+  background: transparent;
+  color: #e5e7eb;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.1s ease;
+}
+
+.app-header__link:hover {
+  background: rgba(15, 23, 42, 0.9);
+  transform: translateY(-1px);
+}
+
+.app-header__link--active {
+  background: #0ea5e9;
+  color: #020617;
+}
+
+/* Right placeholder area */
+.app-header__right {
+  min-width: 80px; /* keeps layout stable even if empty */
+}
+
+/* Main layout helpers so content doesn't sit under header */
+.app-root {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0b1120 0, #020617 40%, #000 100%);
+  color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .app-header__inner {
+    padding-inline: 1rem;
+    gap: 1rem;
+  }
+
+  .app-header__nav {
+    gap: 0.5rem;
+  }
+
+  .app-main {
+    padding: 1rem;
+  }
+}
