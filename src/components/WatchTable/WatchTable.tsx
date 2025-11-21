@@ -13,9 +13,9 @@ export type SortKey =
   | "Initial Price"
   | "Current Price"
   | "Total PnL"
-  | "Thesis Snapshot"
-  | "Key 2026 Catalysts"
-  | "What Moves It (Triggers)";
+  | "1Day Change (%)"
+  | "1Week Change (%)"
+  | "YTD Change (%)";
 
 export type SortDir = "asc" | "desc";
 export type SortState = { key: SortKey; dir: SortDir };
@@ -33,18 +33,28 @@ const MASSIVE_BASE = "https://api.massive.com";
 
 /** Parse a variety of short “Date analyzed” shapes to YYYY-MM-DD. */
 function normalizeToBizDate(raw: string): string {
-  const s = raw.trim();
+  const s = (raw || "").trim();
   const today = new Date();
   let year = today.getFullYear();
 
   const MONTHS: Record<string, number> = {
-    jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5,
-    jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11,
+    jan: 0,
+    feb: 1,
+    mar: 2,
+    apr: 3,
+    may: 4,
+    jun: 5,
+    jul: 6,
+    aug: 7,
+    sep: 8,
+    oct: 9,
+    nov: 10,
+    dec: 11,
   };
 
   let d: Date | null = null;
 
-  // M/D or MM/DD (optional year)
+  // M/D or MM/DD (/YYYY optional)
   {
     const m = s.match(/^(\d{1,2})[\/\-](\d{1,2})(?:[\/\-](\d{2,4}))?$/);
     if (m) {
@@ -55,7 +65,7 @@ function normalizeToBizDate(raw: string): string {
     }
   }
 
-  // D-MMM (optional year)
+  // D-MMM (/-YYYY optional)
   if (!d) {
     const m = s.match(/^(\d{1,2})[\/\-]([A-Za-z]{3})(?:[\/\-](\d{2,4}))?$/);
     if (m) {
@@ -86,11 +96,47 @@ function normalizeToBizDate(raw: string): string {
   return d.toISOString().slice(0, 10);
 }
 
-/** Fetch Massive snapshot (current) price for one ticker. */
+/** Business-day helpers (UTC) */
+function prevBizDate(date: Date): Date {
+  const d = new Date(
+    Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate())
+  );
+  do {
+    d.setUTCDate(d.getUTCDate() - 1);
+  } while (d.getUTCDay() === 0 || d.getUTCDay() === 6);
+  return d;
+}
+function nBizDaysAgo(date: Date, n: number): Date {
+  let d = new Date(
+    Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate())
+  );
+  let count = 0;
+  while (count < n) {
+    d = prevBizDate(d);
+    count++;
+  }
+  return d;
+}
+function ytdAnchor(date: Date): Date {
+  // First trading day of this year (approx: Jan 1 then roll forward to weekday)
+  const d = new Date(Date.UTC(date.getUTCFullYear(), 0, 1));
+  // If Jan 1 is weekend, roll forward to Monday
+  while (d.getUTCDay() === 0 || d.getUTCDay() === 6) {
+    d.setUTCDate(d.getUTCDate() + 1);
+  }
+  return d;
+}
+function fmt(d: Date): string {
+  return d.toISOString().slice(0, 10);
+}
+
+/** Massive: snapshot (current) */
 async function fetchCurrentPrice(ticker: string): Promise<number | null> {
   const url =
     `${MASSIVE_BASE}/v2/snapshot/locale/us/markets/stocks/tickers/` +
-    `${encodeURIComponent(ticker)}?apiKey=${encodeURIComponent(MASSIVE_API_KEY)}`;
+    `${encodeURIComponent(ticker)}?apiKey=${encodeURIComponent(
+      MASSIVE_API_KEY
+    )}`;
   const res = await fetch(url);
   if (!res.ok) return null;
   const json = await res.json();
@@ -102,8 +148,8 @@ async function fetchCurrentPrice(ticker: string): Promise<number | null> {
   return typeof p === "number" ? p : null;
 }
 
-/** Fetch Massive single-day close for a specific YYYY-MM-DD (Initial Price). */
-async function fetchInitialClose(
+/** Massive: single-day close for YYYY-MM-DD */
+async function fetchClose(
   ticker: string,
   yyyy_mm_dd: string
 ): Promise<number | null> {
@@ -119,11 +165,10 @@ async function fetchInitialClose(
   return typeof c === "number" ? c : null;
 }
 
-/** Percent PnL */
-function pct(initial: number | null, current: number | null): number | null {
-  if (initial == null || current == null) return null;
-  if (initial === 0) return null;
-  return ((current - initial) / initial) * 100;
+/** Percent change helper */
+function pct(from: number | null, to: number | null): number | null {
+  if (from == null || to == null || from === 0) return null;
+  return ((to - from) / from) * 100;
 }
 
 /* ---------- PnL → CSS class (glow rows) ---------- */
@@ -166,7 +211,12 @@ const FIELDS = {
     "What_Moves_It",
   ],
   themes: ["Theme(s)", "Themes", "Theme", "Theme_1", "Theme_2"],
-  dateAnalyzed: ["Date analyzed", "Date Analyzed", "Date_Analyzed", "Analyzed Date"],
+  dateAnalyzed: [
+    "Date analyzed",
+    "Date Analyzed",
+    "Date_Analyzed",
+    "Analyzed Date",
+  ],
 };
 
 /* ---------- UI bits ---------- */
@@ -207,7 +257,11 @@ function TH({
 
   return (
     <th className={`wl-th ${className ?? ""}`}>
-      <button type="button" onClick={onClick} className="inline-flex items-center gap-1 text-white">
+      <button
+        type="button"
+        onClick={onClick}
+        className="inline-flex items-center gap-1 text-white"
+      >
         <span>{label}</span>
         <Caret active={active} dir={active ? sort.dir : "asc"} />
       </button>
@@ -228,11 +282,28 @@ function Cell({
 }) {
   return (
     <td className={`wl-td ${className ?? ""}`} title={title}>
-      <div className={(long ? "wl-td-long" : "wl-td-short") + " sm:whitespace-normal sm:line-clamp-3"}>
+      <div
+        className={
+          (long ? "wl-td-long" : "wl-td-short") +
+          " sm:whitespace-normal sm:line-clamp-3"
+        }
+      >
         {value ?? "—"}
       </div>
     </td>
   );
+}
+
+/* ---------- Small helper: run tasks in batches to avoid hammering API ---------- */
+
+async function runInBatches(
+  fns: Array<() => Promise<void>>,
+  batchSize = 8
+): Promise<void> {
+  for (let i = 0; i < fns.length; i += batchSize) {
+    const slice = fns.slice(i, i + batchSize).map((fn) => fn());
+    await Promise.allSettled(slice);
+  }
 }
 
 /* ---------- Main ---------- */
@@ -243,18 +314,26 @@ export default function WatchTable({ rows, sort, setSort, onSort }: Props) {
   // popout modal state
   const [modalOpen, setModalOpen] = React.useState(false);
   const [modalTicker, setModalTicker] = React.useState<string>("");
+  const [modalThesis, setModalThesis] = React.useState<string>("");
+  const [modalCatalysts, setModalCatalysts] = React.useState<string>("");
+  const [modalWhatMoves, setModalWhatMoves] = React.useState<string>("");
 
-  const openModalFor = (t: string) => {
+  const openModalFor = (row: WatchItem) => {
+    const t = (row.Ticker || "").trim();
     if (!t) return;
     setModalTicker(t);
+    setModalThesis(firstValue(row as any, FIELDS.thesis));
+    setModalCatalysts(firstValue(row as any, FIELDS.catalysts2026));
+    setModalWhatMoves(firstValue(row as any, FIELDS.whatMovesIt));
     setModalOpen(true);
   };
   const closeModal = () => setModalOpen(false);
 
   // caches so we fetch once per ticker/date
-  const initCache = React.useRef(new Map<string, number>());
-  const curCache = React.useRef(new Map<string, number>());
-  const [tick, setTick] = React.useState(0);
+  const initCache = React.useRef(new Map<string, number>()); // key: TICKER|YYYY-MM-DD -> close
+  const curCache = React.useRef(new Map<string, number>()); // key: TICKER -> snapshot price
+  const closeCache = React.useRef(new Map<string, number>()); // key: TICKER|YYYY-MM-DD -> close (for perf windows)
+  const [tick, setTick] = React.useState(0); // nudge rerender on new data
 
   // Normalize each row’s analyzed date up front
   const normalizedRows = React.useMemo(() => {
@@ -265,48 +344,84 @@ export default function WatchTable({ rows, sort, setSort, onSort }: Props) {
     });
   }, [rows]);
 
-  // Fetch initial close + current price
+  // Precompute benchmark dates
+  const today = new Date();
+  const d1 = prevBizDate(today); // yesterday's biz day
+  const d5 = nBizDaysAgo(today, 5); // ~ one trading week ago
+  const dYTD = ytdAnchor(today); // first trading day of year
+
+  const d1Str = fmt(d1);
+  const d5Str = fmt(d5);
+  const dYTDStr = fmt(dYTD);
+
+  // Fetch initial close + current price + perf-window closes
   React.useEffect(() => {
     let aborted = false;
+
     async function run() {
-      const tasks: Promise<void>[] = [];
+      const taskFns: Array<() => Promise<void>> = [];
+
       for (const { row, normDate } of normalizedRows) {
         const tkr = (row.Ticker || "").trim();
         if (!tkr) continue;
 
+        // Initial close (for Total PnL vs Date analyzed)
         if (normDate) {
           const initKey = `${tkr}|${normDate}`;
           if (!initCache.current.has(initKey)) {
-            tasks.push(
-              (async () => {
-                const v = await fetchInitialClose(tkr, normDate).catch(() => null);
-                if (!aborted && v != null) {
-                  initCache.current.set(initKey, v);
-                  setTick((x) => x + 1);
-                }
-              })()
-            );
+            taskFns.push(async () => {
+              const v = await fetchClose(tkr, normDate).catch(() => null);
+              if (!aborted && v != null) {
+                initCache.current.set(initKey, v);
+                setTick((x) => x + 1);
+              }
+            });
           }
         }
 
+        // Current price (snapshot)
         if (!curCache.current.has(tkr)) {
-          tasks.push(
-            (async () => {
-              const v = await fetchCurrentPrice(tkr).catch(() => null);
+          taskFns.push(async () => {
+            const v = await fetchCurrentPrice(tkr).catch(() => null);
+            if (!aborted && v != null) {
+              curCache.current.set(tkr, v);
+              setTick((x) => x + 1);
+            }
+          });
+        }
+
+        // Perf window closes (1D, 1W, YTD)
+        for (const ds of [d1Str, d5Str, dYTDStr]) {
+          const key = `${tkr}|${ds}`;
+          if (!closeCache.current.has(key)) {
+            taskFns.push(async () => {
+              const v = await fetchClose(tkr, ds).catch(() => null);
               if (!aborted && v != null) {
-                curCache.current.set(tkr, v);
+                closeCache.current.set(key, v);
                 setTick((x) => x + 1);
               }
-            })()
-          );
+            });
+          }
         }
       }
-      if (tasks.length) await Promise.allSettled(tasks);
+
+      if (taskFns.length) {
+        // Process in small batches instead of hammering the API
+        await runInBatches(taskFns, 6); // tweak 6 → 4/8/etc if you want
+      }
     }
+
     run();
-    return () => { aborted = true; };
+    return () => {
+      aborted = true;
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [normalizedRows.map(n => n.row.Ticker + "|" + (n.normDate ?? "")).join(",")]);
+  }, [
+    normalizedRows.map((n) => n.row.Ticker + "|" + (n.normDate ?? "")).join(","),
+    d1Str,
+    d5Str,
+    dYTDStr,
+  ]);
 
   // Sort
   const sorted = React.useMemo(() => {
@@ -316,37 +431,48 @@ export default function WatchTable({ rows, sort, setSort, onSort }: Props) {
     const numericOrNegInf = (v: number | null | undefined) =>
       typeof v === "number" ? v : Number.NEGATIVE_INFINITY;
 
-    const textForKey = (r: WatchItem, k: SortKey): string => {
-      if (k === "Thesis Snapshot") return firstValue(r as any, FIELDS.thesis).toLowerCase();
-      if (k === "Key 2026 Catalysts") return firstValue(r as any, FIELDS.catalysts2026).toLowerCase();
-      if (k === "What Moves It (Triggers)") return firstValue(r as any, FIELDS.whatMovesIt).toLowerCase();
-      if (k === "Theme(s)") return firstValue(r as any, FIELDS.themes).toLowerCase();
-      if (k === "Date analyzed") return firstValue(r as any, FIELDS.dateAnalyzed).toLowerCase();
-      return String((r as any)[k] ?? "").toLowerCase();
-    };
-
     const valueOf = (r: WatchItem): string | number => {
+      const tkr = (r.Ticker || "").trim();
+
       if (key === "Initial Price") {
         const analyzed = firstValue(r as any, FIELDS.dateAnalyzed);
         const norm = analyzed ? normalizeToBizDate(analyzed) : null;
-        const initKey = `${r.Ticker}|${norm}`;
+        const initKey = `${tkr}|${norm}`;
         const v = norm ? initCache.current.get(initKey) : undefined;
         return numericOrNegInf(v);
       }
       if (key === "Current Price") {
-        const v = curCache.current.get(r.Ticker || "");
+        const v = curCache.current.get(tkr);
         return numericOrNegInf(v);
       }
       if (key === "Total PnL") {
         const analyzed = firstValue(r as any, FIELDS.dateAnalyzed);
         const norm = analyzed ? normalizeToBizDate(analyzed) : null;
-        const initKey = `${r.Ticker}|${norm}`;
+        const initKey = `${tkr}|${norm}`;
         const init = norm ? initCache.current.get(initKey) : undefined;
-        const cur = curCache.current.get(r.Ticker || "");
-        if (init == null || cur == null || init === 0) return Number.NEGATIVE_INFINITY;
+        const cur = curCache.current.get(tkr);
+        if (init == null || cur == null || init === 0)
+          return Number.NEGATIVE_INFINITY;
         return ((cur - init) / init) * 100;
       }
-      return textForKey(r, key);
+      if (key === "1Day Change (%)") {
+        const base = closeCache.current.get(`${tkr}|${d1Str}`);
+        const cur = curCache.current.get(tkr);
+        return numericOrNegInf(pct(base ?? null, cur ?? null) ?? null);
+      }
+      if (key === "1Week Change (%)") {
+        const base = closeCache.current.get(`${tkr}|${d5Str}`);
+        const cur = curCache.current.get(tkr);
+        return numericOrNegInf(pct(base ?? null, cur ?? null) ?? null);
+      }
+      if (key === "YTD Change (%)") {
+        const base = closeCache.current.get(`${tkr}|${dYTDStr}`);
+        const cur = curCache.current.get(tkr);
+        return numericOrNegInf(pct(base ?? null, cur ?? null) ?? null);
+      }
+
+      // default: text
+      return String((r as any)[key] ?? "").toLowerCase();
     };
 
     data.sort((a, b) => {
@@ -358,7 +484,7 @@ export default function WatchTable({ rows, sort, setSort, onSort }: Props) {
     });
 
     return data;
-  }, [rows, sort, tick]);
+  }, [rows, sort, tick, d1Str, d5Str, dYTDStr]);
 
   return (
     <>
@@ -373,7 +499,10 @@ export default function WatchTable({ rows, sort, setSort, onSort }: Props) {
                   onClick={() =>
                     applySort({
                       key: "Ticker",
-                      dir: sort.key === "Ticker" && sort.dir === "asc" ? "desc" : "asc",
+                      dir:
+                        sort.key === "Ticker" && sort.dir === "asc"
+                          ? "desc"
+                          : "asc",
                     })
                   }
                   className="inline-flex items-center gap-1 text-white"
@@ -383,18 +512,64 @@ export default function WatchTable({ rows, sort, setSort, onSort }: Props) {
                 </button>
               </th>
 
-              <TH label="Company" sortKey="Company" sort={sort} applySort={applySort} />
-              <TH label="Theme(s)" sortKey="Theme(s)" sort={sort} applySort={applySort} />
-              <TH label="Date analyzed" sortKey="Date analyzed" sort={sort} applySort={applySort} />
+              <TH
+                label="Company"
+                sortKey="Company"
+                sort={sort}
+                applySort={applySort}
+              />
+              <TH
+                label="Theme(s)"
+                sortKey="Theme(s)"
+                sort={sort}
+                applySort={applySort}
+              />
+              <TH
+                label="Date analyzed"
+                sortKey="Date analyzed"
+                sort={sort}
+                applySort={applySort}
+              />
 
-              {/* Reordered: Initial → Current → Total PnL */}
-              <TH label="Initial Price" sortKey="Initial Price" sort={sort} applySort={applySort} />
-              <TH label="Current Price" sortKey="Current Price" sort={sort} applySort={applySort} />
-              <TH label="Total PnL" sortKey="Total PnL" sort={sort} applySort={applySort} />
+              {/* Prices & PnL */}
+              <TH
+                label="Initial Price"
+                sortKey="Initial Price"
+                sort={sort}
+                applySort={applySort}
+              />
+              <TH
+                label="Current Price"
+                sortKey="Current Price"
+                sort={sort}
+                applySort={applySort}
+              />
+              <TH
+                label="Total PnL"
+                sortKey="Total PnL"
+                sort={sort}
+                applySort={applySort}
+              />
 
-              <TH label="Thesis" sortKey="Thesis Snapshot" sort={sort} applySort={applySort} />
-              <TH label="2026 Catalysts" sortKey="Key 2026 Catalysts" sort={sort} applySort={applySort} />
-              <TH label="What Moves It" sortKey="What Moves It (Triggers)" sort={sort} applySort={applySort} />
+              {/* Perf windows */}
+              <TH
+                label="1Day Change (%)"
+                sortKey="1Day Change (%)"
+                sort={sort}
+                applySort={applySort}
+              />
+              <TH
+                label="1Week Change (%)"
+                sortKey="1Week Change (%)"
+                sort={sort}
+                applySort={applySort}
+              />
+              <TH
+                label="YTD Change (%)"
+                sortKey="YTD Change (%)"
+                sort={sort}
+                applySort={applySort}
+              />
             </tr>
           </thead>
 
@@ -409,11 +584,18 @@ export default function WatchTable({ rows, sort, setSort, onSort }: Props) {
               const current = curCache.current.get(tkr) ?? null;
               const pnlPct = pct(initial, current);
 
-              const thesis = firstValue(r as any, FIELDS.thesis);
-              const catalysts2026 = firstValue(r as any, FIELDS.catalysts2026);
-              const whatMoves = firstValue(r as any, FIELDS.whatMovesIt);
-              const themes = firstValue(r as any, FIELDS.themes) || (r as any)["Theme(s)"];
+              const d1Close =
+                closeCache.current.get(`${tkr}|${d1Str}`) ?? null;
+              const d5Close =
+                closeCache.current.get(`${tkr}|${d5Str}`) ?? null;
+              const dYClose =
+                closeCache.current.get(`${tkr}|${dYTDStr}`) ?? null;
 
+              const ch1d = pct(d1Close, current);
+              const ch1w = pct(d5Close, current);
+              const chYTD = pct(dYClose, current);
+
+              const themes = firstValue(r as any, FIELDS.themes);
               const zebra = i % 2 === 0 ? "wl-row wl-row--even" : "wl-row";
               const glowClass = rowClassForPct(pnlPct);
 
@@ -421,7 +603,7 @@ export default function WatchTable({ rows, sort, setSort, onSort }: Props) {
                 <tr
                   key={`${r.Ticker}-${i}`}
                   className={`${zebra} wl-row-clickable ${glowClass}`}
-                  onClick={() => openModalFor(tkr)}
+                  onClick={() => openModalFor(r)}
                 >
                   {/* Ticker (sticky) */}
                   <td
@@ -429,28 +611,61 @@ export default function WatchTable({ rows, sort, setSort, onSort }: Props) {
                     title={r.Ticker}
                     style={{ cursor: "pointer", background: "inherit" }}
                   >
-                    <span className="wl-ticker-chip">{r.Ticker || "—"}</span>
+                    <span className="wl-ticker-chip">
+                      {r.Ticker || "—"}
+                    </span>
                   </td>
 
                   <Cell value={r.Company} />
                   <Cell value={themes} title={themes} />
                   <Cell value={analyzed || "—"} />
 
-                  {/* Reordered cells */}
-                  <Cell value={initial != null ? `$${initial.toFixed(2)}` : "—"} />
-                  <Cell value={current != null ? `$${current.toFixed(2)}` : "—"} />
-                  <Cell value={pnlPct != null ? `${pnlPct >= 0 ? "+" : ""}${pnlPct.toFixed(2)}%` : "—"} />
+                  <Cell
+                    value={
+                      initial != null ? `$${initial.toFixed(2)}` : "—"
+                    }
+                  />
+                  <Cell
+                    value={
+                      current != null ? `$${current.toFixed(2)}` : "—"
+                    }
+                  />
+                  <Cell
+                    value={
+                      pnlPct != null
+                        ? `${pnlPct >= 0 ? "+" : ""}${pnlPct.toFixed(2)}%`
+                        : "—"
+                    }
+                  />
 
-                  <Cell value={thesis} long />
-                  <Cell value={catalysts2026} long />
-                  <Cell value={whatMoves} long />
+                  <Cell
+                    value={
+                      ch1d != null
+                        ? `${ch1d >= 0 ? "+" : ""}${ch1d.toFixed(2)}%`
+                        : "—"
+                    }
+                  />
+                  <Cell
+                    value={
+                      ch1w != null
+                        ? `${ch1w >= 0 ? "+" : ""}${ch1w.toFixed(2)}%`
+                        : "—"
+                    }
+                  />
+                  <Cell
+                    value={
+                      chYTD != null
+                        ? `${chYTD >= 0 ? "+" : ""}${chYTD.toFixed(2)}%`
+                        : "—"
+                    }
+                  />
                 </tr>
               );
             })}
 
             {sorted.length === 0 && (
               <tr>
-                {/* Ticker + 9 columns = 10 total */}
+                {/* Ticker + (Company, Theme, Date, 3 price cols, 3 perf cols) = 10 total */}
                 <td colSpan={10} className="wl-empty">
                   No items match your filters.
                 </td>
@@ -460,8 +675,15 @@ export default function WatchTable({ rows, sort, setSort, onSort }: Props) {
         </table>
       </div>
 
-      {/* Modal lives outside the table to avoid overflow/stacking issues */}
-      <PopoutModal ticker={modalTicker} open={modalOpen} onClose={closeModal} />
+      {/* Modal outside table */}
+      <PopoutModal
+        ticker={modalTicker}
+        open={modalOpen}
+        onClose={closeModal}
+        thesis={modalThesis}
+        catalysts2026={modalCatalysts}
+        whatMovesIt={modalWhatMoves}
+      />
     </>
   );
 }

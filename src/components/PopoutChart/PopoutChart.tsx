@@ -19,7 +19,7 @@ interface Props {
 }
 
 const PopoutChart: React.FC<Props> = ({ ticker }) => {
-  const [timeframe, setTimeframe] = useState<TFrame>("3M");
+  const [timeframe, setTimeframe] = useState<TFrame>("YTD");
   const [chartType, setChartType] = useState<"candlestick" | "line">(
     "candlestick"
   );
@@ -66,6 +66,8 @@ const PopoutChart: React.FC<Props> = ({ ticker }) => {
         from.setFullYear(now.getFullYear() - 1);
         break;
       case "YTD":
+        span = "day";
+        mult = 1;
         from = new Date(now.getFullYear(), 0, 1);
         break;
     }

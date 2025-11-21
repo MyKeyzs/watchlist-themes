@@ -1,3 +1,4 @@
+// src/components/PopoutModal/PopoutModal.tsx
 import React from "react";
 import { MASSIVE_API_KEY } from "../../lib/env";
 import PopoutChart from "../PopoutChart/PopoutChart";
@@ -6,6 +7,11 @@ type Props = {
   ticker: string;
   open: boolean;
   onClose: () => void;
+
+  // NEW: watchlist fields moved from table into the modal
+  thesis?: string;
+  catalysts2026?: string;
+  whatMovesIt?: string;
 };
 
 const MASSIVE_BASE = "https://api.massive.com";
@@ -41,7 +47,14 @@ function n(x?: number | null): string {
   return `$${x.toLocaleString()}`;
 }
 
-export default function PopoutModal({ ticker, open, onClose }: Props) {
+export default function PopoutModal({
+  ticker,
+  open,
+  onClose,
+  thesis,
+  catalysts2026,
+  whatMovesIt,
+}: Props) {
   const [loading, setLoading] = React.useState(false);
   const [data, setData] = React.useState<MassiveTicker | null>(null);
 
@@ -83,7 +96,11 @@ export default function PopoutModal({ ticker, open, onClose }: Props) {
       <div className="wl-modal" onClick={(e) => e.stopPropagation()}>
         <div className="wl-modal-header">
           <div className="wl-modal-title">
-            {logo ? <img className="wl-modal-logo" src={logo} alt="" /> : <div className="wl-modal-logo" />}
+            {logo ? (
+              <img className="wl-modal-logo" src={logo} alt="" />
+            ) : (
+              <div className="wl-modal-logo" />
+            )}
             <div>
               <div className="wl-modal-name">{r?.name ?? ticker}</div>
               <div className="wl-modal-sub">
@@ -101,7 +118,7 @@ export default function PopoutModal({ ticker, open, onClose }: Props) {
         </div>
 
         <div className="wl-modal-content custom-scroll">
-          {/* Left column - key facts */}
+          {/* Left column - key facts + moved watchlist text fields */}
           <div className="wl-modal-col">
             <div className="wl-kv">
               <span>Market cap</span>
@@ -114,9 +131,7 @@ export default function PopoutModal({ ticker, open, onClose }: Props) {
             <div className="wl-kv">
               <span>List date</span>
               <strong>
-                {r?.list_date
-                  ? new Date(r.list_date).toLocaleDateString()
-                  : "—"}
+                {r?.list_date ? new Date(r.list_date).toLocaleDateString() : "—"}
               </strong>
             </div>
             <div className="wl-kv">
@@ -161,6 +176,22 @@ export default function PopoutModal({ ticker, open, onClose }: Props) {
             <div className="wl-kv">
               <span>Phone</span>
               <strong>{r?.phone_number ?? "—"}</strong>
+            </div>
+
+            {/* NEW: Watchlist narrative fields */}
+            <div className="wl-section">
+              <div className="wl-section-title">Thesis snapshot</div>
+              <p className="wl-description">{thesis || "—"}</p>
+            </div>
+
+            <div className="wl-section">
+              <div className="wl-section-title">Key 2026 catalysts</div>
+              <p className="wl-description">{catalysts2026 || "—"}</p>
+            </div>
+
+            <div className="wl-section">
+              <div className="wl-section-title">What moves it (triggers)</div>
+              <p className="wl-description">{whatMovesIt || "—"}</p>
             </div>
           </div>
 
