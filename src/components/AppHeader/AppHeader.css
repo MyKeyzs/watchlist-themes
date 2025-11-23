@@ -1,18 +1,25 @@
 /* Top header wrapper */
 .app-header {
-  background: #020617; /* very dark slate to match your theme */
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  background: #020617;              /* dark bar to match your theme */
   border-bottom: 1px solid #111827;
   color: #f9fafb;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.45);
 }
 
 /* Center content + max width */
 .app-header__inner {
-  max-width: 1200px;
+  max-width: 1400px;                /* match your wl-container max-width */
+  width: 100%;
   margin: 0 auto;
-  padding: 0.5rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 /* Brand area */
@@ -53,7 +60,7 @@
   padding: 0.45rem 0.9rem;
   border-radius: 999px;
   font-size: 0.9rem;
-  border: none;
+  border: 1px solid transparent;
   background: transparent;
   color: #e5e7eb;
   text-decoration: none;
@@ -62,17 +69,20 @@
   justify-content: center;
   transition:
     background-color 0.15s ease,
+    border-color 0.15s ease,
     color 0.15s ease,
     transform 0.1s ease;
 }
 
 .app-header__link:hover {
   background: rgba(15, 23, 42, 0.9);
+  border-color: rgba(148, 163, 184, 0.6);
   transform: translateY(-1px);
 }
 
 .app-header__link--active {
   background: #0ea5e9;
+  border-color: #0ea5e9;
   color: #020617;
 }
 
@@ -83,16 +93,16 @@
 
 /* Main layout helpers so content doesn't sit under header */
 .app-root {
-  min-height: 100vh;
-  background: radial-gradient(circle at top, #0b1120 0, #020617 40%, #000 100%);
-  color: #e5e7eb;
+  min-height: 100%;
+  background: var(--bg, #0f1115);
+  color: var(--text, #e5e7eb);
   display: flex;
   flex-direction: column;
 }
 
 .app-main {
   flex: 1;
-  padding: 1.5rem;
+  padding: 1.5rem 0 2.5rem;  /* no extra horizontal padding; your wl-container handles width */
 }
 
 @media (max-width: 768px) {
@@ -106,6 +116,6 @@
   }
 
   .app-main {
-    padding: 1rem;
+    padding: 1rem 0 2rem;
   }
 }

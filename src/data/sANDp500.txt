@@ -1,0 +1,3520 @@
+<tr>
+    <td>1</td>
+    <td><a href="/symbol/WDC">Western Digital</a></td>
+    <td><a href="/symbol/WDC">WDC</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;208.82</td>
+</tr>
+
+<tr>
+    <td>2</td>
+    <td><a href="/symbol/HOOD">Robinhood Markets, Inc.</a></td>
+    <td><a href="/symbol/HOOD">HOOD</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;187.98</td>
+</tr>
+
+<tr>
+    <td>3</td>
+    <td><a href="/symbol/STX">Seagate Technology</a></td>
+    <td><a href="/symbol/STX">STX</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;175.16</td>
+</tr>
+
+<tr>
+    <td>4</td>
+    <td><a href="/symbol/MU">Micron Technology</a></td>
+    <td><a href="/symbol/MU">MU</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;146.40</td>
+</tr>
+
+<tr>
+    <td>5</td>
+    <td><a href="/symbol/NEM">Newmont</a></td>
+    <td><a href="/symbol/NEM">NEM</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;124.31</td>
+</tr>
+
+<tr>
+    <td>6</td>
+    <td><a href="/symbol/WBD">Warner Bros. Discovery</a></td>
+    <td><a href="/symbol/WBD">WBD</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;119.21</td>
+</tr>
+
+<tr>
+    <td>7</td>
+    <td><a href="/symbol/PLTR">Palantir Technologies</a></td>
+    <td><a href="/symbol/PLTR">PLTR</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;104.75</td>
+</tr>
+
+<tr>
+    <td>8</td>
+    <td><a href="/symbol/LRCX">Lam Research</a></td>
+    <td><a href="/symbol/LRCX">LRCX</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;97.49</td>
+</tr>
+
+<tr>
+    <td>9</td>
+    <td><a href="/symbol/APH">Amphenol</a></td>
+    <td><a href="/symbol/APH">APH</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;89.49</td>
+</tr>
+
+<tr>
+    <td>10</td>
+    <td><a href="/symbol/HWM">Howmet Aerospace</a></td>
+    <td><a href="/symbol/HWM">HWM</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;80.38</td>
+</tr>
+
+<tr>
+    <td>11</td>
+    <td><a href="/symbol/CAH">Cardinal Health</a></td>
+    <td><a href="/symbol/CAH">CAH</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;77.12</td>
+</tr>
+
+<tr>
+    <td>12</td>
+    <td><a href="/symbol/NRG">NRG Energy</a></td>
+    <td><a href="/symbol/NRG">NRG</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;76.46</td>
+</tr>
+
+<tr>
+    <td>13</td>
+    <td><a href="/symbol/IDXX">Idexx Laboratories</a></td>
+    <td><a href="/symbol/IDXX">IDXX</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;75.58</td>
+</tr>
+
+<tr>
+    <td>14</td>
+    <td><a href="/symbol/KLAC">KLA Corporation</a></td>
+    <td><a href="/symbol/KLAC">KLAC</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;74.11</td>
+</tr>
+
+<tr>
+    <td>15</td>
+    <td><a href="/symbol/CVS">CVS Health</a></td>
+    <td><a href="/symbol/CVS">CVS</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;73.82</td>
+</tr>
+
+<tr>
+    <td>16</td>
+    <td><a href="/symbol/GE">GE Aerospace</a></td>
+    <td><a href="/symbol/GE">GE</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;72.34</td>
+</tr>
+
+<tr>
+    <td>17</td>
+    <td><a href="/symbol/INTC">Intel</a></td>
+    <td><a href="/symbol/INTC">INTC</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;72.07</td>
+</tr>
+
+<tr>
+    <td>18</td>
+    <td><a href="/symbol/GEV">GE Vernova</a></td>
+    <td><a href="/symbol/GEV">GEV</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;68.98</td>
+</tr>
+
+<tr>
+    <td>19</td>
+    <td><a href="/symbol/AMD">Advanced Micro Devices</a></td>
+    <td><a href="/symbol/AMD">AMD</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;68.71</td>
+</tr>
+
+<tr>
+    <td>20</td>
+    <td><a href="/symbol/GLW">Corning Inc.</a></td>
+    <td><a href="/symbol/GLW">GLW</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;67.21</td>
+</tr>
+
+<tr>
+    <td>21</td>
+    <td><a href="/symbol/HCA">HCA Healthcare</a></td>
+    <td><a href="/symbol/HCA">HCA</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;63.58</td>
+</tr>
+
+<tr>
+    <td>22</td>
+    <td><a href="/symbol/COR">Cencora</a></td>
+    <td><a href="/symbol/COR">COR</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;62.76</td>
+</tr>
+
+<tr>
+    <td>23</td>
+    <td><a href="/symbol/HII">Huntington Ingalls Industries</a></td>
+    <td><a href="/symbol/HII">HII</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;61.66</td>
+</tr>
+
+<tr>
+    <td>24</td>
+    <td><a href="/symbol/TPR">Tapestry, Inc.</a></td>
+    <td><a href="/symbol/TPR">TPR</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;61.09</td>
+</tr>
+
+<tr>
+    <td>25</td>
+    <td><a href="/symbol/APP">AppLovin Corporation</a></td>
+    <td><a href="/symbol/APP">APP</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;60.66</td>
+</tr>
+
+<tr>
+    <td>26</td>
+    <td><a href="/symbol/WELL">Welltower</a></td>
+    <td><a href="/symbol/WELL">WELL</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;58.64</td>
+</tr>
+
+<tr>
+    <td>27</td>
+    <td><a href="/symbol/GOOGL">Alphabet Inc. (Class A)</a></td>
+    <td><a href="/symbol/GOOGL">GOOGL</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;58.30</td>
+</tr>
+
+<tr>
+    <td>28</td>
+    <td><a href="/symbol/GOOG">Alphabet Inc. (Class C)</a></td>
+    <td><a href="/symbol/GOOG">GOOG</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;57.35</td>
+</tr>
+
+<tr>
+    <td>29</td>
+    <td><a href="/symbol/TEL">TE Connectivity</a></td>
+    <td><a href="/symbol/TEL">TEL</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;53.13</td>
+</tr>
+
+<tr>
+    <td>30</td>
+    <td><a href="/symbol/MCK">McKesson Corporation</a></td>
+    <td><a href="/symbol/MCK">MCK</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;51.96</td>
+</tr>
+
+<tr>
+    <td>31</td>
+    <td><a href="/symbol/PSKY">Paramount Skydance Corp</a></td>
+    <td><a href="/symbol/PSKY">PSKY</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;51.91</td>
+</tr>
+
+<tr>
+    <td>32</td>
+    <td><a href="/symbol/CAT">Caterpillar Inc.</a></td>
+    <td><a href="/symbol/CAT">CAT</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;51.73</td>
+</tr>
+
+<tr>
+    <td>33</td>
+    <td><a href="/symbol/CEG">Constellation Energy</a></td>
+    <td><a href="/symbol/CEG">CEG</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;51.14</td>
+</tr>
+
+<tr>
+    <td>34</td>
+    <td><a href="/symbol/INCY">Incyte</a></td>
+    <td><a href="/symbol/INCY">INCY</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;47.76</td>
+</tr>
+
+<tr>
+    <td>35</td>
+    <td><a href="/symbol/MPWR">Monolithic Power Systems</a></td>
+    <td><a href="/symbol/MPWR">MPWR</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;47.43</td>
+</tr>
+
+<tr>
+    <td>36</td>
+    <td><a href="/symbol/RL">Ralph Lauren Corporation</a></td>
+    <td><a href="/symbol/RL">RL</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;47.15</td>
+</tr>
+
+<tr>
+    <td>37</td>
+    <td><a href="/symbol/CHRW">C.H. Robinson</a></td>
+    <td><a href="/symbol/CHRW">CHRW</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;46.81</td>
+</tr>
+
+<tr>
+    <td>38</td>
+    <td><a href="/symbol/AVGO">Broadcom</a></td>
+    <td><a href="/symbol/AVGO">AVGO</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;46.74</td>
+</tr>
+
+<tr>
+    <td>39</td>
+    <td><a href="/symbol/RTX">RTX Corporation</a></td>
+    <td><a href="/symbol/RTX">RTX</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;46.63</td>
+</tr>
+
+<tr>
+    <td>40</td>
+    <td><a href="/symbol/JCI">Johnson Controls</a></td>
+    <td><a href="/symbol/JCI">JCI</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;43.86</td>
+</tr>
+
+<tr>
+    <td>41</td>
+    <td><a href="/symbol/CRWD">CrowdStrike</a></td>
+    <td><a href="/symbol/CRWD">CRWD</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;43.40</td>
+</tr>
+
+<tr>
+    <td>42</td>
+    <td><a href="/symbol/FSLR">First Solar</a></td>
+    <td><a href="/symbol/FSLR">FSLR</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;41.80</td>
+</tr>
+
+<tr>
+    <td>43</td>
+    <td><a href="/symbol/HAS">Hasbro</a></td>
+    <td><a href="/symbol/HAS">HAS</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;41.66</td>
+</tr>
+
+<tr>
+    <td>44</td>
+    <td><a href="/symbol/VLO">Valero Energy</a></td>
+    <td><a href="/symbol/VLO">VLO</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;41.49</td>
+</tr>
+
+<tr>
+    <td>45</td>
+    <td><a href="/symbol/JNJ">Johnson &amp; Johnson</a></td>
+    <td><a href="/symbol/JNJ">JNJ</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;40.99</td>
+</tr>
+
+<tr>
+    <td>46</td>
+    <td><a href="/symbol/C">Citigroup</a></td>
+    <td><a href="/symbol/C">C</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;40.22</td>
+</tr>
+
+<tr>
+    <td>47</td>
+    <td><a href="/symbol/UBER">Uber</a></td>
+    <td><a href="/symbol/UBER">UBER</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;39.04</td>
+</tr>
+
+<tr>
+    <td>48</td>
+    <td><a href="/symbol/WYNN">Wynn Resorts</a></td>
+    <td><a href="/symbol/WYNN">WYNN</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;38.81</td>
+</tr>
+
+<tr>
+    <td>49</td>
+    <td><a href="/symbol/STLD">Steel Dynamics</a></td>
+    <td><a href="/symbol/STLD">STLD</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;38.65</td>
+</tr>
+
+<tr>
+    <td>50</td>
+    <td><a href="/symbol/BK">BNY Mellon</a></td>
+    <td><a href="/symbol/BK">BK</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;38.53</td>
+</tr>
+
+<tr>
+    <td>51</td>
+    <td><a href="/symbol/IBKR">Interactive Brokers Group</a></td>
+    <td><a href="/symbol/IBKR">IBKR</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;38.22</td>
+</tr>
+
+<tr>
+    <td>52</td>
+    <td><a href="/symbol/AMAT">Applied Materials</a></td>
+    <td><a href="/symbol/AMAT">AMAT</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;37.74</td>
+</tr>
+
+<tr>
+    <td>53</td>
+    <td><a href="/symbol/LLY">Lilly (Eli)</a></td>
+    <td><a href="/symbol/LLY">LLY</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;37.27</td>
+</tr>
+
+<tr>
+    <td>54</td>
+    <td><a href="/symbol/EA">Electronic Arts</a></td>
+    <td><a href="/symbol/EA">EA</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;37.18</td>
+</tr>
+
+<tr>
+    <td>55</td>
+    <td><a href="/symbol/GILD">Gilead Sciences</a></td>
+    <td><a href="/symbol/GILD">GILD</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;37.10</td>
+</tr>
+
+<tr>
+    <td>56</td>
+    <td><a href="/symbol/MNST">Monster Beverage</a></td>
+    <td><a href="/symbol/MNST">MNST</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;37.06</td>
+</tr>
+
+<tr>
+    <td>57</td>
+    <td><a href="/symbol/JBL">Jabil</a></td>
+    <td><a href="/symbol/JBL">JBL</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;36.69</td>
+</tr>
+
+<tr>
+    <td>58</td>
+    <td><a href="/symbol/MPC">Marathon Petroleum</a></td>
+    <td><a href="/symbol/MPC">MPC</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;36.65</td>
+</tr>
+
+<tr>
+    <td>59</td>
+    <td><a href="/symbol/PWR">Quanta Services</a></td>
+    <td><a href="/symbol/PWR">PWR</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;36.10</td>
+</tr>
+
+<tr>
+    <td>60</td>
+    <td><a href="/symbol/DLTR">Dollar Tree</a></td>
+    <td><a href="/symbol/DLTR">DLTR</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;35.87</td>
+</tr>
+
+<tr>
+    <td>61</td>
+    <td><a href="/symbol/ALB">Albemarle Corporation</a></td>
+    <td><a href="/symbol/ALB">ALB</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;35.71</td>
+</tr>
+
+<tr>
+    <td>62</td>
+    <td><a href="/symbol/CMI">Cummins</a></td>
+    <td><a href="/symbol/CMI">CMI</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;35.55</td>
+</tr>
+
+<tr>
+    <td>63</td>
+    <td><a href="/symbol/IBM">IBM</a></td>
+    <td><a href="/symbol/IBM">IBM</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;35.30</td>
+</tr>
+
+<tr>
+    <td>64</td>
+    <td><a href="/symbol/FOXA">Fox Corporation (Class A)</a></td>
+    <td><a href="/symbol/FOXA">FOXA</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;35.22</td>
+</tr>
+
+<tr>
+    <td>65</td>
+    <td><a href="/symbol/GS">Goldman Sachs</a></td>
+    <td><a href="/symbol/GS">GS</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;35.17</td>
+</tr>
+
+<tr>
+    <td>66</td>
+    <td><a href="/symbol/VTR">Ventas</a></td>
+    <td><a href="/symbol/VTR">VTR</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;34.56</td>
+</tr>
+
+<tr>
+    <td>67</td>
+    <td><a href="/symbol/DG">Dollar General</a></td>
+    <td><a href="/symbol/DG">DG</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;34.13</td>
+</tr>
+
+<tr>
+    <td>68</td>
+    <td><a href="/symbol/WRB">W. R. Berkley Corporation</a></td>
+    <td><a href="/symbol/WRB">WRB</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;33.46</td>
+</tr>
+
+<tr>
+    <td>69</td>
+    <td><a href="/symbol/NVDA">Nvidia</a></td>
+    <td><a href="/symbol/NVDA">NVDA</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;33.20</td>
+</tr>
+
+<tr>
+    <td>70</td>
+    <td><a href="/symbol/ABBV">AbbVie</a></td>
+    <td><a href="/symbol/ABBV">ABBV</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;32.97</td>
+</tr>
+
+<tr>
+    <td>71</td>
+    <td><a href="/symbol/IVZ">Invesco</a></td>
+    <td><a href="/symbol/IVZ">IVZ</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;32.84</td>
+</tr>
+
+<tr>
+    <td>72</td>
+    <td><a href="/symbol/EXPE">Expedia Group</a></td>
+    <td><a href="/symbol/EXPE">EXPE</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;32.82</td>
+</tr>
+
+<tr>
+    <td>73</td>
+    <td><a href="/symbol/ROK">Rockwell Automation</a></td>
+    <td><a href="/symbol/ROK">ROK</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;32.52</td>
+</tr>
+
+<tr>
+    <td>74</td>
+    <td><a href="/symbol/LHX">L3Harris</a></td>
+    <td><a href="/symbol/LHX">LHX</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;32.10</td>
+</tr>
+
+<tr>
+    <td>75</td>
+    <td><a href="/symbol/GM">General Motors</a></td>
+    <td><a href="/symbol/GM">GM</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;32.03</td>
+</tr>
+
+<tr>
+    <td>76</td>
+    <td><a href="/symbol/PH">Parker Hannifin</a></td>
+    <td><a href="/symbol/PH">PH</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;32.00</td>
+</tr>
+
+<tr>
+    <td>77</td>
+    <td><a href="/symbol/AEP">American Electric Power</a></td>
+    <td><a href="/symbol/AEP">AEP</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;31.02</td>
+</tr>
+
+<tr>
+    <td>78</td>
+    <td><a href="/symbol/NUE">Nucor</a></td>
+    <td><a href="/symbol/NUE">NUE</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;30.54</td>
+</tr>
+
+<tr>
+    <td>79</td>
+    <td><a href="/symbol/EBAY">eBay</a></td>
+    <td><a href="/symbol/EBAY">EBAY</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;30.49</td>
+</tr>
+
+<tr>
+    <td>80</td>
+    <td><a href="/symbol/MMM">3M</a></td>
+    <td><a href="/symbol/MMM">MMM</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;30.21</td>
+</tr>
+
+<tr>
+    <td>81</td>
+    <td><a href="/symbol/ROL">Rollins, Inc.</a></td>
+    <td><a href="/symbol/ROL">ROL</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;30.12</td>
+</tr>
+
+<tr>
+    <td>82</td>
+    <td><a href="/symbol/F">Ford Motor Company</a></td>
+    <td><a href="/symbol/F">F</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;29.60</td>
+</tr>
+
+<tr>
+    <td>83</td>
+    <td><a href="/symbol/AMGN">Amgen</a></td>
+    <td><a href="/symbol/AMGN">AMGN</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;29.50</td>
+</tr>
+
+<tr>
+    <td>84</td>
+    <td><a href="/symbol/LDOS">Leidos</a></td>
+    <td><a href="/symbol/LDOS">LDOS</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;29.45</td>
+</tr>
+
+<tr>
+    <td>85</td>
+    <td><a href="/symbol/FOX">Fox Corporation (Class B)</a></td>
+    <td><a href="/symbol/FOX">FOX</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;29.30</td>
+</tr>
+
+<tr>
+    <td>86</td>
+    <td><a href="/symbol/EXPD">Expeditors International</a></td>
+    <td><a href="/symbol/EXPD">EXPD</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;29.29</td>
+</tr>
+
+<tr>
+    <td>87</td>
+    <td><a href="/symbol/CBOE">Cboe Global Markets</a></td>
+    <td><a href="/symbol/CBOE">CBOE</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;29.27</td>
+</tr>
+
+<tr>
+    <td>88</td>
+    <td><a href="/symbol/UHS">Universal Health Services</a></td>
+    <td><a href="/symbol/UHS">UHS</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;29.26</td>
+</tr>
+
+<tr>
+    <td>89</td>
+    <td><a href="/symbol/GD">General Dynamics</a></td>
+    <td><a href="/symbol/GD">GD</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;29.17</td>
+</tr>
+
+<tr>
+    <td>90</td>
+    <td><a href="/symbol/PM">Philip Morris International</a></td>
+    <td><a href="/symbol/PM">PM</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;28.99</td>
+</tr>
+
+<tr>
+    <td>91</td>
+    <td><a href="/symbol/CSCO">Cisco</a></td>
+    <td><a href="/symbol/CSCO">CSCO</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;28.55</td>
+</tr>
+
+<tr>
+    <td>92</td>
+    <td><a href="/symbol/EME">EMCOR Group, Inc.</a></td>
+    <td><a href="/symbol/EME">EME</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;28.13</td>
+</tr>
+
+<tr>
+    <td>93</td>
+    <td><a href="/symbol/STE">Steris</a></td>
+    <td><a href="/symbol/STE">STE</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;28.08</td>
+</tr>
+
+<tr>
+    <td>94</td>
+    <td><a href="/symbol/TTWO">Take-Two Interactive</a></td>
+    <td><a href="/symbol/TTWO">TTWO</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;27.92</td>
+</tr>
+
+<tr>
+    <td>95</td>
+    <td><a href="/symbol/ORLY">O&#39;Reilly Auto Parts</a></td>
+    <td><a href="/symbol/ORLY">ORLY</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;27.04</td>
+</tr>
+
+<tr>
+    <td>96</td>
+    <td><a href="/symbol/PODD">Insulet Corporation</a></td>
+    <td><a href="/symbol/PODD">PODD</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;26.85</td>
+</tr>
+
+<tr>
+    <td>97</td>
+    <td><a href="/symbol/DGX">Quest Diagnostics</a></td>
+    <td><a href="/symbol/DGX">DGX</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;26.77</td>
+</tr>
+
+<tr>
+    <td>98</td>
+    <td><a href="/symbol/MDT">Medtronic</a></td>
+    <td><a href="/symbol/MDT">MDT</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;26.69</td>
+</tr>
+
+<tr>
+    <td>99</td>
+    <td><a href="/symbol/TER">Teradyne</a></td>
+    <td><a href="/symbol/TER">TER</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;26.20</td>
+</tr>
+
+<tr>
+    <td>100</td>
+    <td><a href="/symbol/MS">Morgan Stanley</a></td>
+    <td><a href="/symbol/MS">MS</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;25.81</td>
+</tr>
+
+<tr>
+    <td>101</td>
+    <td><a href="/symbol/ATO">Atmos Energy</a></td>
+    <td><a href="/symbol/ATO">ATO</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;25.77</td>
+</tr>
+
+<tr>
+    <td>102</td>
+    <td><a href="/symbol/L">Loews Corporation</a></td>
+    <td><a href="/symbol/L">L</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;25.63</td>
+</tr>
+
+<tr>
+    <td>103</td>
+    <td><a href="/symbol/SOLV">Solventum</a></td>
+    <td><a href="/symbol/SOLV">SOLV</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;25.49</td>
+</tr>
+
+<tr>
+    <td>104</td>
+    <td><a href="/symbol/TKO">TKO Group Holdings</a></td>
+    <td><a href="/symbol/TKO">TKO</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;25.37</td>
+</tr>
+
+<tr>
+    <td>105</td>
+    <td><a href="/symbol/TJX">TJX Companies</a></td>
+    <td><a href="/symbol/TJX">TJX</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;25.35</td>
+</tr>
+
+<tr>
+    <td>106</td>
+    <td><a href="/symbol/LVS">Las Vegas Sands</a></td>
+    <td><a href="/symbol/LVS">LVS</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;25.21</td>
+</tr>
+
+<tr>
+    <td>107</td>
+    <td><a href="/symbol/HIG">Hartford (The)</a></td>
+    <td><a href="/symbol/HIG">HIG</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;24.73</td>
+</tr>
+
+<tr>
+    <td>108</td>
+    <td><a href="/symbol/CNP">CenterPoint Energy</a></td>
+    <td><a href="/symbol/CNP">CNP</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;24.68</td>
+</tr>
+
+<tr>
+    <td>109</td>
+    <td><a href="/symbol/ALLE">Allegion</a></td>
+    <td><a href="/symbol/ALLE">ALLE</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;24.63</td>
+</tr>
+
+<tr>
+    <td>110</td>
+    <td><a href="/symbol/JPM">JPMorgan Chase</a></td>
+    <td><a href="/symbol/JPM">JPM</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;24.33</td>
+</tr>
+
+<tr>
+    <td>111</td>
+    <td><a href="/symbol/NTRS">Northern Trust</a></td>
+    <td><a href="/symbol/NTRS">NTRS</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;24.03</td>
+</tr>
+
+<tr>
+    <td>112</td>
+    <td><a href="/symbol/EQT">EQT Corporation</a></td>
+    <td><a href="/symbol/EQT">EQT</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;23.68</td>
+</tr>
+
+<tr>
+    <td>113</td>
+    <td><a href="/symbol/ETR">Entergy</a></td>
+    <td><a href="/symbol/ETR">ETR</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;23.58</td>
+</tr>
+
+<tr>
+    <td>114</td>
+    <td><a href="/symbol/EVRG">Evergy</a></td>
+    <td><a href="/symbol/EVRG">EVRG</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;23.23</td>
+</tr>
+
+<tr>
+    <td>115</td>
+    <td><a href="/symbol/APTV">Aptiv</a></td>
+    <td><a href="/symbol/APTV">APTV</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;22.57</td>
+</tr>
+
+<tr>
+    <td>116</td>
+    <td><a href="/symbol/SCHW">Charles Schwab Corporation</a></td>
+    <td><a href="/symbol/SCHW">SCHW</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;22.29</td>
+</tr>
+
+<tr>
+    <td>117</td>
+    <td><a href="/symbol/VST">Vistra Corp.</a></td>
+    <td><a href="/symbol/VST">VST</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;22.28</td>
+</tr>
+
+<tr>
+    <td>118</td>
+    <td><a href="/symbol/NSC">Norfolk Southern Railway</a></td>
+    <td><a href="/symbol/NSC">NSC</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;21.98</td>
+</tr>
+
+<tr>
+    <td>119</td>
+    <td><a href="/symbol/AZO">AutoZone</a></td>
+    <td><a href="/symbol/AZO">AZO</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;21.73</td>
+</tr>
+
+<tr>
+    <td>120</td>
+    <td><a href="/symbol/BG">Bunge Global</a></td>
+    <td><a href="/symbol/BG">BG</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;21.63</td>
+</tr>
+
+<tr>
+    <td>121</td>
+    <td><a href="/symbol/EXC">Exelon</a></td>
+    <td><a href="/symbol/EXC">EXC</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;21.55</td>
+</tr>
+
+<tr>
+    <td>122</td>
+    <td><a href="/symbol/VRSN">Verisign</a></td>
+    <td><a href="/symbol/VRSN">VRSN</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;21.48</td>
+</tr>
+
+<tr>
+    <td>123</td>
+    <td><a href="/symbol/XYL">Xylem Inc.</a></td>
+    <td><a href="/symbol/XYL">XYL</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;21.01</td>
+</tr>
+
+<tr>
+    <td>124</td>
+    <td><a href="/symbol/DD">DuPont</a></td>
+    <td><a href="/symbol/DD">DD</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;20.80</td>
+</tr>
+
+<tr>
+    <td>125</td>
+    <td><a href="/symbol/NOC">Northrop Grumman</a></td>
+    <td><a href="/symbol/NOC">NOC</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;20.76</td>
+</tr>
+
+<tr>
+    <td>126</td>
+    <td><a href="/symbol/TRV">Travelers Companies (The)</a></td>
+    <td><a href="/symbol/TRV">TRV</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;20.42</td>
+</tr>
+
+<tr>
+    <td>127</td>
+    <td><a href="/symbol/EL">Estée Lauder Companies (The)</a></td>
+    <td><a href="/symbol/EL">EL</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;19.90</td>
+</tr>
+
+<tr>
+    <td>128</td>
+    <td><a href="/symbol/CFG">Citizens Financial Group</a></td>
+    <td><a href="/symbol/CFG">CFG</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;19.52</td>
+</tr>
+
+<tr>
+    <td>129</td>
+    <td><a href="/symbol/CBRE">CBRE Group</a></td>
+    <td><a href="/symbol/CBRE">CBRE</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;19.42</td>
+</tr>
+
+<tr>
+    <td>130</td>
+    <td><a href="/symbol/ORCL">Oracle Corporation</a></td>
+    <td><a href="/symbol/ORCL">ORCL</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;19.28</td>
+</tr>
+
+<tr>
+    <td>131</td>
+    <td><a href="/symbol/BKR">Baker Hughes</a></td>
+    <td><a href="/symbol/BKR">BKR</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;19.16</td>
+</tr>
+
+<tr>
+    <td>132</td>
+    <td><a href="/symbol/PLD">Prologis</a></td>
+    <td><a href="/symbol/PLD">PLD</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;19.01</td>
+</tr>
+
+<tr>
+    <td>133</td>
+    <td><a href="/symbol/AXP">American Express</a></td>
+    <td><a href="/symbol/AXP">AXP</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;18.90</td>
+</tr>
+
+<tr>
+    <td>134</td>
+    <td><a href="/symbol/GL">Globe Life</a></td>
+    <td><a href="/symbol/GL">GL</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;18.74</td>
+</tr>
+
+<tr>
+    <td>135</td>
+    <td><a href="/symbol/MTD">Mettler Toledo</a></td>
+    <td><a href="/symbol/MTD">MTD</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;18.69</td>
+</tr>
+
+<tr>
+    <td>136</td>
+    <td><a href="/symbol/ULTA">Ulta Beauty</a></td>
+    <td><a href="/symbol/ULTA">ULTA</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;18.54</td>
+</tr>
+
+<tr>
+    <td>137</td>
+    <td><a href="/symbol/WFC">Wells Fargo</a></td>
+    <td><a href="/symbol/WFC">WFC</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;18.32</td>
+</tr>
+
+<tr>
+    <td>138</td>
+    <td><a href="/symbol/WEC">WEC Energy Group</a></td>
+    <td><a href="/symbol/WEC">WEC</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;18.18</td>
+</tr>
+
+<tr>
+    <td>139</td>
+    <td><a href="/symbol/XEL">Xcel Energy</a></td>
+    <td><a href="/symbol/XEL">XEL</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;17.99</td>
+</tr>
+
+<tr>
+    <td>140</td>
+    <td><a href="/symbol/FE">FirstEnergy</a></td>
+    <td><a href="/symbol/FE">FE</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;17.87</td>
+</tr>
+
+<tr>
+    <td>141</td>
+    <td><a href="/symbol/CME">CME Group</a></td>
+    <td><a href="/symbol/CME">CME</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;17.59</td>
+</tr>
+
+<tr>
+    <td>142</td>
+    <td><a href="/symbol/PSX">Phillips 66</a></td>
+    <td><a href="/symbol/PSX">PSX</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;17.37</td>
+</tr>
+
+<tr>
+    <td>143</td>
+    <td><a href="/symbol/BAC">Bank of America</a></td>
+    <td><a href="/symbol/BAC">BAC</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;17.32</td>
+</tr>
+
+<tr>
+    <td>144</td>
+    <td><a href="/symbol/AEE">Ameren</a></td>
+    <td><a href="/symbol/AEE">AEE</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;17.26</td>
+</tr>
+
+<tr>
+    <td>145</td>
+    <td><a href="/symbol/KO">Coca-Cola Company (The)</a></td>
+    <td><a href="/symbol/KO">KO</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;17.17</td>
+</tr>
+
+<tr>
+    <td>146</td>
+    <td><a href="/symbol/NFLX">Netflix</a></td>
+    <td><a href="/symbol/NFLX">NFLX</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;17.03</td>
+</tr>
+
+<tr>
+    <td>147</td>
+    <td><a href="/symbol/MLM">Martin Marietta Materials</a></td>
+    <td><a href="/symbol/MLM">MLM</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;16.78</td>
+</tr>
+
+<tr>
+    <td>148</td>
+    <td><a href="/symbol/COF">Capital One</a></td>
+    <td><a href="/symbol/COF">COF</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;16.57</td>
+</tr>
+
+<tr>
+    <td>149</td>
+    <td><a href="/symbol/WMT">Walmart</a></td>
+    <td><a href="/symbol/WMT">WMT</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;16.57</td>
+</tr>
+
+<tr>
+    <td>150</td>
+    <td><a href="/symbol/STT">State Street Corporation</a></td>
+    <td><a href="/symbol/STT">STT</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;16.52</td>
+</tr>
+
+<tr>
+    <td>151</td>
+    <td><a href="/symbol/NEE">NextEra Energy</a></td>
+    <td><a href="/symbol/NEE">NEE</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;16.45</td>
+</tr>
+
+<tr>
+    <td>152</td>
+    <td><a href="/symbol/NI">NiSource</a></td>
+    <td><a href="/symbol/NI">NI</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;16.38</td>
+</tr>
+
+<tr>
+    <td>153</td>
+    <td><a href="/symbol/ADM">Archer Daniels Midland</a></td>
+    <td><a href="/symbol/ADM">ADM</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;16.05</td>
+</tr>
+
+<tr>
+    <td>154</td>
+    <td><a href="/symbol/LH">LabCorp</a></td>
+    <td><a href="/symbol/LH">LH</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;15.84</td>
+</tr>
+
+<tr>
+    <td>155</td>
+    <td><a href="/symbol/CINF">Cincinnati Financial</a></td>
+    <td><a href="/symbol/CINF">CINF</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;15.53</td>
+</tr>
+
+<tr>
+    <td>156</td>
+    <td><a href="/symbol/EXE">Expand Energy</a></td>
+    <td><a href="/symbol/EXE">EXE</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;15.51</td>
+</tr>
+
+<tr>
+    <td>157</td>
+    <td><a href="/symbol/LNT">Alliant Energy</a></td>
+    <td><a href="/symbol/LNT">LNT</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;15.44</td>
+</tr>
+
+<tr>
+    <td>158</td>
+    <td><a href="/symbol/CTVA">Corteva</a></td>
+    <td><a href="/symbol/CTVA">CTVA</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;15.06</td>
+</tr>
+
+<tr>
+    <td>159</td>
+    <td><a href="/symbol/ROST">Ross Stores</a></td>
+    <td><a href="/symbol/ROST">ROST</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;15.03</td>
+</tr>
+
+<tr>
+    <td>160</td>
+    <td><a href="/symbol/DE">Deere &amp; Company</a></td>
+    <td><a href="/symbol/DE">DE</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;15.00</td>
+</tr>
+
+<tr>
+    <td>161</td>
+    <td><a href="/symbol/EW">Edwards Lifesciences</a></td>
+    <td><a href="/symbol/EW">EW</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;14.99</td>
+</tr>
+
+<tr>
+    <td>162</td>
+    <td><a href="/symbol/SYF">Synchrony Financial</a></td>
+    <td><a href="/symbol/SYF">SYF</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;14.80</td>
+</tr>
+
+<tr>
+    <td>163</td>
+    <td><a href="/symbol/BIIB">Biogen</a></td>
+    <td><a href="/symbol/BIIB">BIIB</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;14.64</td>
+</tr>
+
+<tr>
+    <td>164</td>
+    <td><a href="/symbol/RCL">Royal Caribbean Group</a></td>
+    <td><a href="/symbol/RCL">RCL</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;14.48</td>
+</tr>
+
+<tr>
+    <td>165</td>
+    <td><a href="/symbol/IQV">IQVIA</a></td>
+    <td><a href="/symbol/IQV">IQV</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;14.45</td>
+</tr>
+
+<tr>
+    <td>166</td>
+    <td><a href="/symbol/D">Dominion Energy</a></td>
+    <td><a href="/symbol/D">D</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;14.13</td>
+</tr>
+
+<tr>
+    <td>167</td>
+    <td><a href="/symbol/YUM">Yum! Brands</a></td>
+    <td><a href="/symbol/YUM">YUM</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;14.03</td>
+</tr>
+
+<tr>
+    <td>168</td>
+    <td><a href="/symbol/DUK">Duke Energy</a></td>
+    <td><a href="/symbol/DUK">DUK</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;13.98</td>
+</tr>
+
+<tr>
+    <td>169</td>
+    <td><a href="/symbol/ECL">Ecolab</a></td>
+    <td><a href="/symbol/ECL">ECL</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;13.98</td>
+</tr>
+
+<tr>
+    <td>170</td>
+    <td><a href="/symbol/T">AT&amp;T</a></td>
+    <td><a href="/symbol/T">T</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;13.88</td>
+</tr>
+
+<tr>
+    <td>171</td>
+    <td><a href="/symbol/URI">United Rentals</a></td>
+    <td><a href="/symbol/URI">URI</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;13.57</td>
+</tr>
+
+<tr>
+    <td>172</td>
+    <td><a href="/symbol/NDAQ">Nasdaq, Inc.</a></td>
+    <td><a href="/symbol/NDAQ">NDAQ</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;13.39</td>
+</tr>
+
+<tr>
+    <td>173</td>
+    <td><a href="/symbol/ABT">Abbott Laboratories</a></td>
+    <td><a href="/symbol/ABT">ABT</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;13.26</td>
+</tr>
+
+<tr>
+    <td>174</td>
+    <td><a href="/symbol/DASH">DoorDash</a></td>
+    <td><a href="/symbol/DASH">DASH</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;13.04</td>
+</tr>
+
+<tr>
+    <td>175</td>
+    <td><a href="/symbol/TMO">Thermo Fisher Scientific</a></td>
+    <td><a href="/symbol/TMO">TMO</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;12.93</td>
+</tr>
+
+<tr>
+    <td>176</td>
+    <td><a href="/symbol/A">Agilent Technologies</a></td>
+    <td><a href="/symbol/A">A</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;12.59</td>
+</tr>
+
+<tr>
+    <td>177</td>
+    <td><a href="/symbol/DTE">DTE Energy</a></td>
+    <td><a href="/symbol/DTE">DTE</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;12.44</td>
+</tr>
+
+<tr>
+    <td>178</td>
+    <td><a href="/symbol/ES">Eversource Energy</a></td>
+    <td><a href="/symbol/ES">ES</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;12.40</td>
+</tr>
+
+<tr>
+    <td>179</td>
+    <td><a href="/symbol/ED">Consolidated Edison</a></td>
+    <td><a href="/symbol/ED">ED</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;12.25</td>
+</tr>
+
+<tr>
+    <td>180</td>
+    <td><a href="/symbol/MSFT">Microsoft</a></td>
+    <td><a href="/symbol/MSFT">MSFT</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;12.01</td>
+</tr>
+
+<tr>
+    <td>181</td>
+    <td><a href="/symbol/VMC">Vulcan Materials Company</a></td>
+    <td><a href="/symbol/VMC">VMC</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;11.90</td>
+</tr>
+
+<tr>
+    <td>182</td>
+    <td><a href="/symbol/NDSN">Nordson Corporation</a></td>
+    <td><a href="/symbol/NDSN">NDSN</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;11.58</td>
+</tr>
+
+<tr>
+    <td>183</td>
+    <td><a href="/symbol/MO">Altria</a></td>
+    <td><a href="/symbol/MO">MO</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;11.28</td>
+</tr>
+
+<tr>
+    <td>184</td>
+    <td><a href="/symbol/PPL">PPL Corporation</a></td>
+    <td><a href="/symbol/PPL">PPL</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;11.28</td>
+</tr>
+
+<tr>
+    <td>185</td>
+    <td><a href="/symbol/BRK.B">Berkshire Hathaway</a></td>
+    <td><a href="/symbol/BRK.B">BRK.B</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;11.20</td>
+</tr>
+
+<tr>
+    <td>186</td>
+    <td><a href="/symbol/ALL">Allstate</a></td>
+    <td><a href="/symbol/ALL">ALL</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;11.17</td>
+</tr>
+
+<tr>
+    <td>187</td>
+    <td><a href="/symbol/CMS">CMS Energy</a></td>
+    <td><a href="/symbol/CMS">CMS</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;11.09</td>
+</tr>
+
+<tr>
+    <td>188</td>
+    <td><a href="/symbol/HLT">Hilton Worldwide</a></td>
+    <td><a href="/symbol/HLT">HLT</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;11.05</td>
+</tr>
+
+<tr>
+    <td>189</td>
+    <td><a href="/symbol/TT">Trane Technologies</a></td>
+    <td><a href="/symbol/TT">TT</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;11.03</td>
+</tr>
+
+<tr>
+    <td>190</td>
+    <td><a href="/symbol/FAST">Fastenal</a></td>
+    <td><a href="/symbol/FAST">FAST</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;11.00</td>
+</tr>
+
+<tr>
+    <td>191</td>
+    <td><a href="/symbol/PHM">PulteGroup</a></td>
+    <td><a href="/symbol/PHM">PHM</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;10.49</td>
+</tr>
+
+<tr>
+    <td>192</td>
+    <td><a href="/symbol/DDOG">Datadog</a></td>
+    <td><a href="/symbol/DDOG">DDOG</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;10.26</td>
+</tr>
+
+<tr>
+    <td>193</td>
+    <td><a href="/symbol/WMB">Williams Companies</a></td>
+    <td><a href="/symbol/WMB">WMB</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;10.14</td>
+</tr>
+
+<tr>
+    <td>194</td>
+    <td><a href="/symbol/GPC">Genuine Parts Company</a></td>
+    <td><a href="/symbol/GPC">GPC</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;10.11</td>
+</tr>
+
+<tr>
+    <td>195</td>
+    <td><a href="/symbol/HSY">Hershey Company (The)</a></td>
+    <td><a href="/symbol/HSY">HSY</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;9.83</td>
+</tr>
+
+<tr>
+    <td>196</td>
+    <td><a href="/symbol/RMD">ResMed</a></td>
+    <td><a href="/symbol/RMD">RMD</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;9.65</td>
+</tr>
+
+<tr>
+    <td>197</td>
+    <td><a href="/symbol/ADI">Analog Devices</a></td>
+    <td><a href="/symbol/ADI">ADI</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;9.35</td>
+</tr>
+
+<tr>
+    <td>198</td>
+    <td><a href="/symbol/TRMB">Trimble Inc.</a></td>
+    <td><a href="/symbol/TRMB">TRMB</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;9.01</td>
+</tr>
+
+<tr>
+    <td>199</td>
+    <td><a href="/symbol/DVN">Devon Energy</a></td>
+    <td><a href="/symbol/DVN">DVN</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;8.92</td>
+</tr>
+
+<tr>
+    <td>200</td>
+    <td><a href="/symbol/PFG">Principal Financial Group</a></td>
+    <td><a href="/symbol/PFG">PFG</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;8.89</td>
+</tr>
+
+<tr>
+    <td>201</td>
+    <td><a href="/symbol/RSG">Republic Services</a></td>
+    <td><a href="/symbol/RSG">RSG</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;8.86</td>
+</tr>
+
+<tr>
+    <td>202</td>
+    <td><a href="/symbol/XOM">ExxonMobil</a></td>
+    <td><a href="/symbol/XOM">XOM</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;8.84</td>
+</tr>
+
+<tr>
+    <td>203</td>
+    <td><a href="/symbol/BSX">Boston Scientific</a></td>
+    <td><a href="/symbol/BSX">BSX</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;8.46</td>
+</tr>
+
+<tr>
+    <td>204</td>
+    <td><a href="/symbol/SO">Southern Company</a></td>
+    <td><a href="/symbol/SO">SO</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;8.44</td>
+</tr>
+
+<tr>
+    <td>205</td>
+    <td><a href="/symbol/AAPL">Apple Inc.</a></td>
+    <td><a href="/symbol/AAPL">AAPL</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;8.41</td>
+</tr>
+
+<tr>
+    <td>206</td>
+    <td><a href="/symbol/AME">Ametek</a></td>
+    <td><a href="/symbol/AME">AME</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;8.19</td>
+</tr>
+
+<tr>
+    <td>207</td>
+    <td><a href="/symbol/KR">Kroger</a></td>
+    <td><a href="/symbol/KR">KR</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;8.03</td>
+</tr>
+
+<tr>
+    <td>208</td>
+    <td><a href="/symbol/CB">Chubb Limited</a></td>
+    <td><a href="/symbol/CB">CB</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;7.96</td>
+</tr>
+
+<tr>
+    <td>209</td>
+    <td><a href="/symbol/ISRG">Intuitive Surgical</a></td>
+    <td><a href="/symbol/ISRG">ISRG</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;7.60</td>
+</tr>
+
+<tr>
+    <td>210</td>
+    <td><a href="/symbol/KEYS">Keysight Technologies</a></td>
+    <td><a href="/symbol/KEYS">KEYS</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;7.52</td>
+</tr>
+
+<tr>
+    <td>211</td>
+    <td><a href="/symbol/WM">Waste Management</a></td>
+    <td><a href="/symbol/WM">WM</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;7.35</td>
+</tr>
+
+<tr>
+    <td>212</td>
+    <td><a href="/symbol/AFL">Aflac</a></td>
+    <td><a href="/symbol/AFL">AFL</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;7.29</td>
+</tr>
+
+<tr>
+    <td>213</td>
+    <td><a href="/symbol/BEN">Franklin Resources</a></td>
+    <td><a href="/symbol/BEN">BEN</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;6.85</td>
+</tr>
+
+<tr>
+    <td>214</td>
+    <td><a href="/symbol/AES">AES Corporation</a></td>
+    <td><a href="/symbol/AES">AES</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;6.84</td>
+</tr>
+
+<tr>
+    <td>215</td>
+    <td><a href="/symbol/MCD">McDonald&#39;s</a></td>
+    <td><a href="/symbol/MCD">MCD</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;6.71</td>
+</tr>
+
+<tr>
+    <td>216</td>
+    <td><a href="/symbol/AWK">American Water Works</a></td>
+    <td><a href="/symbol/AWK">AWK</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;6.63</td>
+</tr>
+
+<tr>
+    <td>217</td>
+    <td><a href="/symbol/TDY">Teledyne Technologies</a></td>
+    <td><a href="/symbol/TDY">TDY</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;6.62</td>
+</tr>
+
+<tr>
+    <td>218</td>
+    <td><a href="/symbol/CCL">Carnival</a></td>
+    <td><a href="/symbol/CCL">CCL</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;6.58</td>
+</tr>
+
+<tr>
+    <td>219</td>
+    <td><a href="/symbol/AIZ">Assurant</a></td>
+    <td><a href="/symbol/AIZ">AIZ</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;6.38</td>
+</tr>
+
+<tr>
+    <td>220</td>
+    <td><a href="/symbol/TXT">Textron</a></td>
+    <td><a href="/symbol/TXT">TXT</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;6.33</td>
+</tr>
+
+<tr>
+    <td>221</td>
+    <td><a href="/symbol/SPG">Simon Property Group</a></td>
+    <td><a href="/symbol/SPG">SPG</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;6.31</td>
+</tr>
+
+<tr>
+    <td>222</td>
+    <td><a href="/symbol/DELL">Dell Technologies</a></td>
+    <td><a href="/symbol/DELL">DELL</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;6.31</td>
+</tr>
+
+<tr>
+    <td>223</td>
+    <td><a href="/symbol/TDG">TransDigm Group</a></td>
+    <td><a href="/symbol/TDG">TDG</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;6.31</td>
+</tr>
+
+<tr>
+    <td>224</td>
+    <td><a href="/symbol/QCOM">Qualcomm</a></td>
+    <td><a href="/symbol/QCOM">QCOM</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;6.30</td>
+</tr>
+
+<tr>
+    <td>225</td>
+    <td><a href="/symbol/ANET">Arista Networks</a></td>
+    <td><a href="/symbol/ANET">ANET</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;6.24</td>
+</tr>
+
+<tr>
+    <td>226</td>
+    <td><a href="/symbol/CSX">CSX Corporation</a></td>
+    <td><a href="/symbol/CSX">CSX</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;6.23</td>
+</tr>
+
+<tr>
+    <td>227</td>
+    <td><a href="/symbol/WAT">Waters Corporation</a></td>
+    <td><a href="/symbol/WAT">WAT</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;6.20</td>
+</tr>
+
+<tr>
+    <td>228</td>
+    <td><a href="/symbol/REGN">Regeneron Pharmaceuticals</a></td>
+    <td><a href="/symbol/REGN">REGN</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;6.12</td>
+</tr>
+
+<tr>
+    <td>229</td>
+    <td><a href="/symbol/O">Realty Income</a></td>
+    <td><a href="/symbol/O">O</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;6.10</td>
+</tr>
+
+<tr>
+    <td>230</td>
+    <td><a href="/symbol/HSIC">Henry Schein</a></td>
+    <td><a href="/symbol/HSIC">HSIC</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;6.07</td>
+</tr>
+
+<tr>
+    <td>231</td>
+    <td><a href="/symbol/MAR">Marriott International</a></td>
+    <td><a href="/symbol/MAR">MAR</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;6.06</td>
+</tr>
+
+<tr>
+    <td>232</td>
+    <td><a href="/symbol/VRTX">Vertex Pharmaceuticals</a></td>
+    <td><a href="/symbol/VRTX">VRTX</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;5.97</td>
+</tr>
+
+<tr>
+    <td>233</td>
+    <td><a href="/symbol/RF">Regions Financial Corporation</a></td>
+    <td><a href="/symbol/RF">RF</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;5.91</td>
+</tr>
+
+<tr>
+    <td>234</td>
+    <td><a href="/symbol/SMCI">Supermicro</a></td>
+    <td><a href="/symbol/SMCI">SMCI</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;5.61</td>
+</tr>
+
+<tr>
+    <td>235</td>
+    <td><a href="/symbol/WAB">Wabtec</a></td>
+    <td><a href="/symbol/WAB">WAB</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;5.61</td>
+</tr>
+
+<tr>
+    <td>236</td>
+    <td><a href="/symbol/INTU">Intuit</a></td>
+    <td><a href="/symbol/INTU">INTU</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;5.51</td>
+</tr>
+
+<tr>
+    <td>237</td>
+    <td><a href="/symbol/SRE">Sempra</a></td>
+    <td><a href="/symbol/SRE">SRE</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;5.45</td>
+</tr>
+
+<tr>
+    <td>238</td>
+    <td><a href="/symbol/PNW">Pinnacle West</a></td>
+    <td><a href="/symbol/PNW">PNW</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;5.17</td>
+</tr>
+
+<tr>
+    <td>239</td>
+    <td><a href="/symbol/DHI">D. R. Horton</a></td>
+    <td><a href="/symbol/DHI">DHI</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;4.93</td>
+</tr>
+
+<tr>
+    <td>240</td>
+    <td><a href="/symbol/TFC">Truist Financial</a></td>
+    <td><a href="/symbol/TFC">TFC</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;4.84</td>
+</tr>
+
+<tr>
+    <td>241</td>
+    <td><a href="/symbol/FCX">Freeport-McMoRan</a></td>
+    <td><a href="/symbol/FCX">FCX</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;4.70</td>
+</tr>
+
+<tr>
+    <td>242</td>
+    <td><a href="/symbol/AIG">American International Group</a></td>
+    <td><a href="/symbol/AIG">AIG</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;4.34</td>
+</tr>
+
+<tr>
+    <td>243</td>
+    <td><a href="/symbol/PNR">Pentair</a></td>
+    <td><a href="/symbol/PNR">PNR</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;4.12</td>
+</tr>
+
+<tr>
+    <td>244</td>
+    <td><a href="/symbol/KEY">KeyCorp</a></td>
+    <td><a href="/symbol/KEY">KEY</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;3.97</td>
+</tr>
+
+<tr>
+    <td>245</td>
+    <td><a href="/symbol/V">Visa Inc.</a></td>
+    <td><a href="/symbol/V">V</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;3.78</td>
+</tr>
+
+<tr>
+    <td>246</td>
+    <td><a href="/symbol/APA">APA Corporation</a></td>
+    <td><a href="/symbol/APA">APA</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;3.72</td>
+</tr>
+
+<tr>
+    <td>247</td>
+    <td><a href="/symbol/ICE">Intercontinental Exchange</a></td>
+    <td><a href="/symbol/ICE">ICE</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;3.64</td>
+</tr>
+
+<tr>
+    <td>248</td>
+    <td><a href="/symbol/CVX">Chevron Corporation</a></td>
+    <td><a href="/symbol/CVX">CVX</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;3.55</td>
+</tr>
+
+<tr>
+    <td>249</td>
+    <td><a href="/symbol/EMR">Emerson Electric</a></td>
+    <td><a href="/symbol/EMR">EMR</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;3.46</td>
+</tr>
+
+<tr>
+    <td>250</td>
+    <td><a href="/symbol/HOLX">Hologic</a></td>
+    <td><a href="/symbol/HOLX">HOLX</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;3.15</td>
+</tr>
+
+<tr>
+    <td>251</td>
+    <td><a href="/symbol/VZ">Verizon</a></td>
+    <td><a href="/symbol/VZ">VZ</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;3.10</td>
+</tr>
+
+<tr>
+    <td>252</td>
+    <td><a href="/symbol/K">Kellanova</a></td>
+    <td><a href="/symbol/K">K</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;3.06</td>
+</tr>
+
+<tr>
+    <td>253</td>
+    <td><a href="/symbol/MA">Mastercard</a></td>
+    <td><a href="/symbol/MA">MA</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;2.63</td>
+</tr>
+
+<tr>
+    <td>254</td>
+    <td><a href="/symbol/SYK">Stryker Corporation</a></td>
+    <td><a href="/symbol/SYK">SYK</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;2.28</td>
+</tr>
+
+<tr>
+    <td>255</td>
+    <td><a href="/symbol/CTAS">Cintas</a></td>
+    <td><a href="/symbol/CTAS">CTAS</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;1.70</td>
+</tr>
+
+<tr>
+    <td>256</td>
+    <td><a href="/symbol/BA">Boeing</a></td>
+    <td><a href="/symbol/BA">BA</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;1.53</td>
+</tr>
+
+<tr>
+    <td>257</td>
+    <td><a href="/symbol/META">Meta Platforms</a></td>
+    <td><a href="/symbol/META">META</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;1.49</td>
+</tr>
+
+<tr>
+    <td>258</td>
+    <td><a href="/symbol/MCO">Moody&#39;s Corporation</a></td>
+    <td><a href="/symbol/MCO">MCO</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;1.33</td>
+</tr>
+
+<tr>
+    <td>259</td>
+    <td><a href="/symbol/BR">Broadridge Financial Solutions</a></td>
+    <td><a href="/symbol/BR">BR</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;1.02</td>
+</tr>
+
+<tr>
+    <td>260</td>
+    <td><a href="/symbol/LYV">Live Nation Entertainment</a></td>
+    <td><a href="/symbol/LYV">LYV</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;0.87</td>
+</tr>
+
+<tr>
+    <td>261</td>
+    <td><a href="/symbol/CTRA">Coterra</a></td>
+    <td><a href="/symbol/CTRA">CTRA</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;0.82</td>
+</tr>
+
+<tr>
+    <td>262</td>
+    <td><a href="/symbol/CI">Cigna</a></td>
+    <td><a href="/symbol/CI">CI</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;0.71</td>
+</tr>
+
+<tr>
+    <td>263</td>
+    <td><a href="/symbol/HUBB">Hubbell Incorporated</a></td>
+    <td><a href="/symbol/HUBB">HUBB</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;0.70</td>
+</tr>
+
+<tr>
+    <td>264</td>
+    <td><a href="/symbol/AMZN">Amazon</a></td>
+    <td><a href="/symbol/AMZN">AMZN</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;0.59</td>
+</tr>
+
+<tr>
+    <td>265</td>
+    <td><a href="/symbol/WTW">Willis Towers Watson</a></td>
+    <td><a href="/symbol/WTW">WTW</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;0.58</td>
+</tr>
+
+<tr>
+    <td>266</td>
+    <td><a href="/symbol/PANW">Palo Alto Networks</a></td>
+    <td><a href="/symbol/PANW">PANW</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;0.52</td>
+</tr>
+
+<tr>
+    <td>267</td>
+    <td><a href="/symbol/FITB">Fifth Third Bancorp</a></td>
+    <td><a href="/symbol/FITB">FITB</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;0.33</td>
+</tr>
+
+<tr>
+    <td>268</td>
+    <td><a href="/symbol/MTB">M&amp;T Bank</a></td>
+    <td><a href="/symbol/MTB">MTB</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;0.31</td>
+</tr>
+
+<tr>
+    <td>269</td>
+    <td><a href="/symbol/SYY">Sysco</a></td>
+    <td><a href="/symbol/SYY">SYY</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;0.22</td>
+</tr>
+
+<tr>
+    <td>270</td>
+    <td><a href="/symbol/ACGL">Arch Capital Group</a></td>
+    <td><a href="/symbol/ACGL">ACGL</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;0.12</td>
+</tr>
+
+<tr>
+    <td>271</td>
+    <td><a href="/symbol/CDNS">Cadence Design Systems</a></td>
+    <td><a href="/symbol/CDNS">CDNS</a></td>
+    <td style="color: green"><img src="/img/up.gif"> &nbsp;&nbsp;0.04</td>
+</tr>
+
+<tr>
+    <td>272</td>
+    <td><a href="/symbol/ETN">Eaton Corporation</a></td>
+    <td><a href="/symbol/ETN">ETN</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-0.05</td>
+</tr>
+
+<tr>
+    <td>273</td>
+    <td><a href="/symbol/USB">U.S. Bancorp</a></td>
+    <td><a href="/symbol/USB">USB</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-0.10</td>
+</tr>
+
+<tr>
+    <td>274</td>
+    <td><a href="/symbol/TSCO">Tractor Supply</a></td>
+    <td><a href="/symbol/TSCO">TSCO</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-0.26</td>
+</tr>
+
+<tr>
+    <td>275</td>
+    <td><a href="/symbol/HST">Host Hotels &amp; Resorts</a></td>
+    <td><a href="/symbol/HST">HST</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-0.57</td>
+</tr>
+
+<tr>
+    <td>276</td>
+    <td><a href="/symbol/UNP">Union Pacific Corporation</a></td>
+    <td><a href="/symbol/UNP">UNP</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-0.80</td>
+</tr>
+
+<tr>
+    <td>277</td>
+    <td><a href="/symbol/CCI">Crown Castle</a></td>
+    <td><a href="/symbol/CCI">CCI</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-0.83</td>
+</tr>
+
+<tr>
+    <td>278</td>
+    <td><a href="/symbol/SHW">Sherwin-Williams</a></td>
+    <td><a href="/symbol/SHW">SHW</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-0.84</td>
+</tr>
+
+<tr>
+    <td>279</td>
+    <td><a href="/symbol/SPGI">S&amp;P Global</a></td>
+    <td><a href="/symbol/SPGI">SPGI</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-0.89</td>
+</tr>
+
+<tr>
+    <td>280</td>
+    <td><a href="/symbol/DHR">Danaher Corporation</a></td>
+    <td><a href="/symbol/DHR">DHR</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-0.94</td>
+</tr>
+
+<tr>
+    <td>281</td>
+    <td><a href="/symbol/PCAR">Paccar</a></td>
+    <td><a href="/symbol/PCAR">PCAR</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-0.99</td>
+</tr>
+
+<tr>
+    <td>282</td>
+    <td><a href="/symbol/BLK">BlackRock</a></td>
+    <td><a href="/symbol/BLK">BLK</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-1.01</td>
+</tr>
+
+<tr>
+    <td>283</td>
+    <td><a href="/symbol/SNA">Snap-on</a></td>
+    <td><a href="/symbol/SNA">SNA</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-1.05</td>
+</tr>
+
+<tr>
+    <td>284</td>
+    <td><a href="/symbol/CTSH">Cognizant</a></td>
+    <td><a href="/symbol/CTSH">CTSH</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-1.20</td>
+</tr>
+
+<tr>
+    <td>285</td>
+    <td><a href="/symbol/VICI">Vici Properties</a></td>
+    <td><a href="/symbol/VICI">VICI</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-1.34</td>
+</tr>
+
+<tr>
+    <td>286</td>
+    <td><a href="/symbol/MTCH">Match Group</a></td>
+    <td><a href="/symbol/MTCH">MTCH</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-1.35</td>
+</tr>
+
+<tr>
+    <td>287</td>
+    <td><a href="/symbol/LIN">Linde plc</a></td>
+    <td><a href="/symbol/LIN">LIN</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-1.42</td>
+</tr>
+
+<tr>
+    <td>288</td>
+    <td><a href="/symbol/RJF">Raymond James Financial</a></td>
+    <td><a href="/symbol/RJF">RJF</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-1.51</td>
+</tr>
+
+<tr>
+    <td>289</td>
+    <td><a href="/symbol/KMI">Kinder Morgan</a></td>
+    <td><a href="/symbol/KMI">KMI</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-1.53</td>
+</tr>
+
+<tr>
+    <td>290</td>
+    <td><a href="/symbol/ADSK">Autodesk</a></td>
+    <td><a href="/symbol/ADSK">ADSK</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-1.61</td>
+</tr>
+
+<tr>
+    <td>291</td>
+    <td><a href="/symbol/MOS">Mosaic Company (The)</a></td>
+    <td><a href="/symbol/MOS">MOS</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-1.67</td>
+</tr>
+
+<tr>
+    <td>292</td>
+    <td><a href="/symbol/MRK">Merck &amp; Co.</a></td>
+    <td><a href="/symbol/MRK">MRK</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-1.73</td>
+</tr>
+
+<tr>
+    <td>293</td>
+    <td><a href="/symbol/COST">Costco</a></td>
+    <td><a href="/symbol/COST">COST</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-1.88</td>
+</tr>
+
+<tr>
+    <td>294</td>
+    <td><a href="/symbol/AMT">American Tower</a></td>
+    <td><a href="/symbol/AMT">AMT</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-2.10</td>
+</tr>
+
+<tr>
+    <td>295</td>
+    <td><a href="/symbol/DOV">Dover Corporation</a></td>
+    <td><a href="/symbol/DOV">DOV</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-2.14</td>
+</tr>
+
+<tr>
+    <td>296</td>
+    <td><a href="/symbol/GEHC">GE HealthCare</a></td>
+    <td><a href="/symbol/GEHC">GEHC</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-2.21</td>
+</tr>
+
+<tr>
+    <td>297</td>
+    <td><a href="/symbol/ITW">Illinois Tool Works</a></td>
+    <td><a href="/symbol/ITW">ITW</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-2.28</td>
+</tr>
+
+<tr>
+    <td>298</td>
+    <td><a href="/symbol/HBAN">Huntington Bancshares</a></td>
+    <td><a href="/symbol/HBAN">HBAN</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-2.40</td>
+</tr>
+
+<tr>
+    <td>299</td>
+    <td><a href="/symbol/LUV">Southwest Airlines</a></td>
+    <td><a href="/symbol/LUV">LUV</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-2.44</td>
+</tr>
+
+<tr>
+    <td>300</td>
+    <td><a href="/symbol/JBHT">J.B. Hunt</a></td>
+    <td><a href="/symbol/JBHT">JBHT</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-2.48</td>
+</tr>
+
+<tr>
+    <td>301</td>
+    <td><a href="/symbol/JKHY">Jack Henry &amp; Associates</a></td>
+    <td><a href="/symbol/JKHY">JKHY</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-2.57</td>
+</tr>
+
+<tr>
+    <td>302</td>
+    <td><a href="/symbol/J">Jacobs Solutions</a></td>
+    <td><a href="/symbol/J">J</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-2.67</td>
+</tr>
+
+<tr>
+    <td>303</td>
+    <td><a href="/symbol/VLTO">Veralto</a></td>
+    <td><a href="/symbol/VLTO">VLTO</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-2.82</td>
+</tr>
+
+<tr>
+    <td>304</td>
+    <td><a href="/symbol/DPZ">Dominos</a></td>
+    <td><a href="/symbol/DPZ">DPZ</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-2.94</td>
+</tr>
+
+<tr>
+    <td>305</td>
+    <td><a href="/symbol/PNC">PNC Financial Services</a></td>
+    <td><a href="/symbol/PNC">PNC</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-3.04</td>
+</tr>
+
+<tr>
+    <td>306</td>
+    <td><a href="/symbol/GEN">Gen Digital</a></td>
+    <td><a href="/symbol/GEN">GEN</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-3.07</td>
+</tr>
+
+<tr>
+    <td>307</td>
+    <td><a href="/symbol/TSLA">Tesla, Inc.</a></td>
+    <td><a href="/symbol/TSLA">TSLA</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-3.16</td>
+</tr>
+
+<tr>
+    <td>308</td>
+    <td><a href="/symbol/COIN">Coinbase Global</a></td>
+    <td><a href="/symbol/COIN">COIN</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-3.18</td>
+</tr>
+
+<tr>
+    <td>309</td>
+    <td><a href="/symbol/DAL">Delta Air Lines</a></td>
+    <td><a href="/symbol/DAL">DAL</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-3.19</td>
+</tr>
+
+<tr>
+    <td>310</td>
+    <td><a href="/symbol/AON">Aon</a></td>
+    <td><a href="/symbol/AON">AON</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-3.52</td>
+</tr>
+
+<tr>
+    <td>311</td>
+    <td><a href="/symbol/PEP">PepsiCo</a></td>
+    <td><a href="/symbol/PEP">PEP</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-3.77</td>
+</tr>
+
+<tr>
+    <td>312</td>
+    <td><a href="/symbol/PEG">Public Service Enterprise Group</a></td>
+    <td><a href="/symbol/PEG">PEG</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-3.81</td>
+</tr>
+
+<tr>
+    <td>313</td>
+    <td><a href="/symbol/HPE">Hewlett Packard Enterprise</a></td>
+    <td><a href="/symbol/HPE">HPE</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-3.89</td>
+</tr>
+
+<tr>
+    <td>314</td>
+    <td><a href="/symbol/WSM">Williams-Sonoma</a></td>
+    <td><a href="/symbol/WSM">WSM</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-3.92</td>
+</tr>
+
+<tr>
+    <td>315</td>
+    <td><a href="/symbol/BKNG">Booking Holdings</a></td>
+    <td><a href="/symbol/BKNG">BKNG</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-4.03</td>
+</tr>
+
+<tr>
+    <td>316</td>
+    <td><a href="/symbol/REG">Regency Centers</a></td>
+    <td><a href="/symbol/REG">REG</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-4.14</td>
+</tr>
+
+<tr>
+    <td>317</td>
+    <td><a href="/symbol/SJM">J.M. Smucker Company (The)</a></td>
+    <td><a href="/symbol/SJM">SJM</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-4.16</td>
+</tr>
+
+<tr>
+    <td>318</td>
+    <td><a href="/symbol/FDX">FedEx</a></td>
+    <td><a href="/symbol/FDX">FDX</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-4.23</td>
+</tr>
+
+<tr>
+    <td>319</td>
+    <td><a href="/symbol/SBAC">SBA Communications</a></td>
+    <td><a href="/symbol/SBAC">SBAC</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-4.31</td>
+</tr>
+
+<tr>
+    <td>320</td>
+    <td><a href="/symbol/TRGP">Targa Resources</a></td>
+    <td><a href="/symbol/TRGP">TRGP</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-4.46</td>
+</tr>
+
+<tr>
+    <td>321</td>
+    <td><a href="/symbol/AOS">A. O. Smith</a></td>
+    <td><a href="/symbol/AOS">AOS</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-4.56</td>
+</tr>
+
+<tr>
+    <td>322</td>
+    <td><a href="/symbol/MDLZ">Mondelez International</a></td>
+    <td><a href="/symbol/MDLZ">MDLZ</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-4.57</td>
+</tr>
+
+<tr>
+    <td>323</td>
+    <td><a href="/symbol/NWS">News Corp (Class B)</a></td>
+    <td><a href="/symbol/NWS">NWS</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-4.70</td>
+</tr>
+
+<tr>
+    <td>324</td>
+    <td><a href="/symbol/OTIS">Otis Worldwide</a></td>
+    <td><a href="/symbol/OTIS">OTIS</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-4.91</td>
+</tr>
+
+<tr>
+    <td>325</td>
+    <td><a href="/symbol/HAL">Halliburton</a></td>
+    <td><a href="/symbol/HAL">HAL</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-5.04</td>
+</tr>
+
+<tr>
+    <td>326</td>
+    <td><a href="/symbol/UAL">United Airlines Holdings</a></td>
+    <td><a href="/symbol/UAL">UAL</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-5.05</td>
+</tr>
+
+<tr>
+    <td>327</td>
+    <td><a href="/symbol/LOW">Lowe&#39;s</a></td>
+    <td><a href="/symbol/LOW">LOW</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-5.07</td>
+</tr>
+
+<tr>
+    <td>328</td>
+    <td><a href="/symbol/TMUS">T-Mobile US</a></td>
+    <td><a href="/symbol/TMUS">TMUS</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-5.10</td>
+</tr>
+
+<tr>
+    <td>329</td>
+    <td><a href="/symbol/LMT">Lockheed Martin</a></td>
+    <td><a href="/symbol/LMT">LMT</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-5.18</td>
+</tr>
+
+<tr>
+    <td>330</td>
+    <td><a href="/symbol/DAY">Dayforce</a></td>
+    <td><a href="/symbol/DAY">DAY</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-5.22</td>
+</tr>
+
+<tr>
+    <td>331</td>
+    <td><a href="/symbol/PGR">Progressive Corporation</a></td>
+    <td><a href="/symbol/PGR">PGR</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-5.30</td>
+</tr>
+
+<tr>
+    <td>332</td>
+    <td><a href="/symbol/SLB">Schlumberger</a></td>
+    <td><a href="/symbol/SLB">SLB</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-5.61</td>
+</tr>
+
+<tr>
+    <td>333</td>
+    <td><a href="/symbol/PFE">Pfizer</a></td>
+    <td><a href="/symbol/PFE">PFE</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-5.62</td>
+</tr>
+
+<tr>
+    <td>334</td>
+    <td><a href="/symbol/BXP">BXP, Inc.</a></td>
+    <td><a href="/symbol/BXP">BXP</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-5.81</td>
+</tr>
+
+<tr>
+    <td>335</td>
+    <td><a href="/symbol/GNRC">Generac</a></td>
+    <td><a href="/symbol/GNRC">GNRC</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-5.81</td>
+</tr>
+
+<tr>
+    <td>336</td>
+    <td><a href="/symbol/MGM">MGM Resorts</a></td>
+    <td><a href="/symbol/MGM">MGM</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-6.06</td>
+</tr>
+
+<tr>
+    <td>337</td>
+    <td><a href="/symbol/CSGP">CoStar Group</a></td>
+    <td><a href="/symbol/CSGP">CSGP</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-6.06</td>
+</tr>
+
+<tr>
+    <td>338</td>
+    <td><a href="/symbol/MSCI">MSCI</a></td>
+    <td><a href="/symbol/MSCI">MSCI</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-6.34</td>
+</tr>
+
+<tr>
+    <td>339</td>
+    <td><a href="/symbol/DIS">Walt Disney Company (The)</a></td>
+    <td><a href="/symbol/DIS">DIS</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-6.35</td>
+</tr>
+
+<tr>
+    <td>340</td>
+    <td><a href="/symbol/PTC">PTC Inc.</a></td>
+    <td><a href="/symbol/PTC">PTC</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-6.39</td>
+</tr>
+
+<tr>
+    <td>341</td>
+    <td><a href="/symbol/DRI">Darden Restaurants</a></td>
+    <td><a href="/symbol/DRI">DRI</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-6.41</td>
+</tr>
+
+<tr>
+    <td>342</td>
+    <td><a href="/symbol/SBUX">Starbucks</a></td>
+    <td><a href="/symbol/SBUX">SBUX</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-6.47</td>
+</tr>
+
+<tr>
+    <td>343</td>
+    <td><a href="/symbol/FTV">Fortive</a></td>
+    <td><a href="/symbol/FTV">FTV</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-6.54</td>
+</tr>
+
+<tr>
+    <td>344</td>
+    <td><a href="/symbol/TSN">Tyson Foods</a></td>
+    <td><a href="/symbol/TSN">TSN</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-6.56</td>
+</tr>
+
+<tr>
+    <td>345</td>
+    <td><a href="/symbol/LEN">Lennar</a></td>
+    <td><a href="/symbol/LEN">LEN</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-6.71</td>
+</tr>
+
+<tr>
+    <td>346</td>
+    <td><a href="/symbol/NWSA">News Corp (Class A)</a></td>
+    <td><a href="/symbol/NWSA">NWSA</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-6.72</td>
+</tr>
+
+<tr>
+    <td>347</td>
+    <td><a href="/symbol/GRMN">Garmin</a></td>
+    <td><a href="/symbol/GRMN">GRMN</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-6.80</td>
+</tr>
+
+<tr>
+    <td>348</td>
+    <td><a href="/symbol/FFIV">F5, Inc.</a></td>
+    <td><a href="/symbol/FFIV">FFIV</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-6.83</td>
+</tr>
+
+<tr>
+    <td>349</td>
+    <td><a href="/symbol/AKAM">Akamai Technologies</a></td>
+    <td><a href="/symbol/AKAM">AKAM</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-6.94</td>
+</tr>
+
+<tr>
+    <td>350</td>
+    <td><a href="/symbol/NTAP">NetApp</a></td>
+    <td><a href="/symbol/NTAP">NTAP</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-7.56</td>
+</tr>
+
+<tr>
+    <td>351</td>
+    <td><a href="/symbol/MHK">Mohawk Industries</a></td>
+    <td><a href="/symbol/MHK">MHK</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-7.72</td>
+</tr>
+
+<tr>
+    <td>352</td>
+    <td><a href="/symbol/NXPI">NXP Semiconductors</a></td>
+    <td><a href="/symbol/NXPI">NXPI</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-7.94</td>
+</tr>
+
+<tr>
+    <td>353</td>
+    <td><a href="/symbol/CF">CF Industries</a></td>
+    <td><a href="/symbol/CF">CF</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-7.95</td>
+</tr>
+
+<tr>
+    <td>354</td>
+    <td><a href="/symbol/SOLS">Solstice Advanced Materials Inc.</a></td>
+    <td><a href="/symbol/SOLS">SOLS</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-8.18</td>
+</tr>
+
+<tr>
+    <td>355</td>
+    <td><a href="/symbol/IPG">Interpublic Group of Companies (The)</a></td>
+    <td><a href="/symbol/IPG">IPG</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-8.21</td>
+</tr>
+
+<tr>
+    <td>356</td>
+    <td><a href="/symbol/MET">MetLife</a></td>
+    <td><a href="/symbol/MET">MET</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-8.32</td>
+</tr>
+
+<tr>
+    <td>357</td>
+    <td><a href="/symbol/ESS">Essex Property Trust</a></td>
+    <td><a href="/symbol/ESS">ESS</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-8.49</td>
+</tr>
+
+<tr>
+    <td>358</td>
+    <td><a href="/symbol/AVY">Avery Dennison</a></td>
+    <td><a href="/symbol/AVY">AVY</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-8.91</td>
+</tr>
+
+<tr>
+    <td>359</td>
+    <td><a href="/symbol/CRL">Charles River Laboratories</a></td>
+    <td><a href="/symbol/CRL">CRL</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-9.19</td>
+</tr>
+
+<tr>
+    <td>360</td>
+    <td><a href="/symbol/CPT">Camden Property Trust</a></td>
+    <td><a href="/symbol/CPT">CPT</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-9.32</td>
+</tr>
+
+<tr>
+    <td>361</td>
+    <td><a href="/symbol/BALL">Ball Corporation</a></td>
+    <td><a href="/symbol/BALL">BALL</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-9.54</td>
+</tr>
+
+<tr>
+    <td>362</td>
+    <td><a href="/symbol/NVR">NVR, Inc.</a></td>
+    <td><a href="/symbol/NVR">NVR</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-9.66</td>
+</tr>
+
+<tr>
+    <td>363</td>
+    <td><a href="/symbol/GWW">W. W. Grainger</a></td>
+    <td><a href="/symbol/GWW">GWW</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-9.67</td>
+</tr>
+
+<tr>
+    <td>364</td>
+    <td><a href="/symbol/AMCR">Amcor</a></td>
+    <td><a href="/symbol/AMCR">AMCR</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-9.67</td>
+</tr>
+
+<tr>
+    <td>365</td>
+    <td><a href="/symbol/PRU">Prudential Financial</a></td>
+    <td><a href="/symbol/PRU">PRU</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-9.94</td>
+</tr>
+
+<tr>
+    <td>366</td>
+    <td><a href="/symbol/PG">Procter &amp; Gamble</a></td>
+    <td><a href="/symbol/PG">PG</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-9.98</td>
+</tr>
+
+<tr>
+    <td>367</td>
+    <td><a href="/symbol/PSA">Public Storage</a></td>
+    <td><a href="/symbol/PSA">PSA</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-10.00</td>
+</tr>
+
+<tr>
+    <td>368</td>
+    <td><a href="/symbol/FICO">Fair Isaac</a></td>
+    <td><a href="/symbol/FICO">FICO</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-10.18</td>
+</tr>
+
+<tr>
+    <td>369</td>
+    <td><a href="/symbol/HUM">Humana</a></td>
+    <td><a href="/symbol/HUM">HUM</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-10.49</td>
+</tr>
+
+<tr>
+    <td>370</td>
+    <td><a href="/symbol/MKC">McCormick &amp; Company</a></td>
+    <td><a href="/symbol/MKC">MKC</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-10.60</td>
+</tr>
+
+<tr>
+    <td>371</td>
+    <td><a href="/symbol/FANG">Diamondback Energy</a></td>
+    <td><a href="/symbol/FANG">FANG</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-10.61</td>
+</tr>
+
+<tr>
+    <td>372</td>
+    <td><a href="/symbol/HON">Honeywell</a></td>
+    <td><a href="/symbol/HON">HON</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-10.75</td>
+</tr>
+
+<tr>
+    <td>373</td>
+    <td><a href="/symbol/BBY">Best Buy</a></td>
+    <td><a href="/symbol/BBY">BBY</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-10.90</td>
+</tr>
+
+<tr>
+    <td>374</td>
+    <td><a href="/symbol/CL">Colgate-Palmolive</a></td>
+    <td><a href="/symbol/CL">CL</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-10.98</td>
+</tr>
+
+<tr>
+    <td>375</td>
+    <td><a href="/symbol/MCHP">Microchip Technology</a></td>
+    <td><a href="/symbol/MCHP">MCHP</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-11.25</td>
+</tr>
+
+<tr>
+    <td>376</td>
+    <td><a href="/symbol/APD">Air Products</a></td>
+    <td><a href="/symbol/APD">APD</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-11.26</td>
+</tr>
+
+<tr>
+    <td>377</td>
+    <td><a href="/symbol/TROW">T. Rowe Price</a></td>
+    <td><a href="/symbol/TROW">TROW</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-11.30</td>
+</tr>
+
+<tr>
+    <td>378</td>
+    <td><a href="/symbol/DLR">Digital Realty</a></td>
+    <td><a href="/symbol/DLR">DLR</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-11.36</td>
+</tr>
+
+<tr>
+    <td>379</td>
+    <td><a href="/symbol/AJG">Arthur J. Gallagher &amp; Co.</a></td>
+    <td><a href="/symbol/AJG">AJG</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-11.43</td>
+</tr>
+
+<tr>
+    <td>380</td>
+    <td><a href="/symbol/HD">Home Depot (The)</a></td>
+    <td><a href="/symbol/HD">HD</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-11.74</td>
+</tr>
+
+<tr>
+    <td>381</td>
+    <td><a href="/symbol/INVH">Invitation Homes</a></td>
+    <td><a href="/symbol/INVH">INVH</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-11.82</td>
+</tr>
+
+<tr>
+    <td>382</td>
+    <td><a href="/symbol/COP">ConocoPhillips</a></td>
+    <td><a href="/symbol/COP">COP</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-11.90</td>
+</tr>
+
+<tr>
+    <td>383</td>
+    <td><a href="/symbol/RVTY">Revvity</a></td>
+    <td><a href="/symbol/RVTY">RVTY</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-11.95</td>
+</tr>
+
+<tr>
+    <td>384</td>
+    <td><a href="/symbol/DOC">Healthpeak Properties</a></td>
+    <td><a href="/symbol/DOC">DOC</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-11.99</td>
+</tr>
+
+<tr>
+    <td>385</td>
+    <td><a href="/symbol/EXR">Extra Space Storage</a></td>
+    <td><a href="/symbol/EXR">EXR</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-12.13</td>
+</tr>
+
+<tr>
+    <td>386</td>
+    <td><a href="/symbol/AXON">Axon Enterprise</a></td>
+    <td><a href="/symbol/AXON">AXON</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-12.17</td>
+</tr>
+
+<tr>
+    <td>387</td>
+    <td><a href="/symbol/PKG">Packaging Corporation of America</a></td>
+    <td><a href="/symbol/PKG">PKG</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-12.36</td>
+</tr>
+
+<tr>
+    <td>388</td>
+    <td><a href="/symbol/FRT">Federal Realty Investment Trust</a></td>
+    <td><a href="/symbol/FRT">FRT</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-12.49</td>
+</tr>
+
+<tr>
+    <td>389</td>
+    <td><a href="/symbol/ZBH">Zimmer Biomet</a></td>
+    <td><a href="/symbol/ZBH">ZBH</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-12.73</td>
+</tr>
+
+<tr>
+    <td>390</td>
+    <td><a href="/symbol/EOG">EOG Resources</a></td>
+    <td><a href="/symbol/EOG">EOG</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-12.73</td>
+</tr>
+
+<tr>
+    <td>391</td>
+    <td><a href="/symbol/WDAY">Workday, Inc.</a></td>
+    <td><a href="/symbol/WDAY">WDAY</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-12.75</td>
+</tr>
+
+<tr>
+    <td>392</td>
+    <td><a href="/symbol/ELV">Elevance Health</a></td>
+    <td><a href="/symbol/ELV">ELV</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-12.79</td>
+</tr>
+
+<tr>
+    <td>393</td>
+    <td><a href="/symbol/OMC">Omnicom Group</a></td>
+    <td><a href="/symbol/OMC">OMC</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-12.98</td>
+</tr>
+
+<tr>
+    <td>394</td>
+    <td><a href="/symbol/ABNB">Airbnb</a></td>
+    <td><a href="/symbol/ABNB">ABNB</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-13.05</td>
+</tr>
+
+<tr>
+    <td>395</td>
+    <td><a href="/symbol/KIM">Kimco Realty</a></td>
+    <td><a href="/symbol/KIM">KIM</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-13.10</td>
+</tr>
+
+<tr>
+    <td>396</td>
+    <td><a href="/symbol/IR">Ingersoll Rand</a></td>
+    <td><a href="/symbol/IR">IR</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-13.18</td>
+</tr>
+
+<tr>
+    <td>397</td>
+    <td><a href="/symbol/ADP">Automatic Data Processing</a></td>
+    <td><a href="/symbol/ADP">ADP</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-13.53</td>
+</tr>
+
+<tr>
+    <td>398</td>
+    <td><a href="/symbol/MAA">Mid-America Apartment Communities</a></td>
+    <td><a href="/symbol/MAA">MAA</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-13.56</td>
+</tr>
+
+<tr>
+    <td>399</td>
+    <td><a href="/symbol/KDP">Keurig Dr Pepper</a></td>
+    <td><a href="/symbol/KDP">KDP</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-13.64</td>
+</tr>
+
+<tr>
+    <td>400</td>
+    <td><a href="/symbol/LW">Lamb Weston</a></td>
+    <td><a href="/symbol/LW">LW</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-13.69</td>
+</tr>
+
+<tr>
+    <td>401</td>
+    <td><a href="/symbol/EG">Everest Group</a></td>
+    <td><a href="/symbol/EG">EG</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-14.10</td>
+</tr>
+
+<tr>
+    <td>402</td>
+    <td><a href="/symbol/MAS">Masco</a></td>
+    <td><a href="/symbol/MAS">MAS</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-14.23</td>
+</tr>
+
+<tr>
+    <td>403</td>
+    <td><a href="/symbol/TECH">Bio-Techne</a></td>
+    <td><a href="/symbol/TECH">TECH</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-14.58</td>
+</tr>
+
+<tr>
+    <td>404</td>
+    <td><a href="/symbol/ROP">Roper Technologies</a></td>
+    <td><a href="/symbol/ROP">ROP</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-14.64</td>
+</tr>
+
+<tr>
+    <td>405</td>
+    <td><a href="/symbol/CPAY">Corpay</a></td>
+    <td><a href="/symbol/CPAY">CPAY</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-14.66</td>
+</tr>
+
+<tr>
+    <td>406</td>
+    <td><a href="/symbol/MMC">Marsh McLennan</a></td>
+    <td><a href="/symbol/MMC">MMC</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-14.83</td>
+</tr>
+
+<tr>
+    <td>407</td>
+    <td><a href="/symbol/TXN">Texas Instruments</a></td>
+    <td><a href="/symbol/TXN">TXN</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-14.99</td>
+</tr>
+
+<tr>
+    <td>408</td>
+    <td><a href="/symbol/BDX">Becton Dickinson</a></td>
+    <td><a href="/symbol/BDX">BDX</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-15.05</td>
+</tr>
+
+<tr>
+    <td>409</td>
+    <td><a href="/symbol/EQR">Equity Residential</a></td>
+    <td><a href="/symbol/EQR">EQR</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-15.62</td>
+</tr>
+
+<tr>
+    <td>410</td>
+    <td><a href="/symbol/AMP">Ameriprise Financial</a></td>
+    <td><a href="/symbol/AMP">AMP</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-15.94</td>
+</tr>
+
+<tr>
+    <td>411</td>
+    <td><a href="/symbol/VTRS">Viatris</a></td>
+    <td><a href="/symbol/VTRS">VTRS</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-15.98</td>
+</tr>
+
+<tr>
+    <td>412</td>
+    <td><a href="/symbol/OXY">Occidental Petroleum</a></td>
+    <td><a href="/symbol/OXY">OXY</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-16.13</td>
+</tr>
+
+<tr>
+    <td>413</td>
+    <td><a href="/symbol/EFX">Equifax</a></td>
+    <td><a href="/symbol/EFX">EFX</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-16.13</td>
+</tr>
+
+<tr>
+    <td>414</td>
+    <td><a href="/symbol/FTNT">Fortinet</a></td>
+    <td><a href="/symbol/FTNT">FTNT</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-16.54</td>
+</tr>
+
+<tr>
+    <td>415</td>
+    <td><a href="/symbol/NKE">Nike, Inc.</a></td>
+    <td><a href="/symbol/NKE">NKE</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-17.01</td>
+</tr>
+
+<tr>
+    <td>416</td>
+    <td><a href="/symbol/WST">West Pharmaceutical Services</a></td>
+    <td><a href="/symbol/WST">WST</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-17.25</td>
+</tr>
+
+<tr>
+    <td>417</td>
+    <td><a href="/symbol/BX">Blackstone Inc.</a></td>
+    <td><a href="/symbol/BX">BX</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-17.25</td>
+</tr>
+
+<tr>
+    <td>418</td>
+    <td><a href="/symbol/PPG">PPG Industries</a></td>
+    <td><a href="/symbol/PPG">PPG</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-17.37</td>
+</tr>
+
+<tr>
+    <td>419</td>
+    <td><a href="/symbol/SWK">Stanley Black &amp; Decker</a></td>
+    <td><a href="/symbol/SWK">SWK</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-17.61</td>
+</tr>
+
+<tr>
+    <td>420</td>
+    <td><a href="/symbol/KHC">Kraft Heinz</a></td>
+    <td><a href="/symbol/KHC">KHC</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-17.65</td>
+</tr>
+
+<tr>
+    <td>421</td>
+    <td><a href="/symbol/AVB">AvalonBay Communities</a></td>
+    <td><a href="/symbol/AVB">AVB</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-17.86</td>
+</tr>
+
+<tr>
+    <td>422</td>
+    <td><a href="/symbol/COO">Cooper Companies (The)</a></td>
+    <td><a href="/symbol/COO">COO</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-17.90</td>
+</tr>
+
+<tr>
+    <td>423</td>
+    <td><a href="/symbol/TYL">Tyler Technologies</a></td>
+    <td><a href="/symbol/TYL">TYL</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-18.01</td>
+</tr>
+
+<tr>
+    <td>424</td>
+    <td><a href="/symbol/UDR">UDR, Inc.</a></td>
+    <td><a href="/symbol/UDR">UDR</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-18.01</td>
+</tr>
+
+<tr>
+    <td>425</td>
+    <td><a href="/symbol/BMY">Bristol Myers Squibb</a></td>
+    <td><a href="/symbol/BMY">BMY</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-18.23</td>
+</tr>
+
+<tr>
+    <td>426</td>
+    <td><a href="/symbol/IEX">IDEX Corporation</a></td>
+    <td><a href="/symbol/IEX">IEX</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-18.46</td>
+</tr>
+
+<tr>
+    <td>427</td>
+    <td><a href="/symbol/TPL">Texas Pacific Land Corporation</a></td>
+    <td><a href="/symbol/TPL">TPL</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-18.95</td>
+</tr>
+
+<tr>
+    <td>428</td>
+    <td><a href="/symbol/VRSK">Verisk Analytics</a></td>
+    <td><a href="/symbol/VRSK">VRSK</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-18.98</td>
+</tr>
+
+<tr>
+    <td>429</td>
+    <td><a href="/symbol/IRM">Iron Mountain</a></td>
+    <td><a href="/symbol/IRM">IRM</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-19.11</td>
+</tr>
+
+<tr>
+    <td>430</td>
+    <td><a href="/symbol/CDW">CDW</a></td>
+    <td><a href="/symbol/CDW">CDW</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-19.44</td>
+</tr>
+
+<tr>
+    <td>431</td>
+    <td><a href="/symbol/TAP">Molson Coors Beverage Company</a></td>
+    <td><a href="/symbol/TAP">TAP</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-19.56</td>
+</tr>
+
+<tr>
+    <td>432</td>
+    <td><a href="/symbol/LKQ">LKQ Corporation</a></td>
+    <td><a href="/symbol/LKQ">LKQ</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-19.56</td>
+</tr>
+
+<tr>
+    <td>433</td>
+    <td><a href="/symbol/DVA">DaVita</a></td>
+    <td><a href="/symbol/DVA">DVA</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-19.59</td>
+</tr>
+
+<tr>
+    <td>434</td>
+    <td><a href="/symbol/KMB">Kimberly-Clark</a></td>
+    <td><a href="/symbol/KMB">KMB</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-19.73</td>
+</tr>
+
+<tr>
+    <td>435</td>
+    <td><a href="/symbol/CHD">Church &amp; Dwight</a></td>
+    <td><a href="/symbol/CHD">CHD</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-19.76</td>
+</tr>
+
+<tr>
+    <td>436</td>
+    <td><a href="/symbol/KKR">KKR</a></td>
+    <td><a href="/symbol/KKR">KKR</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-19.77</td>
+</tr>
+
+<tr>
+    <td>437</td>
+    <td><a href="/symbol/EQIX">Equinix</a></td>
+    <td><a href="/symbol/EQIX">EQIX</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-19.96</td>
+</tr>
+
+<tr>
+    <td>438</td>
+    <td><a href="/symbol/SNPS">Synopsys</a></td>
+    <td><a href="/symbol/SNPS">SNPS</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-19.99</td>
+</tr>
+
+<tr>
+    <td>439</td>
+    <td><a href="/symbol/MSI">Motorola Solutions</a></td>
+    <td><a href="/symbol/MSI">MSI</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-20.17</td>
+</tr>
+
+<tr>
+    <td>440</td>
+    <td><a href="/symbol/IFF">International Flavors &amp; Fragrances</a></td>
+    <td><a href="/symbol/IFF">IFF</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-20.22</td>
+</tr>
+
+<tr>
+    <td>441</td>
+    <td><a href="/symbol/Q">Qnity Electronics</a></td>
+    <td><a href="/symbol/Q">Q</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-20.46</td>
+</tr>
+
+<tr>
+    <td>442</td>
+    <td><a href="/symbol/PAYX">Paychex</a></td>
+    <td><a href="/symbol/PAYX">PAYX</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-20.51</td>
+</tr>
+
+<tr>
+    <td>443</td>
+    <td><a href="/symbol/FIS">Fidelity National Information Services</a></td>
+    <td><a href="/symbol/FIS">FIS</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-20.68</td>
+</tr>
+
+<tr>
+    <td>444</td>
+    <td><a href="/symbol/PAYC">Paycom</a></td>
+    <td><a href="/symbol/PAYC">PAYC</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-20.90</td>
+</tr>
+
+<tr>
+    <td>445</td>
+    <td><a href="/symbol/BRO">Brown &amp; Brown</a></td>
+    <td><a href="/symbol/BRO">BRO</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-21.27</td>
+</tr>
+
+<tr>
+    <td>446</td>
+    <td><a href="/symbol/APO">Apollo Global Management</a></td>
+    <td><a href="/symbol/APO">APO</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-21.28</td>
+</tr>
+
+<tr>
+    <td>447</td>
+    <td><a href="/symbol/KVUE">Kenvue</a></td>
+    <td><a href="/symbol/KVUE">KVUE</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-22.06</td>
+</tr>
+
+<tr>
+    <td>448</td>
+    <td><a href="/symbol/PCG">PG&amp;E Corporation</a></td>
+    <td><a href="/symbol/PCG">PCG</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-22.35</td>
+</tr>
+
+<tr>
+    <td>449</td>
+    <td><a href="/symbol/DXCM">Dexcom</a></td>
+    <td><a href="/symbol/DXCM">DXCM</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-22.55</td>
+</tr>
+
+<tr>
+    <td>450</td>
+    <td><a href="/symbol/EPAM">EPAM Systems</a></td>
+    <td><a href="/symbol/EPAM">EPAM</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-22.60</td>
+</tr>
+
+<tr>
+    <td>451</td>
+    <td><a href="/symbol/WY">Weyerhaeuser</a></td>
+    <td><a href="/symbol/WY">WY</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-22.63</td>
+</tr>
+
+<tr>
+    <td>452</td>
+    <td><a href="/symbol/CARR">Carrier Global</a></td>
+    <td><a href="/symbol/CARR">CARR</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-23.22</td>
+</tr>
+
+<tr>
+    <td>453</td>
+    <td><a href="/symbol/NOW">ServiceNow</a></td>
+    <td><a href="/symbol/NOW">NOW</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-23.27</td>
+</tr>
+
+<tr>
+    <td>454</td>
+    <td><a href="/symbol/LII">Lennox International</a></td>
+    <td><a href="/symbol/LII">LII</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-23.66</td>
+</tr>
+
+<tr>
+    <td>455</td>
+    <td><a href="/symbol/ODFL">Old Dominion</a></td>
+    <td><a href="/symbol/ODFL">ODFL</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-23.88</td>
+</tr>
+
+<tr>
+    <td>456</td>
+    <td><a href="/symbol/GIS">General Mills</a></td>
+    <td><a href="/symbol/GIS">GIS</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-24.21</td>
+</tr>
+
+<tr>
+    <td>457</td>
+    <td><a href="/symbol/CPB">Campbell Soup Company</a></td>
+    <td><a href="/symbol/CPB">CPB</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-24.40</td>
+</tr>
+
+<tr>
+    <td>458</td>
+    <td><a href="/symbol/UPS">United Parcel Service</a></td>
+    <td><a href="/symbol/UPS">UPS</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-24.93</td>
+</tr>
+
+<tr>
+    <td>459</td>
+    <td><a href="/symbol/ZTS">Zoetis</a></td>
+    <td><a href="/symbol/ZTS">ZTS</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-25.08</td>
+</tr>
+
+<tr>
+    <td>460</td>
+    <td><a href="/symbol/BF.B">Brown–Forman</a></td>
+    <td><a href="/symbol/BF.B">BF.B</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-25.09</td>
+</tr>
+
+<tr>
+    <td>461</td>
+    <td><a href="/symbol/ON">ON Semiconductor</a></td>
+    <td><a href="/symbol/ON">ON</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-25.93</td>
+</tr>
+
+<tr>
+    <td>462</td>
+    <td><a href="/symbol/HPQ">HP Inc.</a></td>
+    <td><a href="/symbol/HPQ">HPQ</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-26.57</td>
+</tr>
+
+<tr>
+    <td>463</td>
+    <td><a href="/symbol/EIX">Edison International</a></td>
+    <td><a href="/symbol/EIX">EIX</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-26.63</td>
+</tr>
+
+<tr>
+    <td>464</td>
+    <td><a href="/symbol/ADBE">Adobe Inc.</a></td>
+    <td><a href="/symbol/ADBE">ADBE</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-27.10</td>
+</tr>
+
+<tr>
+    <td>465</td>
+    <td><a href="/symbol/XYZ">Block, Inc.</a></td>
+    <td><a href="/symbol/XYZ">XYZ</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-27.11</td>
+</tr>
+
+<tr>
+    <td>466</td>
+    <td><a href="/symbol/CMCSA">Comcast</a></td>
+    <td><a href="/symbol/CMCSA">CMCSA</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-27.12</td>
+</tr>
+
+<tr>
+    <td>467</td>
+    <td><a href="/symbol/HRL">Hormel Foods</a></td>
+    <td><a href="/symbol/HRL">HRL</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-27.67</td>
+</tr>
+
+<tr>
+    <td>468</td>
+    <td><a href="/symbol/ERIE">Erie Indemnity</a></td>
+    <td><a href="/symbol/ERIE">ERIE</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-28.11</td>
+</tr>
+
+<tr>
+    <td>469</td>
+    <td><a href="/symbol/ACN">Accenture</a></td>
+    <td><a href="/symbol/ACN">ACN</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-28.41</td>
+</tr>
+
+<tr>
+    <td>470</td>
+    <td><a href="/symbol/BLDR">Builders FirstSource</a></td>
+    <td><a href="/symbol/BLDR">BLDR</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-28.90</td>
+</tr>
+
+<tr>
+    <td>471</td>
+    <td><a href="/symbol/CPRT">Copart</a></td>
+    <td><a href="/symbol/CPRT">CPRT</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-29.03</td>
+</tr>
+
+<tr>
+    <td>472</td>
+    <td><a href="/symbol/PYPL">PayPal</a></td>
+    <td><a href="/symbol/PYPL">PYPL</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-29.03</td>
+</tr>
+
+<tr>
+    <td>473</td>
+    <td><a href="/symbol/NCLH">Norwegian Cruise Line Holdings</a></td>
+    <td><a href="/symbol/NCLH">NCLH</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-29.27</td>
+</tr>
+
+<tr>
+    <td>474</td>
+    <td><a href="/symbol/SWKS">Skyworks Solutions</a></td>
+    <td><a href="/symbol/SWKS">SWKS</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-29.40</td>
+</tr>
+
+<tr>
+    <td>475</td>
+    <td><a href="/symbol/POOL">Pool Corporation</a></td>
+    <td><a href="/symbol/POOL">POOL</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-29.61</td>
+</tr>
+
+<tr>
+    <td>476</td>
+    <td><a href="/symbol/OKE">ONEOK</a></td>
+    <td><a href="/symbol/OKE">OKE</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-29.75</td>
+</tr>
+
+<tr>
+    <td>477</td>
+    <td><a href="/symbol/IP">International Paper</a></td>
+    <td><a href="/symbol/IP">IP</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-30.01</td>
+</tr>
+
+<tr>
+    <td>478</td>
+    <td><a href="/symbol/ALGN">Align Technology</a></td>
+    <td><a href="/symbol/ALGN">ALGN</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-31.63</td>
+</tr>
+
+<tr>
+    <td>479</td>
+    <td><a href="/symbol/CRM">Salesforce</a></td>
+    <td><a href="/symbol/CRM">CRM</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-32.07</td>
+</tr>
+
+<tr>
+    <td>480</td>
+    <td><a href="/symbol/GPN">Global Payments</a></td>
+    <td><a href="/symbol/GPN">GPN</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-34.42</td>
+</tr>
+
+<tr>
+    <td>481</td>
+    <td><a href="/symbol/TGT">Target Corporation</a></td>
+    <td><a href="/symbol/TGT">TGT</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-35.18</td>
+</tr>
+
+<tr>
+    <td>482</td>
+    <td><a href="/symbol/GDDY">GoDaddy</a></td>
+    <td><a href="/symbol/GDDY">GDDY</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-35.62</td>
+</tr>
+
+<tr>
+    <td>483</td>
+    <td><a href="/symbol/CAG">Conagra Brands</a></td>
+    <td><a href="/symbol/CAG">CAG</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-35.96</td>
+</tr>
+
+<tr>
+    <td>484</td>
+    <td><a href="/symbol/CLX">Clorox</a></td>
+    <td><a href="/symbol/CLX">CLX</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-36.01</td>
+</tr>
+
+<tr>
+    <td>485</td>
+    <td><a href="/symbol/UNH">UnitedHealth Group</a></td>
+    <td><a href="/symbol/UNH">UNH</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-36.75</td>
+</tr>
+
+<tr>
+    <td>486</td>
+    <td><a href="/symbol/BAX">Baxter International</a></td>
+    <td><a href="/symbol/BAX">BAX</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-37.21</td>
+</tr>
+
+<tr>
+    <td>487</td>
+    <td><a href="/symbol/SW">Smurfit WestRock</a></td>
+    <td><a href="/symbol/SW">SW</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-37.28</td>
+</tr>
+
+<tr>
+    <td>488</td>
+    <td><a href="/symbol/ZBRA">Zebra Technologies</a></td>
+    <td><a href="/symbol/ZBRA">ZBRA</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-37.61</td>
+</tr>
+
+<tr>
+    <td>489</td>
+    <td><a href="/symbol/STZ">Constellation Brands</a></td>
+    <td><a href="/symbol/STZ">STZ</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-39.52</td>
+</tr>
+
+<tr>
+    <td>490</td>
+    <td><a href="/symbol/LYB">LyondellBasell</a></td>
+    <td><a href="/symbol/LYB">LYB</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-39.68</td>
+</tr>
+
+<tr>
+    <td>491</td>
+    <td><a href="/symbol/CNC">Centene Corporation</a></td>
+    <td><a href="/symbol/CNC">CNC</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-39.75</td>
+</tr>
+
+<tr>
+    <td>492</td>
+    <td><a href="/symbol/CHTR">Charter Communications</a></td>
+    <td><a href="/symbol/CHTR">CHTR</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-40.78</td>
+</tr>
+
+<tr>
+    <td>493</td>
+    <td><a href="/symbol/FDS">FactSet</a></td>
+    <td><a href="/symbol/FDS">FDS</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-42.32</td>
+</tr>
+
+<tr>
+    <td>494</td>
+    <td><a href="/symbol/MRNA">Moderna</a></td>
+    <td><a href="/symbol/MRNA">MRNA</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-42.95</td>
+</tr>
+
+<tr>
+    <td>495</td>
+    <td><a href="/symbol/DOW">Dow Inc.</a></td>
+    <td><a href="/symbol/DOW">DOW</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-44.68</td>
+</tr>
+
+<tr>
+    <td>496</td>
+    <td><a href="/symbol/CMG">Chipotle Mexican Grill</a></td>
+    <td><a href="/symbol/CMG">CMG</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-47.55</td>
+</tr>
+
+<tr>
+    <td>497</td>
+    <td><a href="/symbol/ARE">Alexandria Real Estate Equities</a></td>
+    <td><a href="/symbol/ARE">ARE</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-47.83</td>
+</tr>
+
+<tr>
+    <td>498</td>
+    <td><a href="/symbol/MOH">Molina Healthcare</a></td>
+    <td><a href="/symbol/MOH">MOH</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-51.36</td>
+</tr>
+
+<tr>
+    <td>499</td>
+    <td><a href="/symbol/IT">Gartner</a></td>
+    <td><a href="/symbol/IT">IT</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-51.66</td>
+</tr>
+
+<tr>
+    <td>500</td>
+    <td><a href="/symbol/LULU">Lululemon Athletica</a></td>
+    <td><a href="/symbol/LULU">LULU</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-56.02</td>
+</tr>
+
+<tr>
+    <td>501</td>
+    <td><a href="/symbol/DECK">Deckers Brands</a></td>
+    <td><a href="/symbol/DECK">DECK</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-58.08</td>
+</tr>
+
+<tr>
+    <td>502</td>
+    <td><a href="/symbol/TTD">The Trade Desk, Inc.</a></td>
+    <td><a href="/symbol/TTD">TTD</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-66.26</td>
+</tr>
+
+<tr>
+    <td>503</td>
+    <td><a href="/symbol/FISV">Fiserv, Inc.</a></td>
+    <td><a href="/symbol/FISV">FISV</a></td>
+    <td style="color: red"><img src="/img/down.gif"> &nbsp;&nbsp;-70.38</td>
+</tr>

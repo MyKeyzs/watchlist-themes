@@ -1,19 +1,19 @@
 // src/components/AppHeader.tsx
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./AppHeader.css"
+import "./AppHeader.css";
 
 const AppHeader: React.FC = () => {
   return (
     <header className="app-header">
       <div className="app-header__inner">
-        {/* Left: brand / logo text */}
+        {/* Left: brand */}
         <div className="app-header__brand">
           <span className="app-header__brand-mark">AI</span>
           <span className="app-header__brand-text">Wealth Console</span>
         </div>
 
-        {/* Center: main nav tabs */}
+        {/* Center: nav tabs */}
         <nav className="app-header__nav">
           <NavLink
             to="/"
@@ -35,12 +35,20 @@ const AppHeader: React.FC = () => {
           >
             My holdings
           </NavLink>
+
+          <NavLink
+            to="/sp500"
+            className={({ isActive }) =>
+              "app-header__link" +
+              (isActive ? " app-header__link--active" : "")
+            }
+          >
+            S&amp;P 500 Companies YTD 
+          </NavLink>
         </nav>
 
-        {/* Right side – optional space for icons/buttons later */}
-        <div className="app-header__right">
-          {/* leave empty for now; add profile/settings later if you want */}
-        </div>
+        {/* Right side: placeholder for future profile/settings */}
+        <div className="app-header__right" />
       </div>
     </header>
   );

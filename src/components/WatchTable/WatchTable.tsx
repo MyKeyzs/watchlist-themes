@@ -1,25 +1,12 @@
 // src/components/WatchTable/WatchTable.tsx
 import React from "react";
-import { WatchItem } from "../../utils/types";
+
 import PopoutModal from "../../components/PopoutModal/PopoutModal";
 import { MASSIVE_API_KEY } from "../../lib/env";
+import { WatchItem, SortKey, SortState, SortDir } from "../../utils/types";
 
-/* ---------- Sorting ---------- */
-export type SortKey =
-  | "Ticker"
-  | "Company"
-  | "Theme(s)"
-  | "Date analyzed"
-  | "Initial Price"
-  | "Current Price"
-  | "Total PnL"
-  | "1Day Change (%)"
-  | "1Week Change (%)"
-  | "YTD Change (%)";
-
-export type SortDir = "asc" | "desc";
-export type SortState = { key: SortKey; dir: SortDir };
-
+// re-export for WatchlistPage
+export type { SortState } from "../../utils/types";
 type Props = {
   rows: WatchItem[];
   sort: SortState;
