@@ -2,8 +2,21 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./AppHeader.css";
+import { useAuth } from "../../contexts/AuthContext"; // <- add this
 
 const AppHeader: React.FC = () => {
+  const { logout } = useAuth(); // assumes AuthContext exposes logout()
+
+  const handleLogout = async () => {
+    try {
+      await logout();
+      // optional: you could navigate to /login here if your AuthContext
+      // doesn't already redirect on sign-out.
+    } catch (err) {
+      console.error("Failed to logout", err);
+    }
+  };
+
   return (
     <header className="app-header">
       <div className="app-header__inner">
@@ -43,12 +56,20 @@ const AppHeader: React.FC = () => {
               (isActive ? " app-header__link--active" : "")
             }
           >
-            S&amp;P 500 Companies YTD 
+            S&amp;P 500 Companies YTD
           </NavLink>
         </nav>
 
-        {/* Right side: placeholder for future profile/settings */}
-        <div className="app-header__right" />
+        {/* Right side: logout */}
+        <div className="app-header__right">
+          <button
+            type="button"
+            className="app-header__logout"
+            onClick={handleLogout}
+          >
+            Logout
+          </button>
+        </div>
       </div>
     </header>
   );

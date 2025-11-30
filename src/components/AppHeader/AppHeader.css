@@ -119,3 +119,33 @@
     padding: 1rem 0 2rem;
   }
 }
+
+/* Right placeholder area */
+.app-header__right {
+  min-width: 80px;
+  display: flex;                 /* align contents to the right */
+  justify-content: flex-end;
+}
+
+/* Logout button styling */
+.app-header__logout {
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #4b5563;
+  background: #111827;
+  color: #e5e7eb;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.1s ease;
+}
+
+.app-header__logout:hover {
+  background: #b91c1c;
+  border-color: #ef4444;
+  color: #f9fafb;
+  transform: translateY(-1px);
+}

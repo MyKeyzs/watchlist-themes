@@ -8,7 +8,7 @@ import {
   createUserWithEmailAndPassword,
   signOut,
 } from "firebase/auth";
-import { doc, setDoc, serverTimestamp } from "firebase/firestore";
+import { doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";
 
 interface AuthContextValue {
   user: User | null;
@@ -22,7 +22,7 @@ const AuthContext = createContext<AuthContextValue | undefined>(undefined);
 
 /** Create / update the Firestore user profile document */
 async function saveUserProfile(uid: string, email: string | null) {
-  // we use merge:true so we DON'T blow away existing fields like your holdings[]
+  // merge:true so we DON’T blow away subcollections like users/{uid}/holdings
   await setDoc(
     doc(db, "users", uid),
     {
@@ -38,21 +38,38 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const unsub = onAuthStateChanged(auth, (u) => {
-      setUser(u);
+    const unsub = onAuthStateChanged(auth, async (firebaseUser) => {
+      if (firebaseUser) {
+        // Ensure users/{uid} doc exists in Firestore
+        try {
+          const userRef = doc(db, "users", firebaseUser.uid);
+          const snap = await getDoc(userRef);
+
+          if (!snap.exists()) {
+            // First time we’ve seen this user → create their profile doc
+            await saveUserProfile(firebaseUser.uid, firebaseUser.email);
+          }
+        } catch (err) {
+          console.error("Failed to ensure user profile doc", err);
+        }
+      }
+
+      setUser(firebaseUser);
       setLoading(false);
     });
+
     return unsub;
   }, []);
 
   async function login(email: string, password: string) {
     await signInWithEmailAndPassword(auth, email, password);
+    // onAuthStateChanged will run afterward and ensure the Firestore doc
   }
 
   async function register(email: string, password: string) {
     const cred = await createUserWithEmailAndPassword(auth, email, password);
 
-    // create/merge the Firestore user doc
+    // create/merge the Firestore user doc immediately on sign-up
     await saveUserProfile(cred.user.uid, cred.user.email);
   }
 

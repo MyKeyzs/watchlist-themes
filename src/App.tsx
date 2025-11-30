@@ -19,6 +19,7 @@ import { AuthProvider, useAuth } from "./contexts/AuthContext";
 import "../src/styles/index.css"
 import "./styles/watchlist.light.css";
 import "../src/components/AppHeader/AppHeader.css"
+import "../src/components/AppHeader/AppHeader.css";
 
 /* ---------- Header ---------- */
 
@@ -27,12 +28,24 @@ function AppHeader({
 }: {
   active: "holdings" | "watchlist" | "sp500";
 }) {
+  const { logout } = useAuth();
+
+  const handleLogout = async () => {
+    try {
+      await logout();
+      // if your AuthProvider doesn't auto-redirect after logout,
+      // you could navigate to /login here using useNavigate
+    } catch (err) {
+      console.error("Failed to logout", err);
+    }
+  };
+
   return (
     <header className="app-header">
       <div className="app-header__inner">
         <div className="app-header__brand">
-          <div className="app-header__brand-mark">IN</div>
-          <span className="app-header__brand-text">Invest the Nest</span>
+          <div className="app-header__brand-mark">SW</div>
+          <span className="app-header__brand-text">StockWatchers</span>
         </div>
 
         <nav className="app-header__nav">
@@ -67,7 +80,16 @@ function AppHeader({
           </Link>
         </nav>
 
-        <div className="app-header__right" />
+        {/* Right: logout button */}
+        <div className="app-header__right">
+          <button
+            type="button"
+            className="app-header__logout"
+            onClick={handleLogout}
+          >
+            Logout
+          </button>
+        </div>
       </div>
     </header>
   );
