@@ -33,7 +33,7 @@ body {
 .app-shell,
 .wl-root {
   flex: 1;
-  max-width: 1400px;          /* keep it from going wall-to-wall on big screens */
+  max-width: 1400px;
   width: 100%;
   padding: 0 24px 40px;
   box-sizing: border-box;
