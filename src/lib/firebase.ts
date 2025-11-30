@@ -5,7 +5,7 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAmkcYxJuN1D7Fq-LtdkzILcpCfQ6_1S0s",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "watchlist-themes.firebaseapp.com",
   projectId: "watchlist-themes",
   storageBucket: "watchlist-themes.firebasestorage.app",
