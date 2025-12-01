@@ -105,12 +105,13 @@ function nBizDaysAgo(date: Date, n: number): Date {
   return d;
 }
 function ytdAnchor(date: Date): Date {
-  // First trading day of this year (approx: Jan 1 then roll forward to weekday)
-  const d = new Date(Date.UTC(date.getUTCFullYear(), 0, 1));
-  // If Jan 1 is weekend, roll forward to Monday
+  // Start from Jan 2 (Jan 1 is always a holiday), then roll forward to weekday
+  const d = new Date(Date.UTC(date.getUTCFullYear(), 0, 2));
+
   while (d.getUTCDay() === 0 || d.getUTCDay() === 6) {
     d.setUTCDate(d.getUTCDate() + 1);
   }
+
   return d;
 }
 function fmt(d: Date): string {
