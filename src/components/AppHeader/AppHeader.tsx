@@ -17,6 +17,9 @@ const AppHeader: React.FC = () => {
     }
   };
 
+
+   // Parent pill should look active for either S&P route
+  const isSp500Active = location.pathname.startsWith("/sp500");
   return (
     <header className="app-header">
       <div className="app-header__inner">
@@ -48,17 +51,41 @@ const AppHeader: React.FC = () => {
           >
             My holdings
           </NavLink>
-
-          <NavLink
-            to="/sp500"
-            className={({ isActive }) =>
-              "app-header__link" +
-              (isActive ? " app-header__link--active" : "")
-            }
-          >
-            S&amp;P 500 Companies YTD
-          </NavLink>
         </nav>
+        <div className="app-header__dropdown">
+            <button
+              type="button"
+              className={
+                "app-header__link app-header__link--dropdown" +
+                (isSp500Active ? " app-header__link--active" : "")
+              }
+            >
+              S&amp;P 500
+              <span className="app-header__caret">▾</span>
+            </button>
+
+            <div className="app-header__dropdown-menu">
+              <NavLink
+                to="/sp500"
+                className={({ isActive }) =>
+                  "app-header__dropdown-item" +
+                  (isActive ? " app-header__dropdown-item--active" : "")
+                }
+              >
+                SPY YTD
+              </NavLink>
+
+              <NavLink
+                to="/sp500-heatmap"
+                className={({ isActive }) =>
+                  "app-header__dropdown-item" +
+                  (isActive ? " app-header__dropdown-item--active" : "")
+                }
+              >
+                SPY HeatMap
+              </NavLink>
+            </div>
+          </div>
 
         {/* Right side: logout */}
         <div className="app-header__right">
