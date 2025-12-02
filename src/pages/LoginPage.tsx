@@ -1,5 +1,5 @@
 // src/pages/LoginPage.tsx
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 
@@ -10,25 +10,12 @@ export default function LoginPage() {
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
 
-  // pull user as well so we can redirect when it becomes non-null
-  const { user, login, register } = useAuth();
+  const { login, register } = useAuth();
   const navigate = useNavigate();
   const location = useLocation() as any;
 
   // where to go after login (default → holdings)
-  const from: string = location.state?.from?.pathname ?? "/holdings";
-
-  /**
-   * As soon as Firebase/AuthContext reports a logged-in user,
-   * send them to the intended page. This keeps navigation in sync
-   * with the real auth state and avoids the "have to click twice"
-   * issue.
-   */
-  useEffect(() => {
-    if (user) {
-      navigate(from, { replace: true });
-    }
-  }, [user, from, navigate]);
+  const from = location.state?.from?.pathname ?? "/holdings";
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -37,12 +24,11 @@ export default function LoginPage() {
 
     try {
       if (mode === "login") {
-        // just perform the login; redirect happens in the useEffect above
         await login(email, password);
       } else {
         await register(email, password);
       }
-      // DO NOT navigate here – let the effect run once user is set
+      navigate(from, { replace: true });
     } catch (err: any) {
       const msg =
         err?.message ||
@@ -107,7 +93,11 @@ export default function LoginPage() {
 
           {error && <div className="auth-error">{error}</div>}
 
-          <button className="auth-submit" type="submit" disabled={submitting}>
+          <button
+            className="auth-submit"
+            type="submit"
+            disabled={submitting}
+          >
             {submitting
               ? "Working..."
               : mode === "login"
