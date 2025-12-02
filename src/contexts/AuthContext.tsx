@@ -1,91 +1,76 @@
 // src/contexts/AuthContext.tsx
 import React, { createContext, useContext, useEffect, useState } from "react";
-import type { User } from "firebase/auth";
-import { auth, db } from "../lib/firebase";
 import {
+  User,
   onAuthStateChanged,
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
   signOut,
 } from "firebase/auth";
-import { doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";
+import { auth } from "../lib/firebase"; // <-- your existing firebase.ts export
 
-interface AuthContextValue {
+type AuthContextType = {
   user: User | null;
   loading: boolean;
-  login: (email: string, password: string) => Promise<void>;
-  register: (email: string, password: string) => Promise<void>;
+  login: (email: string, password: string) => Promise<User>;
+  register: (email: string, password: string) => Promise<User>;
   logout: () => Promise<void>;
-}
+};
 
-const AuthContext = createContext<AuthContextValue | undefined>(undefined);
+const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-/** Create / update the Firestore user profile document */
-async function saveUserProfile(uid: string, email: string | null) {
-  // merge:true so we DON’T blow away subcollections like users/{uid}/holdings
-  await setDoc(
-    doc(db, "users", uid),
-    {
-      email: email ?? "",
-      createdAt: serverTimestamp(),
-    },
-    { merge: true }
-  );
-}
-
-export function AuthProvider({ children }: { children: React.ReactNode }) {
+export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
 
+  // Keep user in sync with Firebase on app load / refresh
   useEffect(() => {
-    const unsub = onAuthStateChanged(auth, async (firebaseUser) => {
-      if (firebaseUser) {
-        // Ensure users/{uid} doc exists in Firestore
-        try {
-          const userRef = doc(db, "users", firebaseUser.uid);
-          const snap = await getDoc(userRef);
-
-          if (!snap.exists()) {
-            // First time we’ve seen this user → create their profile doc
-            await saveUserProfile(firebaseUser.uid, firebaseUser.email);
-          }
-        } catch (err) {
-          console.error("Failed to ensure user profile doc", err);
-        }
-      }
-
-      setUser(firebaseUser);
+    const unsub = onAuthStateChanged(auth, (firebaseUser) => {
+      setUser(firebaseUser ?? null);
       setLoading(false);
     });
-
     return unsub;
   }, []);
 
-  async function login(email: string, password: string) {
-    await signInWithEmailAndPassword(auth, email, password);
-    // onAuthStateChanged will run afterward and ensure the Firestore doc
-  }
+  // IMPORTANT: set user immediately on login so RequireAuth sees it
+  const login = async (email: string, password: string): Promise<User> => {
+    const cred = await signInWithEmailAndPassword(auth, email, password);
+    setUser(cred.user);      // <--- this removes the “double login” race
+    return cred.user;
+  };
 
-  async function register(email: string, password: string) {
+  const register = async (email: string, password: string): Promise<User> => {
     const cred = await createUserWithEmailAndPassword(auth, email, password);
+    setUser(cred.user);      // <--- same for sign-up
+    return cred.user;
+  };
 
-    // create/merge the Firestore user doc immediately on sign-up
-    await saveUserProfile(cred.user.uid, cred.user.email);
-  }
-
-  async function logout() {
+  const logout = async () => {
     await signOut(auth);
-  }
+    setUser(null);
+  };
+
+  const value: AuthContextType = {
+    user,
+    loading,
+    login,
+    register,
+    logout,
+  };
 
   return (
-    <AuthContext.Provider value={{ user, loading, login, register, logout }}>
+    <AuthContext.Provider value={value}>
       {children}
     </AuthContext.Provider>
   );
-}
+};
 
 export function useAuth() {
   const ctx = useContext(AuthContext);
-  if (!ctx) throw new Error("useAuth must be used within AuthProvider");
+  if (!ctx) {
+    throw new Error("useAuth must be used within an AuthProvider");
+  }
   return ctx;
 }
